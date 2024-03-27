@@ -1,0 +1,12 @@
+.env
+.production.env
+*.DS_Store
+cov/
+cov.lcov
+.idea
+backup.json
+html_cov/
+_fresh/
+tmp/
+vendor/
+node_modules/

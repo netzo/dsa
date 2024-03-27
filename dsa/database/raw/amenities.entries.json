@@ -1,0 +1,809 @@
+[
+  {
+    "key": [
+      "amenities",
+      "01HRW7WPT2A21AMSYGGP1S7EYJ"
+    ],
+    "value": {
+      "id": "01HRW7WPT2A21AMSYGGP1S7EYJ",
+      "createdAt": "2023-07-02T10:20:30.454Z",
+      "updatedAt": "2024-03-13T01:05:09.322Z",
+      "type": "food-and-drink",
+      "name": "Cafeteria Los Ventanales",
+      "description": "Toda una tradición, el lugar favorito de nuestros socios e invitados, un espacio acogedor donde la plática con un buen café es imperdonable. No dejes de probar nuestro renovado menú con atractivos platillos de cocina internacional.",
+      "image": "https://deportivosanagustin.com/images/cafeteria.jpg",
+      "facilityIds": [
+        "01HRW7WPT2A21AMSYGGP1S7EYJ"
+      ],
+      "data": {
+        "contact": {
+          "email": "alycia_gerlach28@gmail.com",
+          "phone": "214-330-0417 x2587"
+        },
+        "openingHours": {
+          "monday": "07:00-18:00",
+          "tuesday": "07:00-18:00",
+          "wednesday": "07:00-18:00",
+          "thursday": "07:00-18:00",
+          "friday": "07:00-18:00",
+          "saturday": "07:00-18:00",
+          "sunday": "07:00-18:00",
+          "festiveDays": "09:00-18:00"
+        },
+        "menuIds": [
+          "1O219XQXF8EQ96V3LJGAF6AX00"
+        ]
+      }
+    }
+  },
+  {
+    "key": [
+      "facilities",
+      "S7EYJRW7WP01H21AMSYGGP1T2A"
+    ],
+    "value": {
+      "id": "S7EYJRW7WP01H21AMSYGGP1T2A",
+      "createdAt": "2023-07-02T10:20:30.454Z",
+      "updatedAt": "2024-03-13T01:05:09.322Z",
+      "type": "food-and-drink",
+      "name": "Bar Cedros",
+      "description": "El lugar de los amigos, un espacio donde las charlas parecen no terminar… Rica botana del día, tu bebida favorita y tus mejores amigos, algo más?",
+      "image": "https://deportivosanagustin.com/images/bar2.jpg",
+      "facilityIds": [
+        "01HRW7WPT2A21AMSYGGP1S7EYJ"
+      ],
+      "data": {
+        "contact": {
+          "email": "alycia_gerlach28@gmail.com",
+          "phone": "214-330-0417 x2587"
+        },
+        "openingHours": {
+          "monday": "07:00-18:00",
+          "tuesday": "07:00-18:00",
+          "wednesday": "07:00-18:00",
+          "thursday": "07:00-18:00",
+          "friday": "07:00-18:00",
+          "saturday": "07:00-18:00",
+          "sunday": "07:00-18:00",
+          "festiveDays": "09:00-18:00"
+        },
+        "menuIds": [
+          "1O219XQXF8EQ96V3LJGAF6AX00"
+        ]
+      }
+    }
+  },
+  {
+    "key": [
+      "facilities",
+      "V3LJGAF61O219XQXF8EQ96AT00"
+    ],
+    "value": {
+      "id": "V3LJGAF61O219XQXF8EQ96AT00",
+      "createdAt": "2023-07-02T10:20:30.454Z",
+      "updatedAt": "2024-03-13T01:05:09.322Z",
+      "type": "food-and-drink",
+      "name": "Pabellón",
+      "description": "Espectacular salón abierto, completamente techado y climatizado con ventiladores de brisa para un mayor confort, con vista al área acuática y a la alberca exterior. Un espacio para grandes eventos como bodas, cumpleaños, festivales, primeras comuniones, XV años. En temporadas de verano tenemos servicio para el área de albercas con un snack que ofrece un delicioso y variado menú.",
+      "image": "https://deportivosanagustin.com/images/instalaciones/apabellon.jpg",
+      "facilityIds": [
+        "01HRW7WPT2A21AMSYGGP1S7EYJ"
+      ],
+      "data": {
+        "contact": {
+          "email": "alycia_gerlach28@gmail.com",
+          "phone": "214-330-0417 x2587"
+        },
+        "openingHours": {
+          "monday": "07:00-18:00",
+          "tuesday": "07:00-18:00",
+          "wednesday": "07:00-18:00",
+          "thursday": "07:00-18:00",
+          "friday": "07:00-18:00",
+          "saturday": "07:00-18:00",
+          "sunday": "07:00-18:00",
+          "festiveDays": "09:00-18:00"
+        },
+        "menuIds": [
+          "1O219XQXF8EQ96V3LJGAF6AX00"
+        ]
+      }
+    }
+  },
+  {
+    "key": [
+      "facilities",
+      "A21AMS01HRW7WPT2S7EYYGGP1J"
+    ],
+    "value": {
+      "id": "A21AMS01HRW7WPT2S7EYYGGP1J",
+      "createdAt": "2023-07-02T10:20:30.454Z",
+      "updatedAt": "2024-03-13T01:05:09.322Z",
+      "type": "food-and-drink",
+      "name": "La Terraza",
+      "description": "Enmarcada por bellos jardines, este espacio te ofrece estar al aire libre en una cálida terraza, donde podrás leer, tomar un jugo recién hecho, desayunar después de ejercitarte. Nuestro servicio de alimentos oferta un delicioso menú desde un refrigerio, ricos antojitos, frescas ensaladas, fruta de la estación, una cena ligera, práctico y delicioso.",
+      "image": "https://deportivosanagustin.com/images/terraza19.jpg",
+      "facilityIds": [
+        "01HRW7WPT2A21AMSYGGP1S7EYJ"
+      ],
+      "data": {
+        "contact": {
+          "email": "alycia_gerlach28@gmail.com",
+          "phone": "214-330-0417 x2587"
+        },
+        "openingHours": {
+          "monday": "07:00-18:00",
+          "tuesday": "07:00-18:00",
+          "wednesday": "07:00-18:00",
+          "thursday": "07:00-18:00",
+          "friday": "07:00-18:00",
+          "saturday": "07:00-18:00",
+          "sunday": "07:00-18:00",
+          "festiveDays": "09:00-18:00"
+        },
+        "menuIds": [
+          "1O219XQXF8EQ96V3LJGAF6AX00"
+        ]
+      }
+    }
+  },
+  {
+    "key": [
+      "amenities",
+      "01HRW7WPSKHQV59EJCQVEJTPSZ"
+    ],
+    "value": {
+      "id": "01HRW7WPSKHQV59EJCQVEJTPSZ",
+      "createdAt": "2024-02-16T13:35:59.131Z",
+      "updatedAt": "2024-03-13T07:55:44.037Z",
+      "type": "event",
+      "name": "Noches Bohemias",
+      "description": "Los viernes a partir de mayo, las noches son de parrilla, amigos, música en vivo y una larga charla con un buen vino.",
+      "image": "https://deportivosanagustin.com/images/grill.jpg",
+      "facilityIds": [
+        "A21AMS01HRW7WPT2S7EYYGGP1J"
+      ],
+      "data": {
+        "startDateTime": "2024-10-19T10:28:06.887Z",
+        "endDateTime": "2024-08-22T19:36:31.428Z",
+        "location": "Denego cenaculum velociter ulciscor via ut. Aurum aestus aestivus viscus. Optio velum demens cinis delinquo verto surgo uterque accusator spiculum. Nam villa vestrum censura arma autem ceno aro. Crastinus crudelis adamo vae valde adulescens.",
+        "organizers": [
+          {
+            "name": "Juan Perez",
+            "email": "juan.perez@yahoo.com",
+            "phone": "527-454-5890 x01694",
+            "userId": "01HRW7WPSNAVM6P22BKFCAJWAE"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "key": [
+      "amenities",
+      "01HRW7WPT6M0RS8H8NNA0G6T4G"
+    ],
+    "value": {
+      "id": "01HRW7WPT6M0RS8H8NNA0G6T4G",
+      "createdAt": "2023-10-21T23:12:11.769Z",
+      "updatedAt": "2024-03-13T01:13:09.910Z",
+      "type": "sport",
+      "name": "Natación",
+      "description": "La natación es el movimiento y desplazamiento a través del agua mediante el uso de las extremidades corporales y por lo general sin utilizar ningún instrumento artificial. La natación es una actividad que puede ser útil y recreativa.",
+      "image": "https://i.pngimg.me/thumb/f/720/m2i8H7N4Z5Z5i8m2.jpg",
+      "facilityIds": [],
+      "data": {
+        "type": "swimming"
+      }
+    }
+  },
+  {
+    "key": [
+      "amenities",
+      "01HRW7WPT6M0RS8H8NNA0G6T4H"
+    ],
+    "value": {
+      "id": "01HRW7WPT6M0RS8H8NNA0G6T4H",
+      "createdAt": "2023-10-21T23:12:11.769Z",
+      "updatedAt": "2024-03-13T01:13:09.910Z",
+      "type": "sport",
+      "name": "Tennis",
+      "description": "El tenis es un deporte de raqueta que se puede practicar individualmente contra un solo oponente o entre dos parejas que consta de pelotas de tenis y raquetas. El objetivo del juego es jugar la pelota de tal manera que el oponente no pueda devolverla.",
+      "image": "https://www.onlygfx.com/wp-content/uploads/2022/05/tennis-silhouette-6.png",
+      "facilityIds": [],
+      "data": {
+        "type": "tennis"
+      }
+    }
+  },
+  {
+    "key": [
+      "amenities",
+      "01HRW7WPT6M0RS8H8NNA0G6T4I"
+    ],
+    "value": {
+      "id": "01HRW7WPT6M0RS8H8NNA0G6T4I",
+      "createdAt": "2023-10-21T23:12:11.769Z",
+      "updatedAt": "2024-03-13T01:13:09.910Z",
+      "type": "sport",
+      "name": "Pádel",
+      "description": "El pádel es un deporte de raqueta que se juega en parejas. Se practica en una pista acotada por paredes y se juega con una pelota de tenis. El objetivo del juego es jugar la pelota de tal manera que el oponente no pueda devolverla.",
+      "image": "https://assets.matchi.se/archive/2018/11/81e9b9a5c9d11c4abaa0c63c7c40c9d4.jpg",
+      "facilityIds": [],
+      "data": {
+        "type": "paddle"
+      }
+    }
+  },
+  {
+    "key": [
+      "amenities",
+      "01HRW7WPT6M0RS8H8NNA0G6T4J"
+    ],
+    "value": {
+      "id": "01HRW7WPT6M0RS8H8NNA0G6T4J",
+      "createdAt": "2023-10-21T23:12:11.769Z",
+      "updatedAt": "2024-03-13T01:13:09.910Z",
+      "type": "sport",
+      "name": "Raquetbol",
+      "description": "El raquetbol es un deporte de raqueta que se juega en parejas. Se practica en una pista acotada por paredes y se juega con una pelota de tenis. El objetivo del juego es jugar la pelota de tal manera que el oponente no pueda devolverla.",
+      "image": "https://us.123rf.com/450wm/thesilhouettequeen/thesilhouettequeen2010/thesilhouettequeen201003427/157969644-racquetball-4-isolated-vector-silhouette.jpg",
+      "facilityIds": [],
+      "data": {
+        "type": "racquetball"
+      }
+    }
+  },
+  {
+    "key": [
+      "amenities",
+      "01HRW7WPT6M0RS8H8NNA0G6T4K"
+    ],
+    "value": {
+      "id": "01HRW7WPT6M0RS8H8NNA0G6T4K",
+      "createdAt": "2023-10-21T23:12:11.769Z",
+      "updatedAt": "2024-03-13T01:13:09.910Z",
+      "type": "sport",
+      "name": "Gimnasia",
+      "description": "La gimnasia es un deporte que se practica en un gimnasio y que consiste en la realización de una serie de ejercicios físicos que requieren fuerza, flexibilidad, agilidad y coordinación.",
+      "image": "https://c1.klipartz.com/pngpicture/267/260/sticker-png-birthday-cake-silhouette-gymnastics-rhythmic-gymnastics-dance-artistic-gymnastics-ballet-cartwheel-birthday.png",
+      "facilityIds": [],
+      "data": {
+        "type": "gymnastics"
+      }
+    }
+  },
+  {
+    "key": [
+      "amenities",
+      "01HRW7WPT6M0RS8H8NNA0G6T4L"
+    ],
+    "value": {
+      "id": "01HRW7WPT6M0RS8H8NNA0G6T4L",
+      "createdAt": "2023-10-21T23:12:11.769Z",
+      "updatedAt": "2024-03-13T01:13:09.910Z",
+      "type": "sport",
+      "name": "Fútbol",
+      "description": "El fútbol es un deporte de equipo jugado entre dos conjuntos de once jugadores cada uno y algunos árbitros que se ocupan de que las normas se cumplan correctamente. Es ampliamente considerado el deporte más popular del mundo.",
+      "image": "https://toppng.com/uploads/preview/football-player-silhouette-1152343897993buyiycb9.png",
+      "facilityIds": [],
+      "data": {
+        "type": "soccer"
+      }
+    }
+  },
+  {
+    "key": [
+      "amenities",
+      "01HRW7WPT6M0RS8H8NNA0G6T4M"
+    ],
+    "value": {
+      "id": "01HRW7WPT6M0RS8H8NNA0G6T4M",
+      "createdAt": "2023-10-21T23:12:11.769Z",
+      "updatedAt": "2024-03-13T01:13:09.910Z",
+      "type": "sport",
+      "name": "Hockey",
+      "description": "El hockey es un deporte de equipo en el que dos equipos compiten para llevar una pelota o un disco de goma a la portería contraria con la ayuda de un palo largo llamado stick. El hockey es un deporte de equipo en el que dos equipos compiten para llevar una pelota o un disco de goma a la portería contraria con la ayuda de un palo largo llamado stick.",
+      "image": "https://img.freepik.com/premium-vector/ice-hockey-player-silhouette_765582-227.jpg",
+      "facilityIds": [],
+      "data": {
+        "type": "hockey"
+      }
+    }
+  },
+  {
+    "key": [
+      "amenities",
+      "11HRNA0W7WPT6M0RS8H8NG6T4M"
+    ],
+    "value": {
+      "id": "11HRNA0W7WPT6M0RS8H8NG6T4M",
+      "createdAt": "2023-10-21T23:12:11.769Z",
+      "updatedAt": "2024-03-13T01:13:09.910Z",
+      "type": "sport",
+      "name": "Patinaje artístico",
+      "description": "El patinaje artístico es una actividad que se realiza sobre una superficie de hielo, ya sea natural o artificial, con patines de cuchilla. El patinaje artístico es una actividad que se realiza sobre una superficie de hielo, ya sea natural o artificial, con patines de cuchilla.",
+      "image": "https://p1.hiclipart.com/preview/549/705/84/ice-ice-skating-figure-skating-sports-roller-skating-ice-skates-pirouette-dance-png-clipart.jpg",
+      "facilityIds": [],
+      "data": {
+        "type": "ice-skating"
+      }
+    }
+  },
+  {
+    "key": [
+      "amenities",
+      "01HRW7WPT6M0RS8H8NNA0G6T4N"
+    ],
+    "value": {
+      "id": "01HRW7WPT6M0RS8H8NNA0G6T4N",
+      "createdAt": "2023-10-21T23:12:11.769Z",
+      "updatedAt": "2024-03-13T01:13:09.910Z",
+      "type": "sport",
+      "name": "Baloncesto",
+      "description": "El baloncesto es un deporte de equipo que se puede desarrollar tanto en pista cubierta como en descubierta, en el que dos conjuntos de cinco jugadores cada uno, intenta anotar puntos, también llamados canastas o dobles y/o triples introduciendo un balón en un aro colocado a 3,05 metros del suelo del que cuelga una red.",
+      "image": "https://png.pngtree.com/png-clipart/20210620/original/pngtree-basketball-silhouette-man-jumping-to-pitch-png-image_6438103.jpg",
+      "facilityIds": [],
+      "data": {
+        "type": "basketball"
+      }
+    }
+  },
+  {
+    "key": [
+      "amenities",
+      "01HRW7WPT6M0RS8H8NNA0G6T4O"
+    ],
+    "value": {
+      "id": "01HRW7WPT6M0RS8H8NNA0G6T4O",
+      "createdAt": "2023-10-21T23:12:11.769Z",
+      "updatedAt": "2024-03-13T01:13:09.910Z",
+      "type": "sport",
+      "name": "Danza",
+      "description": "La danza es una forma de arte en la que se utiliza el movimiento del cuerpo, usualmente con música, como una forma de expresión, de interacción social, con fines de entretenimiento, artísticos o religiosos.",
+      "image": "https://p7.hiclipart.com/preview/944/311/818/jazz-dance-ballet-dancer-contemporary-dance-ballet.jpg",
+      "facilityIds": [],
+      "data": {
+        "type": "dance"
+      }
+    }
+  },
+  {
+    "key": [
+      "amenities",
+      "01HRW7WPT6M0RS8H8NNA0G6T4P"
+    ],
+    "value": {
+      "id": "01HRW7WPT6M0RS8H8NNA0G6T4P",
+      "createdAt": "2023-10-21T23:12:11.769Z",
+      "updatedAt": "2024-03-13T01:13:09.910Z",
+      "type": "sport",
+      "name": "Karate-do",
+      "description": "El karate es un arte marcial que se originó en Okinawa, Japón. El karate es un arte marcial que se originó en Okinawa, Japón. El karate es un arte marcial que se originó en Okinawa, Japón.",
+      "image": "https://banner2.cleanpng.com/20180421/plw/kisspng-karate-tang-soo-do-martial-arts-shotokan-sport-5adbea38e94927.8141844715243617849556.jpg",
+      "facilityIds": [],
+      "data": {
+        "type": "karate-do"
+      }
+    }
+  },
+  {
+    "key": [
+      "amenities",
+      "01HRW7WPT6M0RS8H8NNA0G6T4Q"
+    ],
+    "value": {
+      "id": "01HRW7WPT6M0RS8H8NNA0G6T4Q",
+      "createdAt": "2023-10-21T23:12:11.769Z",
+      "updatedAt": "2024-03-13T01:13:09.910Z",
+      "type": "sport",
+      "name": "Fitness",
+      "description": "El fitness es un deporte que se practica en un gimnasio y que consiste en la realización de una serie de ejercicios físicos que requieren fuerza, flexibilidad, agilidad y coordinación.",
+      "image": "https://p1.hiclipart.com/preview/387/875/729/group-of-people-personal-trainer-exercise-physical-fitness-training-fitness-centre-suspension-training-silhouette-png-clipart.jpg",
+      "facilityIds": [],
+      "data": {
+        "type": "fitness"
+      }
+    }
+  },
+  {
+    "key": [
+      "amenities",
+      "01HRW7WPT6M0RS8H8NNA0G6T4S"
+    ],
+    "value": {
+      "id": "01HRW7WPT6M0RS8H8NNA0G6T4S",
+      "createdAt": "2023-10-21T23:12:11.769Z",
+      "updatedAt": "2024-03-13T01:13:09.910Z",
+      "type": "sport",
+      "name": "Boxeo",
+      "description": "El boxeo es un deporte de combate en el que dos contrincantes luchan utilizando únicamente sus puños con guantes, golpeando a su adversario de la cintura hacia arriba, dentro de un cuadrilátero especialmente diseñado para tal fin.",
+      "image": "https://www.pngall.com/wp-content/uploads/15/Boxing-PNG-Image.png",
+      "facilityIds": [],
+      "data": {
+        "type": "boxing"
+      }
+    }
+  },
+  {
+    "key": [
+      "amenities",
+      "01HRW7WPT6M0RS8H8NNA0G6T4T"
+    ],
+    "value": {
+      "id": "01HRW7WPT6M0RS8H8NNA0G6T4T",
+      "createdAt": "2023-10-21T23:12:11.769Z",
+      "updatedAt": "2024-03-13T01:13:09.910Z",
+      "type": "sport",
+      "name": "Triatlón",
+      "description": "El triatlón es un deporte que combina tres disciplinas: natación, ciclismo y carrera a pie. El triatlón es un deporte que combina tres disciplinas: natación, ciclismo y carrera a pie.",
+      "image": "https://cdn-icons-png.freepik.com/512/6716/6716130.png",
+      "facilityIds": [],
+      "data": {
+        "type": "triathlon"
+      }
+    }
+  },
+  {
+    "key": [
+      "amenities",
+      "01HRW7WPT6M0RS8H8NNA0G6T4U"
+    ],
+    "value": {
+      "id": "01HRW7WPT6M0RS8H8NNA0G6T4U",
+      "createdAt": "2023-10-21T23:12:11.769Z",
+      "updatedAt": "2024-03-13T01:13:09.910Z",
+      "type": "sport",
+      "name": "Yoga",
+      "description": "El yoga es una disciplina física y mental que se originó en la India. El yoga es una disciplina física y mental que se originó en la India. El yoga es una disciplina física y mental que se originó en la India.",
+      "image": "https://p1.hiclipart.com/preview/728/997/235/yoga-asana-posture-stretching-vriksasana-exercise-pilates-silhouette-png-clipart.jpg",
+      "facilityIds": [],
+      "data": {
+        "type": "yoga"
+      }
+    }
+  },
+  {
+    "key": [
+      "amenities",
+      "01HRW7WPT6M0RS8H8NNA0G6T4V"
+    ],
+    "value": {
+      "id": "01HRW7WPT6M0RS8H8NNA0G6T4V",
+      "createdAt": "2023-10-21T23:12:11.769Z",
+      "updatedAt": "2024-03-13T01:13:09.910Z",
+      "type": "sport",
+      "name": "Tai-chi",
+      "description": "El tai chi es un arte marcial chino que se practica por sus beneficios para la salud y por su valor como entrenamiento para la defensa personal. El tai chi es un arte marcial chino que se practica por sus beneficios para la salud y por su valor como entrenamiento para la defensa personal.",
+      "image": "https://p7.hiclipart.com/preview/679/107/752/tai-chi-%E5%A4%AA%E6%9E%81%E5%8A%9F%E5%A4%AB%E6%89%87-silhouette-taiji-silhouette.jpg",
+      "facilityIds": [],
+      "data": {
+        "type": "tai-chi"
+      }
+    }
+  },
+  {
+    "key": [
+      "amenities",
+      "01HRW7WPT6M0RS8H8NNA0G6T4W"
+    ],
+    "value": {
+      "id": "01HRW7WPT6M0RS8H8NNA0G6T4W",
+      "createdAt": "2023-10-21T23:12:11.769Z",
+      "updatedAt": "2024-03-13T01:13:09.910Z",
+      "type": "sport",
+      "name": "Pilates",
+      "description": "El pilates es un método de entrenamiento físico que busca el desarrollo de los músculos internos para mantener el equilibrio corporal y dar estabilidad y firmeza a la columna vertebral. El pilates es un método de entrenamiento físico que busca el desarrollo de los músculos internos para mantener el equilibrio corporal y dar estabilidad y firmeza a la columna vertebral.",
+      "image": "https://p7.hiclipart.com/preview/981/760/15/pilates-physical-fitness-exercise-silhouette-yoga-silhouette.jpg",
+      "facilityIds": [],
+      "data": {
+        "type": "pilates"
+      }
+    }
+  },
+  {
+    "key": [
+      "amenities",
+      "01HRW7WPT6M0RS8H8NNA0G6T4X"
+    ],
+    "value": {
+      "id": "01HRW7WPT6M0RS8H8NNA0G6T4X",
+      "createdAt": "2023-10-21T23:12:11.769Z",
+      "updatedAt": "2024-03-13T01:13:09.910Z",
+      "type": "sport",
+      "name": "Crossfit",
+      "description": "El crossfit es un sistema de entrenamiento de fuerza y acondicionamiento basado en ejercicios constantemente variados, con movimientos funcionales ejecutados a alta intensidad. El crossfit es un sistema de entrenamiento de fuerza y acondicionamiento basado en ejercicios constantemente variados, con movimientos funcionales ejecutados a alta intensidad.",
+      "image": "https://i.pinimg.com/originals/11/fe/05/11fe054afce95f0d214ac546cfeabc85.png",
+      "facilityIds": [],
+      "data": {
+        "type": "crossfit"
+      }
+    }
+  },
+  {
+    "key": [
+      "amenities",
+      "01HRW7WPT6M0RS8H8NNA0G6T4Y"
+    ],
+    "value": {
+      "id": "01HRW7WPT6M0RS8H8NNA0G6T4Y",
+      "createdAt": "2023-10-21T23:12:11.769Z",
+      "updatedAt": "2024-03-13T01:13:09.910Z",
+      "type": "sport",
+      "name": "Tabata",
+      "description": "El tabata es un sistema de entrenamiento de alta intensidad que se basa en realizar ejercicios de fuerza y cardiovasculares durante 20 segundos, seguidos de 10 segundos de descanso, durante un total de 4 minutos. El tabata es un sistema de entrenamiento de alta intensidad que se basa en realizar ejercicios de fuerza y cardiovasculares durante 20 segundos, seguidos de 10 segundos de descanso, durante un total de 4 minutos.",
+      "image": "https://cdni.iconscout.com/illustration/premium/thumb/slow-climbers-3311521-2764577.png",
+      "facilityIds": [],
+      "data": {
+        "type": "tabata"
+      }
+    }
+  },
+  {
+    "key": [
+      "amenities",
+      "01HRW7WPT6M0RS8H8NNA0G6T4Z"
+    ],
+    "value": {
+      "id": "01HRW7WPT6M0RS8H8NNA0G6T4Z",
+      "createdAt": "2023-10-21T23:12:11.769Z",
+      "updatedAt": "2024-03-13T01:13:09.910Z",
+      "type": "sport",
+      "name": "Spinning",
+      "description": "El spinning es una actividad física que se realiza en una bicicleta estática al ritmo de la música. El spinning es una actividad física que se realiza en una bicicleta estática al ritmo de la música.",
+      "image": "https://cdn.pixabay.com/photo/2020/04/27/13/58/spinning-bike-5099978_1280.png",
+      "facilityIds": [],
+      "data": {
+        "type": "spinning"
+      }
+    }
+  },
+  {
+    "key": [
+      "amenities",
+      "01HRW72AKWE5WPT4C4TQEMV3V9"
+    ],
+    "value": {
+      "id": "01HRW72AKWE5WPT4C4TQEMV3V9",
+      "createdAt": "2023-09-16T00:56:48.574Z",
+      "updatedAt": "2024-03-13T15:06:36.706Z",
+      "type": "service",
+      "name": "Masaje deportivo mixto",
+      "description": "Disfruta de un masaje deportivo, que te ayudará a relajar tus músculos y a recuperarte de la fatiga muscular.",
+      "image": "https://cdn.hsnstore.com/blog/wp-content/uploads/2016/06/recuperacion-lesion.jpg",
+      "facilityIds": [
+        "01HRW7WPT5F4WRR4MRV5SNXPD6"
+      ],
+      "data": {
+        "type": "wellness",
+        "openningHours": {
+          "monday": "08:00-20:00",
+          "tuesday": "08:00-20:00",
+          "wednesday": "08:00-20:00",
+          "thursday": "08:00-20:00",
+          "friday": "08:00-20:00",
+          "saturday": "08:00-20:00",
+          "sunday": "08:00-20:00",
+          "festiveDays": "closed"
+        }
+      }
+    }
+  },
+  {
+    "key": [
+      "amenities",
+      "01HRW7WPT4CE534TQEMV2AKWV9"
+    ],
+    "value": {
+      "id": "01HRW7WPT4CE534TQEMV2AKWV9",
+      "createdAt": "2023-09-16T00:56:48.574Z",
+      "updatedAt": "2024-03-13T15:06:36.706Z",
+      "type": "service",
+      "name": "Masaje relajante caballeros",
+      "description": "Disfruta de un masaje relajante, que te ayudará a liberar el estrés y a relajarte.",
+      "image": "https://img.freepik.com/fotos-premium/hombre-da-masaje-al-chico-que-acostado-gabinete-adentro_146671-49113.jpg",
+      "facilityIds": [
+        "01HRW7WPT5F4WRR4MRV5SNXPD6"
+      ],
+      "data": {
+        "type": "wellness",
+        "openningHours": {
+          "monday": "08:00-20:00",
+          "tuesday": "08:00-20:00",
+          "wednesday": "08:00-20:00",
+          "thursday": "08:00-20:00",
+          "friday": "08:00-20:00",
+          "saturday": "08:00-20:00",
+          "sunday": "08:00-20:00",
+          "festiveDays": "closed"
+        }
+      }
+    }
+  },
+  {
+    "key": [
+      "amenities",
+      "1HRW7WPT4C4T0QEMV2AKWE53V9"
+    ],
+    "value": {
+      "id": "1HRW7WPT4C4T0QEMV2AKWE53V9",
+      "createdAt": "2023-09-16T00:56:48.574Z",
+      "updatedAt": "2024-03-13T15:06:36.706Z",
+      "type": "service",
+      "name": "Masaje relajante damas",
+      "description": "Disfruta de un masaje relajante, que te ayudará a liberar el estrés y a relajarte.",
+      "image": "https://www.figursan.com/masaje-relajante-corporal-completo-1-sesion_img2759n1t6.jpg",
+      "facilityIds": [
+        "01HRW7WPT5F4WRR4MRV5SNXPD6"
+      ],
+      "data": {
+        "type": "wellness",
+        "openningHours": {
+          "monday": "08:00-20:00",
+          "tuesday": "08:00-20:00",
+          "wednesday": "08:00-20:00",
+          "thursday": "08:00-20:00",
+          "friday": "08:00-20:00",
+          "saturday": "08:00-20:00",
+          "sunday": "08:00-20:00",
+          "festiveDays": "closed"
+        }
+      }
+    }
+  },
+  {
+    "key": [
+      "amenities",
+      "01E53VHRW7WPT4C4TQEMV2AKW9"
+    ],
+    "value": {
+      "id": "01E53VHRW7WPT4C4TQEMV2AKW9",
+      "createdAt": "2023-09-16T00:56:48.574Z",
+      "updatedAt": "2024-03-13T15:06:36.706Z",
+      "type": "service",
+      "name": "Estetica",
+      "description": "Disfruta de nuestros servicios de estetica, desde cortes para caballero hasta maquillaje para damas.",
+      "image": "https://titulae.es/wp-content/uploads/2021/11/grado-superior-peluqueria.jpg",
+      "facilityIds": [
+        "01HRW7WPT5F4WRR4MRV5SNXPD6"
+      ],
+      "data": {
+        "type": "salon",
+        "openningHours": {
+          "monday": "08:00-20:00",
+          "tuesday": "08:00-20:00",
+          "wednesday": "08:00-20:00",
+          "thursday": "08:00-20:00",
+          "friday": "08:00-20:00",
+          "saturday": "08:00-20:00",
+          "sunday": "08:00-20:00",
+          "festiveDays": "closed"
+        }
+      }
+    }
+  },
+  {
+    "key": [
+      "amenities",
+      "0KWE53V91HRW7WPT4C4TQEMV2A"
+    ],
+    "value": {
+      "id": "0KWE53V91HRW7WPT4C4TQEMV2A",
+      "createdAt": "2023-09-16T00:56:48.574Z",
+      "updatedAt": "2024-03-13T15:06:36.706Z",
+      "type": "service",
+      "name": "Boleo de zapatos",
+      "description": "Luce tus zapatos como nuevos, con nuestro servicio de boleo de zapatos.",
+      "image": "https://img.unocero.com/2017/08/Shoes-2-880x496.jpg",
+      "facilityIds": [
+        "01HRW7WPT5F4WRR4MRV5SNXPD6"
+      ],
+      "data": {
+        "type": "salon",
+        "openningHours": {
+          "monday": "08:00-20:00",
+          "tuesday": "08:00-20:00",
+          "wednesday": "08:00-20:00",
+          "thursday": "08:00-20:00",
+          "friday": "08:00-20:00",
+          "saturday": "08:00-20:00",
+          "sunday": "08:00-20:00",
+          "festiveDays": "closed"
+        }
+      }
+    }
+  },
+  {
+    "key": [
+      "amenities",
+      "AKWE53V901HRW7WPT4C4TQEMV2"
+    ],
+    "value": {
+      "id": "AKWE53V901HRW7WPT4C4TQEMV2",
+      "createdAt": "2023-09-16T00:56:48.574Z",
+      "updatedAt": "2024-03-13T15:06:36.706Z",
+      "type": "service",
+      "name": "Consulta de nutricion",
+      "description": "Consulta con nuestros expertos en nutricion, para mejorar tu alimentacion y tu salud.",
+      "image": "https://www.adfisioterapiavalencia.com/wp-content/uploads/2020/07/nutricion-deportiva.jpg",
+      "facilityIds": [
+        "01HRW7WPT5F4WRR4MRV5SNXPD6"
+      ],
+      "data": {
+        "type": "medical",
+        "openningHours": {
+          "monday": "08:00-20:00",
+          "tuesday": "08:00-20:00",
+          "wednesday": "08:00-20:00",
+          "thursday": "08:00-20:00",
+          "friday": "08:00-20:00",
+          "saturday": "08:00-20:00",
+          "sunday": "08:00-20:00",
+          "festiveDays": "closed"
+        }
+      }
+    }
+  },
+  {
+    "key": [
+      "amenities",
+      "KWE5301HRW7WPT4C4TQEMV2AV9"
+    ],
+    "value": {
+      "id": "KWE5301HRW7WPT4C4TQEMV2AV9",
+      "createdAt": "2023-09-16T00:56:48.574Z",
+      "updatedAt": "2024-03-13T15:06:36.706Z",
+      "type": "service",
+      "name": "Consulta psicologia deportiva",
+      "description": "Consulta con nuestros expertos en psicologia deportiva, para mejorar tu rendimiento y tu salud mental.",
+      "image": "https://www.formacionacadef.es/wp-content/uploads/2020/10/Psicologia-del-deporte.jpg",
+      "facilityIds": [
+        "01HRW7WPT5F4WRR4MRV5SNXPD6"
+      ],
+      "data": {
+        "type": "medical",
+        "openningHours": {
+          "monday": "08:00-20:00",
+          "tuesday": "08:00-20:00",
+          "wednesday": "08:00-20:00",
+          "thursday": "08:00-20:00",
+          "friday": "08:00-20:00",
+          "saturday": "08:00-20:00",
+          "sunday": "08:00-20:00",
+          "festiveDays": "closed"
+        }
+      }
+    }
+  },
+  {
+    "key": [
+      "amenities",
+      "E53V01HRW7WPT4C4TQEMV2AKW9"
+    ],
+    "value": {
+      "id": "E53V01HRW7WPT4C4TQEMV2AKW9",
+      "createdAt": "2023-09-16T00:56:48.574Z",
+      "updatedAt": "2024-03-13T15:06:36.706Z",
+      "type": "service",
+      "name": "Consulta medica deportiva",
+      "description": "Consulta sobre lesiones, acondicionamiento fisico y cualquier otra duda relacionada con el deporte.",
+      "image": "https://ortopediaintegral.com.mx/wp-content/uploads/2020/09/Medicina-del-Deporte-en-CDMX.jpg",
+      "facilityIds": [
+        "01HRW7WPT5F4WRR4MRV5SNXPD6"
+      ],
+      "data": {
+        "type": "medical",
+        "openningHours": {
+          "monday": "08:00-20:00",
+          "tuesday": "08:00-20:00",
+          "wednesday": "08:00-20:00",
+          "thursday": "08:00-20:00",
+          "friday": "08:00-20:00",
+          "saturday": "08:00-20:00",
+          "sunday": "08:00-20:00",
+          "festiveDays": "closed"
+        }
+      }
+    }
+  }
+]

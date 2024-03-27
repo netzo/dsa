@@ -1,0 +1,100 @@
+/* Base Settings */
+body {
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 1.875rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  page-break-before: always; /* Add page break before each h2 */
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 1rem;
+  font-size: 12px;
+}
+
+/* Links */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Lists */
+ul, ol {
+  margin-left: 1.25rem;
+  margin-bottom: 1rem;
+  font-size: 12px;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 4px solid #007bff;
+  padding-left: 15px;
+  margin-left: 0;
+  font-style: italic;
+  color: #666;
+}
+
+/* Code */
+code {
+  font-family: 'Fira Code', monospace;
+  background-color: #f8f9fa;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+pre code {
+  padding: 10px;
+  overflow-x: auto;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1rem;
+  font-size: 10px; /* Tamaño de fuente de 10px para el contenido de la tabla */
+}
+
+th, td {
+  border: 1px solid #dee2e6;
+  padding: 0.75rem; /* Reduce el padding para espaciamiento más estrecho */
+  text-align: left;
+  font-size: 10px; /* Tamaño de fuente de 10px para el contenido de las celdas */
+  line-height: 1.15; /* Espaciado de línea único */
+}
+
+th {
+  background-color: #f8f9fa;
+}
