@@ -98,7 +98,7 @@ function UserHeader(props: { form: UseFormReturn<User> }) {
               <Avatar className="h-7 w-7 !text-xs">
                 <AvatarImage src={image} />
                 <AvatarFallback>
-                  {name?.[0].toUpperCase()}
+                  {name?.[0]?.toUpperCase()}
                 </AvatarFallback>
               </Avatar>
               {name}
