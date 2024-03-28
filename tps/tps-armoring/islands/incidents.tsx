@@ -1,3 +1,5 @@
+import type { Unit } from "@/mod.ts";
+import { getIncident, type Incident, toDateTime } from "@/mod.ts";
 import { useSignal } from "@preact/signals";
 import { Badge } from "netzo/components/badge.tsx";
 import {
@@ -30,9 +32,6 @@ import { SelectMultiple } from "netzo/components/select-multiple.tsx";
 import { Separator } from "netzo/components/separator.tsx";
 import { Textarea } from "netzo/components/textarea.tsx";
 import { cn } from "netzo/components/utils.ts";
-import { getIncident, type Incident } from "../../database/incidents.ts";
-import { toDateTime } from "../../database/mod.ts";
-import type { Unit } from "../../database/units.ts";
 
 const defaultLayout = [50, 50];
 
@@ -62,7 +61,7 @@ export function PageIncidents(props: {
           .map((
             value,
           ) => (value
-            ? { label: ({/* TODO */ })?.[value] ?? value, value }
+            ? { label: ({/* TODO */})?.[value] ?? value, value }
             : { label: "*no data", value: "" })
           ),
       },
@@ -137,7 +136,7 @@ export function PageIncidents(props: {
                         className={cn(
                           "space-y-2 rounded-lg border p-3 text-sm hover:bg-accent hover:cursor-pointer",
                           incident.value.id === row.original.id &&
-                          "bg-muted",
+                            "bg-muted",
                         )}
                         onClick={() => onClickSelect(row.original)}
                       >
@@ -287,7 +286,7 @@ function FormUpdate(props: {
                     "security",
                     "other",
                   ].map((value) => ({
-                    label: ({/* TODO */ })?.[value] ?? value,
+                    label: ({/* TODO */})?.[value] ?? value,
                     value,
                   }))}
                 />

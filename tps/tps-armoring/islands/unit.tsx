@@ -1,3 +1,5 @@
+import type { Unit } from "@/mod.ts";
+import { getUnit, toPercent } from "@/mod.ts";
 import { useComputed } from "@preact/signals";
 import {
   Avatar,
@@ -37,9 +39,6 @@ import { Input } from "netzo/components/input.tsx";
 import { Progress } from "netzo/components/progress.tsx";
 import { Textarea } from "netzo/components/textarea.tsx";
 import { cn } from "netzo/components/utils.ts";
-import { toPercent } from "../../database/mod.ts";
-import type { Unit } from "../../database/units.ts";
-import { getUnit } from "../../database/units.ts";
 import { GROUPS } from "./units.tsx";
 
 type PageUnitProps = {

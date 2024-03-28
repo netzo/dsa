@@ -1,8 +1,8 @@
 import { defineRoute } from "$fresh/server.ts";
 import { PageBookings } from "@/islands/bookings.tsx";
+import type { Account } from "@/mod.ts";
+import { type Booking } from "@/mod.ts";
 import { db } from "@/netzo.config.ts";
-import type { Account } from "../../../database/accounts.ts";
-import { type Booking } from "../../../database/bookings.ts";
 
 // NOTE: cannot pass functions as props from routes (server) to islands (client)
 export default defineRoute(async (req, ctx) => {

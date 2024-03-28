@@ -1,5 +1,5 @@
 import { defineRoute } from "$fresh/server.ts";
-import type { Unit } from "../../../database/units.ts";
+import type { Unit } from "@/mod.ts";
 import { PageUnit } from "../../islands/unit.tsx";
 import { db } from "../../netzo.config.ts";
 

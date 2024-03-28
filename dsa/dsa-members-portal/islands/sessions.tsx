@@ -1,3 +1,4 @@
+import { getSession, type Session, toDateTime } from "@/mod.ts";
 import {
   Avatar,
   AvatarFallback,
@@ -16,8 +17,6 @@ import {
 } from "netzo/components/blocks/table/table.tsx";
 import { Button } from "netzo/components/button.tsx";
 import { IconCopy } from "netzo/components/icon-copy.tsx";
-import { toDateTime } from "../../database/mod.ts";
-import { getSession, type Session } from "../../database/sessions.ts";
 
 export function PageSessions(props: { sessions: Session[] }) {
   const table = useTable<Session>(props.sessions, {

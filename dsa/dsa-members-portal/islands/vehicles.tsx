@@ -1,3 +1,4 @@
+import { getPublication, getVehicle, Vehicle } from "@/mod.ts";
 import { Button } from "netzo/components/button.tsx";
 import { Combobox } from "netzo/components/combobox.tsx";
 import {
@@ -15,8 +16,6 @@ import {
   useForm,
 } from "netzo/components/form.tsx";
 import { Input } from "netzo/components/input.tsx";
-import { getPublication } from "../../database/publications.ts";
-import { getVehicle, Vehicle } from "../../database/vehicles.ts";
 
 export function FormCreateVehicle(props: { defaultValues: Vehicle }) {
   const form = useForm<Vehicle>({

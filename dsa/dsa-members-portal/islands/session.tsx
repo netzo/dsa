@@ -1,3 +1,5 @@
+import type { Booking } from "@/mod.ts";
+import { getSession, Session } from "@/mod.ts";
 import {
   Avatar,
   AvatarFallback,
@@ -26,8 +28,6 @@ import {
 } from "netzo/components/form.tsx";
 import { Input } from "netzo/components/input.tsx";
 import { Textarea } from "netzo/components/textarea.tsx";
-import type { Booking } from "../../database/bookings.ts";
-import { getSession, Session } from "../../database/sessions.ts";
 import { CardBookings } from "./bookings.tsx";
 
 type PageSessionProps = {

@@ -1,9 +1,8 @@
 import { defineRoute } from "$fresh/server.ts";
 import { PageUser } from "@/islands/user.tsx";
+import type { Booking, User } from "@/mod.ts";
+import { Account } from "@/mod.ts";
 import { db } from "@/netzo.config.ts";
-import { Account } from "../../../database/accounts.ts";
-import type { Booking } from "../../../database/bookings.ts";
-import type { User } from "../../../database/users.ts";
 
 export default defineRoute(async (req, ctx) => {
   const { id } = ctx.params;

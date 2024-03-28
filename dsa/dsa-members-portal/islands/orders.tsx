@@ -1,3 +1,5 @@
+import type { Order } from "@/mod.ts";
+import { getOrder, toDateTime } from "@/mod.ts";
 import { Avatar, AvatarFallback } from "netzo/components/avatar.tsx";
 import {
   TableActionsReload,
@@ -12,9 +14,6 @@ import {
 } from "netzo/components/blocks/table/table.tsx";
 import { Button } from "netzo/components/button.tsx";
 import { IconCopy } from "netzo/components/icon-copy.tsx";
-import { toDateTime } from "../../database/mod.ts";
-import type { Order } from "../../database/orders.ts";
-import { getOrder } from "../../database/orders.ts";
 
 export function PageOrders(props: { orders: Order[] }) {
   const table = useTable<Order>(props.orders, {

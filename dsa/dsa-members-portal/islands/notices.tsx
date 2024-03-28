@@ -1,3 +1,4 @@
+import { getNotice, type Notice, NOTICE_TYPES, toDateTime } from "@/mod.ts";
 import { useSignal } from "@preact/signals";
 import { Badge } from "netzo/components/badge.tsx";
 import {
@@ -15,12 +16,6 @@ import {
   ResizablePanelGroup,
 } from "netzo/components/resizable.tsx";
 import { cn } from "netzo/components/utils.ts";
-import { toDateTime } from "../../database/mod.ts";
-import {
-  NOTICE_TYPES,
-  getNotice,
-  type Notice,
-} from "../../database/notices.ts";
 
 const defaultLayout = [50, 50];
 
@@ -52,7 +47,7 @@ export function PageNotices(props: {
           .map((
             value,
           ) => (value
-            ? { label: ({/* TODO */ })?.[value] ?? value, value }
+            ? { label: ({/* TODO */})?.[value] ?? value, value }
             : { label: "*no data", value: "" })
           ),
       },
@@ -124,7 +119,7 @@ export function PageNotices(props: {
                         className={cn(
                           "flex space-y-2 rounded-lg border hover:bg-accent hover:cursor-pointer",
                           notice.value.id === row.original.id &&
-                          "bg-muted",
+                            "bg-muted",
                         )}
                       >
                         <div

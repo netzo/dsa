@@ -1,3 +1,5 @@
+import type { Facility } from "@/mod.ts";
+import { FACILITY_TYPES, getDay, getFacility, toHslColor } from "@/mod.ts";
 import { Badge } from "netzo/components/badge.tsx";
 import {
   TableActionsReload,
@@ -17,9 +19,6 @@ import {
   CardHeader,
   CardTitle,
 } from "netzo/components/card.tsx";
-import type { Facility } from "../../database/facilities.ts";
-import { FACILITY_TYPES, getFacility } from "../../database/facilities.ts";
-import { getDay, toHslColor } from "../../database/mod.ts";
 
 export function PageFacilities(props: { facilities: Facility[] }) {
   const table = useTable<Facility>(props.facilities, {

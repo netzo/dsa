@@ -1,3 +1,5 @@
+import type { Amenity } from "@/mod.ts";
+import { AMENITY_TYPES, getBooking, toHslColor } from "@/mod.ts";
 import { Badge } from "netzo/components/badge.tsx";
 import {
   TableActionsReload,
@@ -23,10 +25,6 @@ import {
   DialogTrigger,
 } from "netzo/components/dialog.tsx";
 import { cn } from "netzo/components/utils.ts";
-import type { Amenity } from "../../database/amenities.ts";
-import { AMENITY_TYPES } from "../../database/amenities.ts";
-import { getBooking } from "../../database/bookings.ts";
-import { toHslColor } from "../../database/mod.ts";
 import { FormCreateBooking } from "./bookings.tsx";
 
 export function PageAmenities(props: { amenities: Amenity[] }) {
@@ -131,8 +129,9 @@ export function PageAmenities(props: { amenities: Amenity[] }) {
                         {row.original?.data?.type && (
                           <CardContent className="flex items-center justify-between gap-1 text-sm font-medium">
                             <Badge
-                              className={`bg-[${toHslColor(row.original.data.type)
-                                }]`}
+                              className={`bg-[${
+                                toHslColor(row.original.data.type)
+                              }]`}
                             >
                               {AMENITY_TYPES?.[row.original.data.type]}
                             </Badge>

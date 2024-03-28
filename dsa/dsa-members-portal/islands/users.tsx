@@ -1,3 +1,4 @@
+import { getPublication, getUser, toDateTime, User } from "@/mod.ts";
 import {
   Avatar,
   AvatarFallback,
@@ -32,9 +33,6 @@ import {
 } from "netzo/components/form.tsx";
 import { IconCopy } from "netzo/components/icon-copy.tsx";
 import { Input } from "netzo/components/input.tsx";
-import { toDateTime } from "../../database/mod.ts";
-import { getPublication } from "../../database/publications.ts";
-import { User, getUser } from "../../database/users.ts";
 
 export function PageUsers(props: { users: User[] }) {
   const table = useTable<User>(props.users, {

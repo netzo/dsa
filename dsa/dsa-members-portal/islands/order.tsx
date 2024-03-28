@@ -1,4 +1,6 @@
 // see https://v0.dev/t/C2Fk3YauyQ4
+import type { Item } from "@/mod.ts";
+import { getItem, toMXN } from "@/mod.ts";
 import {
   TableActionsReload,
   TableFilters,
@@ -32,9 +34,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "netzo/components/select.tsx";
-import type { Item } from "../../database/items.ts";
-import { getItem } from "../../database/items.ts";
-import { toMXN } from "../../database/mod.ts";
 
 const defaultLayout = [50, 50];
 
@@ -65,7 +64,7 @@ export function PageOrder(props: {
           .map((
             value,
           ) => (value
-            ? { label: ({/* TODO */ })?.[value] ?? value, value }
+            ? { label: ({/* TODO */})?.[value] ?? value, value }
             : { label: "*no data", value: "" })
           ),
       },

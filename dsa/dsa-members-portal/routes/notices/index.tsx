@@ -1,7 +1,7 @@
 import { defineRoute } from "$fresh/server.ts";
 import { PageNotices } from "@/islands/notices.tsx";
+import type { Notice } from "@/mod.ts";
 import { db } from "@/netzo.config.ts";
-import type { Notice } from "../../../database/notices.ts";
 
 export default defineRoute(async (req, ctx) => {
   const { id } = ctx.params;

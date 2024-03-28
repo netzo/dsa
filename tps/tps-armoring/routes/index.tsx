@@ -1,5 +1,6 @@
 import { Partial } from "$fresh/runtime.ts";
 import { defineRoute } from "$fresh/server.ts";
+import type { Unit } from "@/mod.ts";
 import { Button } from "netzo/components/button.tsx";
 import {
   Card,
@@ -7,7 +8,6 @@ import {
   CardHeader,
   CardTitle,
 } from "netzo/components/card.tsx";
-import type { Unit } from "../../database/units.ts";
 import * as Dashboard from "../islands/dashboard.tsx";
 import { db } from "../netzo.config.ts";
 

@@ -1,3 +1,5 @@
+import type { Publication } from "@/mod.ts";
+import { getPublication, PUBLICATION_TYPES, toHslColor } from "@/mod.ts";
 import { Badge } from "netzo/components/badge.tsx";
 import {
   TableActionsReload,
@@ -17,12 +19,6 @@ import {
   CardHeader,
   CardTitle,
 } from "netzo/components/card.tsx";
-import { toHslColor } from "../../database/mod.ts";
-import type { Publication } from "../../database/publications.ts";
-import {
-  PUBLICATION_TYPES,
-  getPublication,
-} from "../../database/publications.ts";
 
 export function PagePublications(props: { publications: Publication[] }) {
   const table = useTable<Publication>(props.publications, {
@@ -47,7 +43,7 @@ export function PagePublications(props: { publications: Publication[] }) {
           .map((
             value,
           ) => (value
-            ? { label: ({/* TODO */ })?.[value] ?? value, value }
+            ? { label: ({/* TODO */})?.[value] ?? value, value }
             : { label: "*no data", value: "" })
           ),
       },

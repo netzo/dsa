@@ -1,3 +1,4 @@
+import type { ProductGroup } from "@/mod.ts";
 import { Avatar, AvatarFallback } from "netzo/components/avatar.tsx";
 import {
   TableActionsReload,
@@ -13,7 +14,6 @@ import {
 import { buttonVariants } from "netzo/components/button.tsx";
 import { IconCopy } from "netzo/components/icon-copy.tsx";
 import { cn } from "netzo/components/utils.ts";
-import type { ProductGroup } from "../../database/product-groups.ts";
 
 export function PageProductGroups(props: { productGroups: ProductGroup[] }) {
   const table = useTable<ProductGroup>(props.productGroups, {

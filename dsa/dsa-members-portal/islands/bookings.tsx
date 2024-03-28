@@ -1,4 +1,5 @@
 import { Head } from "$fresh/runtime.ts";
+import { Booking, getBooking, getPublication } from "@/mod.ts";
 import {
   Calendar,
   momentLocalizer,
@@ -32,8 +33,6 @@ import {
 import { Input } from "netzo/components/input.tsx";
 import moment from "npm:moment@2.30.1";
 import React, { useMemo } from "react";
-import { Booking, getBooking } from "../../database/bookings.ts";
-import { getPublication } from "../../database/publications.ts";
 import { FormCreateBooking } from "./bookings.tsx";
 
 import * as dates from "./bookings.utils.ts";

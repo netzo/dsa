@@ -1,3 +1,5 @@
+import type { Unit } from "@/mod.ts";
+import { toPercent, toUSD } from "@/mod.ts";
 import { useSignal } from "@preact/signals";
 import {
   Avatar,
@@ -28,8 +30,6 @@ import {
 } from "netzo/components/popover.tsx";
 import { cn } from "netzo/components/utils.ts";
 import type { ComponentProps } from "preact";
-import { toPercent, toUSD } from "../../database/mod.ts";
-import type { Unit } from "../../database/units.ts";
 import type { Metrics } from "../routes/index.tsx";
 
 type PopoverTriggerProps = ComponentProps<typeof PopoverTrigger>;

@@ -1,3 +1,5 @@
+import type { Facility } from "@/mod.ts";
+import { Booking, getFacility } from "@/mod.ts";
 import {
   Avatar,
   AvatarFallback,
@@ -35,9 +37,6 @@ import {
 } from "netzo/components/form.tsx";
 import { Input } from "netzo/components/input.tsx";
 import { Textarea } from "netzo/components/textarea.tsx";
-import { Booking } from "../../database/bookings.ts";
-import type { Facility } from "../../database/facilities.ts";
-import { getFacility } from "../../database/facilities.ts";
 import { CardBookingsList, FormCreateBooking } from "./bookings.tsx";
 
 type PageFacilityProps = {

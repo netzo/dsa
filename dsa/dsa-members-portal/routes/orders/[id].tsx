@@ -1,8 +1,7 @@
 import { defineRoute } from "$fresh/server.ts";
 import { PageOrder } from "@/islands/order.tsx";
+import type { Item, Order } from "@/mod.ts";
 import { db } from "@/netzo.config.ts";
-import type { Item } from "../../../database/items.ts";
-import type { Order } from "../../../database/orders.ts";
 
 export default defineRoute(async (req, ctx) => {
   const { id } = ctx.params;

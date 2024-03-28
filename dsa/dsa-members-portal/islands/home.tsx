@@ -1,3 +1,4 @@
+import type { Amenity, Notice } from "@/mod.ts";
 import { Button, buttonVariants } from "netzo/components/button.tsx";
 import { ScrollArea, ScrollBar } from "netzo/components/scroll-area.tsx";
 import { Separator } from "netzo/components/separator.tsx";
@@ -8,8 +9,6 @@ import {
   TabsTrigger,
 } from "netzo/components/tabs.tsx";
 import { cn } from "netzo/components/utils.ts";
-import type { Amenity } from "../../database/amenities.ts";
-import type { Notice } from "../../database/notices.ts";
 
 export function PageHome(props: { amenities: Amenity[]; notices: Notice[] }) {
   const { amenities, notices } = props;

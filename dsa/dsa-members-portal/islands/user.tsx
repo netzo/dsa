@@ -1,3 +1,5 @@
+import type { Booking } from "@/mod.ts";
+import { getUser, toMXN, toPercent, User } from "@/mod.ts";
 import {
   Avatar,
   AvatarFallback,
@@ -29,9 +31,6 @@ import {
   type UseFormReturn,
 } from "netzo/components/form.tsx";
 import { Input } from "netzo/components/input.tsx";
-import type { Booking } from "../../database/bookings.ts";
-import { toMXN, toPercent } from "../../database/mod.ts";
-import { getUser, User } from "../../database/users.ts";
 import { CardBookings } from "./bookings.tsx";
 
 type PageUserProps = {

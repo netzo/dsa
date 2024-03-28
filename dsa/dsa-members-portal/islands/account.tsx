@@ -1,4 +1,15 @@
 import { FormCreateUser } from "@/islands/users.tsx";
+import type { Account } from "@/mod.ts";
+import {
+  getAccount,
+  Statement,
+  STATEMENT_TYPES,
+  toMXN,
+  User,
+  USER_TYPES,
+  Vehicle,
+  VEHICLE_TYPES,
+} from "@/mod.ts";
 import {
   Avatar,
   AvatarFallback,
@@ -27,12 +38,6 @@ import {
 import { Form, useForm, type UseFormReturn } from "netzo/components/form.tsx";
 import { IconCopy } from "netzo/components/icon-copy.tsx";
 import { cn } from "netzo/components/utils.ts";
-import type { Account } from "../../database/accounts.ts";
-import { getAccount } from "../../database/accounts.ts";
-import { toMXN } from "../../database/mod.ts";
-import { Statement, STATEMENT_TYPES } from "../../database/statements.ts";
-import { User, USER_TYPES } from "../../database/users.ts";
-import { Vehicle, VEHICLE_TYPES } from "../../database/vehicles.ts";
 import { FormCreateVehicle } from "./vehicles.tsx";
 
 type PageAccountProps = {

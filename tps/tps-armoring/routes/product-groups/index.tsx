@@ -1,5 +1,5 @@
 import { defineRoute } from "$fresh/server.ts";
-import type { ProductGroup } from "../../../database/product-groups.ts";
+import type { ProductGroup } from "@/mod.ts";
 import { PageProductGroups } from "../../islands/product-groups.tsx";
 import { apiMicrosoft365 } from "../../netzo.config.ts";
 
