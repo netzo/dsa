@@ -70,7 +70,7 @@ export function PageAmenities(props: { amenities: Amenity[] }) {
   });
 
   return (
-    <div className="grid grid-rows-[min-content_auto_min-content]">
+    <div className="grid grid-rows-[min-content_auto_min-content] h-screen">
       <header className="flex items-center justify-between p-4">
         <div className="flex items-center flex-1 space-x-2">
           <TableActionsReload table={table} />
@@ -129,9 +129,8 @@ export function PageAmenities(props: { amenities: Amenity[] }) {
                         {row.original?.data?.type && (
                           <CardContent className="flex items-center justify-between gap-1 text-sm font-medium">
                             <Badge
-                              className={`bg-[${
-                                toHslColor(row.original.data.type)
-                              }]`}
+                              className={`bg-[${toHslColor(row.original.data.type)
+                                }]`}
                             >
                               {AMENITY_TYPES?.[row.original.data.type]}
                             </Badge>

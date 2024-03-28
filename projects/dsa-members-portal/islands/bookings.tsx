@@ -2,8 +2,8 @@ import { Head } from "$fresh/runtime.ts";
 import { Booking, getBooking, getPublication } from "@/mod.ts";
 import {
   Calendar,
-  momentLocalizer,
   Views,
+  momentLocalizer,
 } from "https://esm.sh/v135/react-big-calendar@1.11.2?external=react,react-dom&target=es2022";
 import { Button } from "netzo/components/button.tsx";
 import {
@@ -115,7 +115,7 @@ export function PageBookings({
           href="https://esm.sh/react-big-calendar@1.11.2/lib/css/react-big-calendar.css"
         />
       </Head>
-      <div className="grid grid-rows-[min-content_auto_min-content]">
+      <div className="grid grid-rows-[min-content_auto_min-content] h-screen">
         <header className="flex items-center justify-between p-4">
           <div className="flex items-center flex-1 space-x-2">
             {/* TODO */}

@@ -64,7 +64,7 @@ export function PageOrder(props: {
           .map((
             value,
           ) => (value
-            ? { label: ({/* TODO */})?.[value] ?? value, value }
+            ? { label: ({/* TODO */ })?.[value] ?? value, value }
             : { label: "*no data", value: "" })
           ),
       },
@@ -105,7 +105,7 @@ export function PageOrder(props: {
       <ResizablePanel
         defaultSize={defaultLayout[0]}
         minSize={30}
-        className="grid grid-rows-[min-content_auto_min-content]"
+        className="grid grid-rows-[min-content_auto_min-content] h-screen"
       >
         <header className="flex items-center justify-between p-4">
           <div className="flex items-center flex-1 space-x-2">

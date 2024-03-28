@@ -43,7 +43,7 @@ export function PagePublications(props: { publications: Publication[] }) {
           .map((
             value,
           ) => (value
-            ? { label: ({/* TODO */})?.[value] ?? value, value }
+            ? { label: ({/* TODO */ })?.[value] ?? value, value }
             : { label: "*no data", value: "" })
           ),
       },
@@ -78,7 +78,7 @@ export function PagePublications(props: { publications: Publication[] }) {
   };
 
   return (
-    <div className="grid grid-rows-[min-content_auto_min-content]">
+    <div className="grid grid-rows-[min-content_auto_min-content] h-screen">
       <header className="flex items-center justify-between p-4">
         <div className="flex items-center flex-1 space-x-2">
           <TableActionsReload table={table} />

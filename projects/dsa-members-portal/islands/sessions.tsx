@@ -1,4 +1,4 @@
-import { getSession, type Session, toDateTime } from "@/mod.ts";
+import { getSession, toDateTime, type Session } from "@/mod.ts";
 import {
   Avatar,
   AvatarFallback,
@@ -187,7 +187,7 @@ export function PageSessions(props: { sessions: Session[] }) {
   };
 
   return (
-    <div className="grid grid-rows-[min-content_auto_min-content]">
+    <div className="grid grid-rows-[min-content_auto_min-content] h-screen">
       <header className="flex items-center justify-between p-4">
         <div className="flex items-center flex-1 space-x-2">
           <TableActionsReload table={table} />
