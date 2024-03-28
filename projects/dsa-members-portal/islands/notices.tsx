@@ -1,4 +1,4 @@
-import { NOTICE_TYPES, getNotice, toDateTime, type Notice } from "@/mod.ts";
+import { getNotice, type Notice, NOTICE_TYPES, toDateTime } from "@/mod.ts";
 import { useSignal } from "@preact/signals";
 import { Badge } from "netzo/components/badge.tsx";
 import {
@@ -47,7 +47,7 @@ export function PageNotices(props: {
           .map((
             value,
           ) => (value
-            ? { label: ({/* TODO */ })?.[value] ?? value, value }
+            ? { label: ({/* TODO */})?.[value] ?? value, value }
             : { label: "*no data", value: "" })
           ),
       },
@@ -119,7 +119,7 @@ export function PageNotices(props: {
                         className={cn(
                           "flex space-y-2 rounded-lg border hover:bg-accent hover:cursor-pointer",
                           notice.value.id === row.original.id &&
-                          "bg-muted",
+                            "bg-muted",
                         )}
                       >
                         <div

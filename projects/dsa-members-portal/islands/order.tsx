@@ -64,7 +64,7 @@ export function PageOrder(props: {
           .map((
             value,
           ) => (value
-            ? { label: ({/* TODO */ })?.[value] ?? value, value }
+            ? { label: ({/* TODO */})?.[value] ?? value, value }
             : { label: "*no data", value: "" })
           ),
       },

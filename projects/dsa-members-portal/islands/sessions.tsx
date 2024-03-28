@@ -1,4 +1,4 @@
-import { getSession, toDateTime, type Session } from "@/mod.ts";
+import { getSession, type Session, toDateTime } from "@/mod.ts";
 import {
   Avatar,
   AvatarFallback,
