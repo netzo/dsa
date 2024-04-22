@@ -4,7 +4,7 @@ import {
   Calendar,
   momentLocalizer,
   Views,
-} from "https://esm.sh/v135/react-big-calendar@1.11.2?external=react,react-dom&target=es2022";
+} from "https://esm.sh/react-big-calendar@1.11.2?external=react,react-dom&target=es2022";
 import { Button } from "netzo/components/button.tsx";
 import {
   Card,
