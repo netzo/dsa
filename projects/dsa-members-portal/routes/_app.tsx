@@ -5,7 +5,10 @@ import { Head } from "netzo/components/head.tsx";
 import { cn } from "netzo/components/utils.ts";
 import type { NetzoState } from "netzo/mod.ts";
 
+const denoJson = await Deno.readTextFile("deno.json");
+
 export default defineApp<NetzoState>((req, ctx) => {
+  ctx.state.denoJson = JSON.parse(denoJson);
   const { isAuthenticated, sessionUser } = ctx.state?.auth ?? {};
   // assert isAuthenticated explicitly (undefined if auth not enabled)
   const mustAuth = isAuthenticated === false;

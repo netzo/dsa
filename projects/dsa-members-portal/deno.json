@@ -1,6 +1,6 @@
 {
   "name": "@netzolabs/dsa-members-portal",
-  "version": "0.0",
+  "version": "0.0.0",
   "exclude": [
     "_fresh/",
     "**/_fresh/*"

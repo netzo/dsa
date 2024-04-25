@@ -16,7 +16,7 @@ export const ACCOUNT_ID = "01HRW7WPRM1YNTG92HFA6VKHDF";
 
 export const Nav = (props: { state: NetzoState }) => {
   return (
-    <NavRoot>
+    <NavRoot {...props}>
       <NavHeader title="San Agustin" image="/symbol.svg" />
       <NavSeparator />
       <NavItem icon="mdi-home" text="Inicio" href="/" exact={true} />
@@ -58,6 +58,12 @@ export const Nav = (props: { state: NetzoState }) => {
         href={`/accounts/${ACCOUNT_ID}`}
       />
       <NavSeparator />
+        <span
+          title={props.state.denoJson.description}
+          className="text-xs text-muted-foreground"
+        >
+          {props.state.denoJson.name}@{props.state.denoJson.version}
+        </span>
       <NavItemUser state={props.state} />
     </NavRoot>
   );
