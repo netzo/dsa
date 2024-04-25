@@ -407,32 +407,32 @@ function CardVehiclesList(props: PageAccountProps) {
   const GROUPS = [
     {
       id: "car",
-      title: "Carro",
+      label: "Carro",
       icon: { className: "mdi-car-hatchback" },
     },
     {
       id: "suv",
-      title: "Camioneta",
+      label: "Camioneta",
       icon: { className: "mdi-car-sports-utility-vehicle" },
     },
     {
       id: "pickup",
-      title: "Pickup",
+      label: "Pickup",
       icon: { className: "mdi-car-lifted-pickup" },
     },
     {
       id: "truck",
-      title: "Camion",
+      label: "Camion",
       icon: { className: "mdi-truck" },
     },
     {
       id: "motorcycle",
-      title: "Motocicleta",
+      label: "Motocicleta",
       icon: { className: "mdi-motorbike" },
     },
     {
       id: "other",
-      title: "Otro",
+      label: "Otro",
       icon: { className: "mdi-car" },
     },
   ];
@@ -514,12 +514,12 @@ function CardStatementsList(props: PageAccountProps) {
   const GROUPS = [
     {
       id: "contribution",
-      title: "Aportación",
+      label: "Aportación",
       icon: { className: "mdi-bank" },
     },
     {
       id: "order",
-      title: "Orden",
+      label: "Orden",
       icon: { className: "mdi-file-document-edit" },
     },
   ];
