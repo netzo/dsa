@@ -1,5 +1,6 @@
 import { netzodb } from "netzo/integrations/databases/netzodb.ts";
 import { defineConfig } from "netzo/mod.ts";
+import { loader } from "netzo/plugins/loader/plugin.ts";
 import * as netzo from "netzo/plugins/mod.ts";
 import { unocss } from "netzo/plugins/unocss/plugin.ts";
 import unocssConfig from "./unocss.config.ts";
@@ -29,6 +30,7 @@ export default defineConfig({
         { name: "vehicles", idField: "id" },
       ],
     }),
+    loader(),
     unocss(unocssConfig),
   ],
 });
