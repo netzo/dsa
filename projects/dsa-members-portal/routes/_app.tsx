@@ -1,4 +1,3 @@
-import { Partial } from "$fresh/runtime.ts";
 import { defineApp } from "$fresh/server.ts";
 import { Nav /* , NetzoToolbar */ } from "@/islands/mod.tsx";
 import { Head } from "netzo/components/head.tsx";
@@ -43,11 +42,9 @@ export default defineApp<NetzoState>((req, ctx) => {
             )}
           >
             <Nav state={ctx.state} />
-            <Partial name="main">
-              <main className="grid h-screen">
-                <ctx.Component />
-              </main>
-            </Partial>
+            <main className="grid h-screen">
+              <ctx.Component />
+            </main>
             {/* <NetzoToolbar sessionUser={sessionUser} /> */}
           </body>
         )}

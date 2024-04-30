@@ -58,12 +58,12 @@ export const Nav = (props: { state: NetzoState }) => {
         href={`/accounts/${ACCOUNT_ID}`}
       />
       <NavSeparator />
-        <span
-          title={props.state.denoJson.description}
-          className="text-xs text-muted-foreground"
-        >
-          {props.state.denoJson.name}@{props.state.denoJson.version}
-        </span>
+      <span
+        title={props.state.denoJson.description}
+        className="text-xs text-muted-foreground"
+      >
+        {props.state.denoJson.name}@{props.state.denoJson.version}
+      </span>
       <NavItemUser state={props.state} />
     </NavRoot>
   );
