@@ -25,10 +25,20 @@ export const Nav = (props: { state: NetzoState }) => {
         text="Mis Reservas"
         href={`/bookings?userId=${USER_ID}`}
       />
-      <NavItem icon="mdi-dots-grid" text="Instalaciones" href="/facilities" />
+      <NavItem
+        icon="mdi-account-group"
+        text="Mi Perfil"
+        href={`/users/${USER_ID}`}
+      />
+      <NavItem
+        icon="mdi-wallet-membership"
+        text="Mi Acción"
+        href={`/accounts/${ACCOUNT_ID}`}
+      />
       <NavItemHeader text="Comunidad" />
       <NavItem icon="mdi-newspaper" text="Avisos" href="/notices" />
       <NavItem icon="mdi-store" text="Publicaciones" href="/publications" />
+      <NavItem icon="mdi-dots-grid" text="Instalaciones" href="/facilities" />
       <NavItemHeader text="Amenidades" />
       <NavItem icon="mdi-calendar" text="Eventos" href="/amenities/events" />
       <NavItem
@@ -47,23 +57,7 @@ export const Nav = (props: { state: NetzoState }) => {
         href="/amenities/services"
       />
       <NavSpacer />
-      <NavItem
-        icon="mdi-account-group"
-        text="Mi Perfil"
-        href={`/users/${USER_ID}`}
-      />
-      <NavItem
-        icon="mdi-wallet-membership"
-        text="Mi Acción"
-        href={`/accounts/${ACCOUNT_ID}`}
-      />
       <NavSeparator />
-      <span
-        title={props.state.denoJson.description}
-        className="text-xs text-muted-foreground"
-      >
-        {props.state.denoJson.name}@{props.state.denoJson.version}
-      </span>
       <NavItemUser state={props.state} />
     </NavRoot>
   );

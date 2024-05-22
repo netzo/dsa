@@ -1,5 +1,5 @@
-import { openingHoursSchema, organizersSchema } from "@/mod.ts";
 import { z } from "zod";
+import { openingHoursSchema, organizersSchema } from "./mod.ts";
 
 const sportsSchema = z.object({
   type: z.enum([

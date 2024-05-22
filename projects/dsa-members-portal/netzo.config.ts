@@ -1,35 +1,25 @@
-import { netzodb } from "netzo/integrations/databases/netzodb.ts";
+import { datastore } from "netzo/datastore/mod.ts";
 import { defineConfig } from "netzo/mod.ts";
 import { loader } from "netzo/plugins/loader/plugin.ts";
 import * as netzo from "netzo/plugins/mod.ts";
 import { unocss } from "netzo/plugins/unocss/plugin.ts";
 import unocssConfig from "./unocss.config.ts";
 
-export const db = netzodb();
+export const db = datastore();
 
 export default defineConfig({
   plugins: [
     netzo.environments(),
-    // netzo.auth({ providers: { netzo: {} } }),
-    netzo.api({
-      apiKey: undefined, // Deno.env.get("NETZO_API_KEY"),
-      collections: [
-        { name: "accounts", idField: "id" },
-        { name: "amenities", idField: "id" },
-        { name: "bookings", idField: "id" },
-        { name: "facilities", idField: "id" },
-        { name: "items", idField: "id" },
-        { name: "menus", idField: "id" },
-        { name: "orders", idField: "id" },
-        { name: "publications", idField: "id" },
-        { name: "services", idField: "id" },
-        { name: "sessions", idField: "id" },
-        { name: "sports", idField: "id" },
-        { name: "statements", idField: "id" },
-        { name: "users", idField: "id" },
-        { name: "vehicles", idField: "id" },
-      ],
+    netzo.auth({
+      logo: "/favicon.svg",
+      title: "Deportivo San Agustin",
+      description: "Portal de socios del Deportivo San Agustin",
+      image: { src: "/cover.jpg" },
+      caption: "Al iniciar sesión aceptas los <a>términos y condiciones</a> de uso.",
+      providers: { netzo: {} },
     }),
+    // netzo.database({ apiKey: undefineDeno.env.get("NETZO_API_KEY") }),
+    netzo.datastore({ apiKey: undefined }), // Deno.env.get("NETZO_API_KEY"),
     loader(),
     unocss(unocssConfig),
   ],

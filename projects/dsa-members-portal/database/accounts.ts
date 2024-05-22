@@ -1,5 +1,6 @@
-import { getVerifications, verificationsSchema } from "@/mod.ts";
+import { getVerifications } from "@/mod.ts";
 import { z } from "zod";
+import { verificationsSchema } from "./mod.ts";
 
 export const accountSchema = z.object({
   id: z.string().ulid(),

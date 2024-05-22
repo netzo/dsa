@@ -1,5 +1,6 @@
-import { getOpeningHours, openingHoursSchema } from "@/mod.ts";
+import { getOpeningHours } from "@/mod.ts";
 import { z } from "zod";
+import { openingHoursSchema } from "./mod.ts";
 
 export const restaurantsSchema = z.object({
   menuIds: z.array(z.string()),
