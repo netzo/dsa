@@ -1,4 +1,4 @@
-import { getNotice, type Notice, NOTICE_TYPES, toDateTime } from "@/mod.ts";
+import { NOTICE_TYPES, getNotice, toDateTime, type Notice } from "@/mod.ts";
 import { useSignal } from "@preact/signals";
 import { Badge } from "netzo/components/badge.tsx";
 import {
@@ -7,7 +7,7 @@ import {
   TablePagination,
   TableSearch,
   TableView,
-  useTable,
+  useTable
 } from "netzo/components/blocks/table/table.tsx";
 import { Button } from "netzo/components/button.tsx";
 import {
@@ -16,6 +16,7 @@ import {
   ResizablePanelGroup,
 } from "netzo/components/resizable.tsx";
 import { cn } from "netzo/components/utils.ts";
+import { useState } from "preact/hooks";
 
 const defaultLayout = [50, 50];
 
@@ -27,31 +28,11 @@ export function PageNotices(props: {
 
   const width = globalThis?.innerWidth; // const { width = 0 } = useWindowSize(); causes unnecessary re-renders
 
-  const table = useTable<Notice>(props.notices, {
-    endpoint: "/api/notices",
-    idField: "id",
-    search: {
-      column: "name",
-      placeholder: "Buscar por nombre...",
-    },
-    sorting: [
-      { id: "updatedAt", desc: true },
-      { id: "name", desc: false },
-    ],
-    filters: [
-      {
-        column: "type",
-        title: "Tipo",
-        options: [...new Set(props.notices.map((item) => item.type).flat())]
-          .sort()
-          .map((
-            value,
-          ) => (value
-            ? { label: ({/* TODO */})?.[value] ?? value, value }
-            : { label: "*no data", value: "" })
-          ),
-      },
-    ],
+  // table requires useState for data (useSignal/signal not supported)
+  const [data, setData] = useState<Notice[]>(props.notices ?? []);
+
+  const table = useTable<Notice>({
+    data,
     // IMPORTANT: columns are required for search and filters
     columns: [
       {
@@ -63,6 +44,34 @@ export function PageNotices(props: {
         filterFn: (row, id, value) => value.includes(row.getValue(id)),
       },
     ],
+    // NOTE: columnVisibility, search, sorting, and filters use table.getColumn() and MUST
+    // reference nested columns with underscore syntax (e.g. "data.name" is "data_name")
+    initialState: {
+      columnVisibility: {},
+      search: {
+        column: "name",
+        placeholder: "Buscar por nombre...",
+      },
+      sorting: [
+        { id: "updatedAt", desc: true },
+        { id: "name", desc: false },
+      ],
+      filters: [
+        {
+          column: "type",
+          title: "Tipo",
+          options: [...new Set(props.notices.map((item) => item.type).flat())]
+            .sort()
+            .map((
+              value,
+            ) => (value
+              ? { label: ({/* TODO */ })?.[value] ?? value, value }
+              : { label: "*no data", value: "" })
+            ),
+        },
+      ],
+    },
+    meta: {}
   });
 
   const onClickSelect = (value: Notice) => notice.value = value;
@@ -119,7 +128,7 @@ export function PageNotices(props: {
                         className={cn(
                           "flex space-y-2 rounded-lg border hover:bg-accent hover:cursor-pointer",
                           notice.value.id === row.original.id &&
-                            "bg-muted",
+                          "bg-muted",
                         )}
                       >
                         <div

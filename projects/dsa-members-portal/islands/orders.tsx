@@ -14,20 +14,14 @@ import {
 } from "netzo/components/blocks/table/table.tsx";
 import { Button } from "netzo/components/button.tsx";
 import { IconCopy } from "netzo/components/icon-copy.tsx";
+import { useState } from "preact/hooks";
 
 export function PageOrders(props: { orders: Order[] }) {
-  const table = useTable<Order>(props.orders, {
-    endpoint: "/api/orders",
-    idField: "id",
-    search: {
-      column: "orderNumber",
-      placeholder: "Buscar por numero de accion...",
-    },
-    sorting: [
-      { id: "orderNumber", desc: false },
-      { id: "updatedAt", desc: true },
-    ],
-    filters: [],
+  // table requires useState for data (useSignal/signal not supported)
+  const [data, setData] = useState<Order[]>(props.orders ?? []);
+
+  const table = useTable<Order>({
+    data,
     columns: [
       {
         id: "actions",
@@ -96,6 +90,20 @@ export function PageOrders(props: { orders: Order[] }) {
         },
       },
     ],
+    // NOTE: columnVisibility, search, sorting, and filters use table.getColumn() and MUST
+    // reference nested columns with underscore syntax (e.g. "data.name" is "data_name")
+    initialState: {
+      search: {
+        column: "orderNumber",
+        placeholder: "Buscar por numero de accion...",
+      },
+      sorting: [
+        { id: "orderNumber", desc: false },
+        { id: "updatedAt", desc: true },
+      ],
+      filters: [],
+    },
+    meta: {}
   });
 
   const onClickCreate = async () => {

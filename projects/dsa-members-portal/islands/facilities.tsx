@@ -19,33 +19,14 @@ import {
   CardHeader,
   CardTitle,
 } from "netzo/components/card.tsx";
+import { useState } from "preact/hooks";
 
 export function PageFacilities(props: { facilities: Facility[] }) {
-  const table = useTable<Facility>(props.facilities, {
-    endpoint: "/api/facilities",
-    idField: "id",
-    search: {
-      column: "name",
-      placeholder: "Buscar por nombre...",
-    },
-    sorting: [
-      { id: "updatedAt", desc: true },
-      { id: "name", desc: false },
-    ],
-    filters: [
-      {
-        column: "type",
-        title: "Tipo",
-        options: [...new Set(props.facilities.map((item) => item.type).flat())]
-          .sort()
-          .map((
-            value,
-          ) => (value
-            ? { label: FACILITY_TYPES?.[value], value }
-            : { label: "*no data", value: "" })
-          ),
-      },
-    ],
+  // table requires useState for data (useSignal/signal not supported)
+  const [data, setData] = useState<Facility[]>(props.facilities ?? []);
+
+  const table = useTable<Facility>({
+    data,
     columns: [
       {
         id: "actions",
@@ -58,6 +39,33 @@ export function PageFacilities(props: { facilities: Facility[] }) {
         filterFn: (row, id, value) => value.includes(row.getValue(id)),
       },
     ],
+    // NOTE: columnVisibility, search, sorting, and filters use table.getColumn() and MUST
+    // reference nested columns with underscore syntax (e.g. "data.name" is "data_name")
+    initialState: {
+      search: {
+        column: "name",
+        placeholder: "Buscar por nombre...",
+      },
+      sorting: [
+        { id: "updatedAt", desc: true },
+        { id: "name", desc: false },
+      ],
+      filters: [
+        {
+          column: "type",
+          title: "Tipo",
+          options: [...new Set(props.facilities.map((item) => item.type).flat())]
+            .sort()
+            .map((
+              value,
+            ) => (value
+              ? { label: FACILITY_TYPES?.[value], value }
+              : { label: "*no data", value: "" })
+            ),
+        },
+      ],
+    },
+    meta: {}
   });
 
   const onClickCreate = async () => {

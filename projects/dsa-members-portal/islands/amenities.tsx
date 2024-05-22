@@ -25,36 +25,15 @@ import {
   DialogTrigger,
 } from "netzo/components/dialog.tsx";
 import { cn } from "netzo/components/utils.ts";
+import { useState } from "preact/hooks";
 import { FormCreateBooking } from "./bookings.tsx";
 
 export function PageAmenities(props: { amenities: Amenity[] }) {
-  const table = useTable<Amenity>(props.amenities, {
-    endpoint: "/api/amenities",
-    idField: "id",
-    search: {
-      column: "name",
-      placeholder: "Buscar por nombre...",
-    },
-    sorting: [
-      { id: "updatedAt", desc: true },
-      { id: "name", desc: false },
-    ],
-    filters: [
-      {
-        column: "data_type",
-        title: "Tipo",
-        options: [
-          ...new Set(props.amenities.map((item) => item.data.type).flat()),
-        ]
-          .sort()
-          .map((
-            value,
-          ) => (value
-            ? { label: AMENITY_TYPES?.[value], value }
-            : { label: "*no data", value: "" })
-          ),
-      },
-    ],
+  // table requires useState for data (useSignal/signal not supported)
+  const [data, setData] = useState<Amenity[]>(props.amenities ?? []);
+
+  const table = useTable<Amenity>({
+    data,
     columns: [
       {
         id: "actions",
@@ -67,6 +46,35 @@ export function PageAmenities(props: { amenities: Amenity[] }) {
         filterFn: (row, id, value) => value.includes(row.getValue(id)),
       },
     ],
+    // NOTE: columnVisibility, search, sorting, and filters use table.getColumn() and MUST
+    // reference nested columns with underscore syntax (e.g. "data.name" is "data_name")
+    initialState: {
+      search: {
+        column: "name",
+        placeholder: "Buscar por nombre...",
+      },
+      sorting: [
+        { id: "updatedAt", desc: true },
+        { id: "name", desc: false },
+      ],
+      filters: [
+        {
+          column: "data_type",
+          title: "Tipo",
+          options: [
+            ...new Set(props.amenities.map((item) => item.data.type).flat()),
+          ]
+            .sort()
+            .map((
+              value,
+            ) => (value
+              ? { label: AMENITY_TYPES?.[value], value }
+              : { label: "*no data", value: "" })
+            ),
+        },
+      ],
+    },
+    meta: {}
   });
 
   return (
@@ -129,9 +137,8 @@ export function PageAmenities(props: { amenities: Amenity[] }) {
                         {row.original?.data?.type && (
                           <CardContent className="flex items-center justify-between gap-1 text-sm font-medium">
                             <Badge
-                              className={`bg-[${
-                                toHslColor(row.original.data.type)
-                              }]`}
+                              className={`bg-[${toHslColor(row.original.data.type)
+                                }]`}
                             >
                               {AMENITY_TYPES?.[row.original.data.type]}
                             </Badge>

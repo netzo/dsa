@@ -15,20 +15,14 @@ import {
 } from "netzo/components/blocks/table/table.tsx";
 import { Button } from "netzo/components/button.tsx";
 import { IconCopy } from "netzo/components/icon-copy.tsx";
+import { useState } from "preact/hooks";
 
 export function PageAccounts(props: { accounts: Account[] }) {
-  const table = useTable<Account>(props.accounts, {
-    endpoint: "/api/accounts",
-    idField: "id",
-    search: {
-      column: "accountNumber",
-      placeholder: "Buscar por numero de accion...",
-    },
-    sorting: [
-      { id: "accountNumber", desc: false },
-      { id: "updatedAt", desc: true },
-    ],
-    filters: [],
+  // table requires useState for data (useSignal/signal not supported)
+  const [data, setData] = useState<Account[]>(props.accounts ?? []);
+
+  const table = useTable<Account>({
+    data,
     columns: [
       {
         id: "actions",
@@ -117,6 +111,20 @@ export function PageAccounts(props: { accounts: Account[] }) {
         },
       },
     ],
+    // NOTE: columnVisibility, search, sorting, and filters use table.getColumn() and MUST
+    // reference nested columns with underscore syntax (e.g. "data.name" is "data_name")
+    initialState: {
+      search: {
+        column: "accountNumber",
+        placeholder: "Buscar por numero de accion...",
+      },
+      sorting: [
+        { id: "accountNumber", desc: false },
+        { id: "updatedAt", desc: true },
+      ],
+      filters: [],
+    },
+    meta: {}
   });
 
   const onClickCreate = async () => {

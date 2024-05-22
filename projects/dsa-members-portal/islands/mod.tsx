@@ -21,9 +21,9 @@ export const Nav = (props: { state: NetzoState }) => {
       <NavSeparator />
       <NavItem icon="mdi-home" text="Inicio" href="/" exact={true} />
       <NavItem
-        icon="mdi-calendar-clock"
-        text="Mis Reservas"
-        href={`/bookings?userId=${USER_ID}`}
+        icon="mdi-wallet-membership"
+        text="Mi Acción"
+        href={`/accounts/${ACCOUNT_ID}`}
       />
       <NavItem
         icon="mdi-account-group"
@@ -31,15 +31,15 @@ export const Nav = (props: { state: NetzoState }) => {
         href={`/users/${USER_ID}`}
       />
       <NavItem
-        icon="mdi-wallet-membership"
-        text="Mi Acción"
-        href={`/accounts/${ACCOUNT_ID}`}
+        icon="mdi-calendar-clock"
+        text="Mis Reservas"
+        href={`/bookings?userId=${USER_ID}`}
       />
       <NavItemHeader text="Comunidad" />
       <NavItem icon="mdi-newspaper" text="Avisos" href="/notices" />
       <NavItem icon="mdi-store" text="Publicaciones" href="/publications" />
-      <NavItem icon="mdi-dots-grid" text="Instalaciones" href="/facilities" />
       <NavItemHeader text="Amenidades" />
+      <NavItem icon="mdi-dots-grid" text="Instalaciones" href="/facilities" />
       <NavItem icon="mdi-calendar" text="Eventos" href="/amenities/events" />
       <NavItem
         icon="mdi-food"

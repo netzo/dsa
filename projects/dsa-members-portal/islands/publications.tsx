@@ -19,35 +19,14 @@ import {
   CardHeader,
   CardTitle,
 } from "netzo/components/card.tsx";
+import { useState } from "preact/hooks";
 
 export function PagePublications(props: { publications: Publication[] }) {
-  const table = useTable<Publication>(props.publications, {
-    endpoint: "/api/publications",
-    idField: "id",
-    search: {
-      column: "name",
-      placeholder: "Buscar por nombre...",
-    },
-    sorting: [
-      { id: "updatedAt", desc: true },
-      { id: "name", desc: false },
-    ],
-    filters: [
-      {
-        column: "type",
-        title: "Tipo",
-        options: [
-          ...new Set(props.publications.map((item) => item.type).flat()),
-        ]
-          .sort()
-          .map((
-            value,
-          ) => (value
-            ? { label: ({/* TODO */})?.[value] ?? value, value }
-            : { label: "*no data", value: "" })
-          ),
-      },
-    ],
+  // table requires useState for data (useSignal/signal not supported)
+  const [data, setData] = useState<Publication[]>(props.publications ?? []);
+
+  const table = useTable<Publication>({
+    data,
     columns: [
       {
         id: "actions",
@@ -60,6 +39,35 @@ export function PagePublications(props: { publications: Publication[] }) {
         filterFn: (row, id, value) => value.includes(row.getValue(id)),
       },
     ],
+    // NOTE: columnVisibility, search, sorting, and filters use table.getColumn() and MUST
+    // reference nested columns with underscore syntax (e.g. "data.name" is "data_name")
+    initialState: {
+      search: {
+        column: "name",
+        placeholder: "Buscar por nombre...",
+      },
+      sorting: [
+        { id: "updatedAt", desc: true },
+        { id: "name", desc: false },
+      ],
+      filters: [
+        {
+          column: "type",
+          title: "Tipo",
+          options: [
+            ...new Set(props.publications.map((item) => item.type).flat()),
+          ]
+            .sort()
+            .map((
+              value,
+            ) => (value
+              ? { label: ({/* TODO */ })?.[value] ?? value, value }
+              : { label: "*no data", value: "" })
+            ),
+        },
+      ],
+    },
+    meta: {},
   });
 
   const onClickCreate = async () => {

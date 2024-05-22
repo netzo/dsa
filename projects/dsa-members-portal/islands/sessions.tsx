@@ -1,4 +1,4 @@
-import { getSession, type Session, toDateTime } from "@/mod.ts";
+import { getSession, toDateTime, type Session } from "@/mod.ts";
 import {
   Avatar,
   AvatarFallback,
@@ -17,34 +17,14 @@ import {
 } from "netzo/components/blocks/table/table.tsx";
 import { Button } from "netzo/components/button.tsx";
 import { IconCopy } from "netzo/components/icon-copy.tsx";
+import { useState } from "preact/hooks";
 
 export function PageSessions(props: { sessions: Session[] }) {
-  const table = useTable<Session>(props.sessions, {
-    endpoint: "/api/sessions",
-    idField: "id",
-    search: {
-      column: "name",
-      placeholder: "Buscar por nombre...",
-    },
-    sorting: [
-      { id: "updatedAt", desc: true },
-      { id: "name", desc: false },
-    ],
-    filters: [
-      {
-        column: "sportId",
-        title: "Deporte",
-        options: [...new Set(props.sessions.map((item) => item.sport).flat())]
-          .sort()
-          .map(
-            (
-              value,
-            ) => (value
-              ? { label: value.name, value: value.id }
-              : { label: "*no data", value: "" }),
-          ),
-      },
-    ],
+  // table requires useState for data (useSignal/signal not supported)
+  const [data, setData] = useState<Session[]>(props.sessions ?? []);
+
+  const table = useTable<Session>({
+    data,
     columns: [
       {
         id: "actions",
@@ -169,6 +149,34 @@ export function PageSessions(props: { sessions: Session[] }) {
         },
       },
     ],
+    // NOTE: columnVisibility, search, sorting, and filters use table.getColumn() and MUST
+    // reference nested columns with underscore syntax (e.g. "data.name" is "data_name")
+    initialState: {
+      search: {
+        column: "name",
+        placeholder: "Buscar por nombre...",
+      },
+      sorting: [
+        { id: "updatedAt", desc: true },
+        { id: "name", desc: false },
+      ],
+      filters: [
+        {
+          column: "sportId",
+          title: "Deporte",
+          options: [...new Set(props.sessions.map((item) => item.sport).flat())]
+            .sort()
+            .map(
+              (
+                value,
+              ) => (value
+                ? { label: value.name, value: value.id }
+                : { label: "*no data", value: "" }),
+            ),
+        },
+      ],
+    },
+    meta: {},
   });
 
   const onClickCreate = async () => {

@@ -13,7 +13,7 @@ import { cn } from "netzo/components/utils.ts";
 export function PageHome(props: { amenities: Amenity[]; notices: Notice[] }) {
   const { amenities, notices } = props;
   return (
-    <div className="h-full px-4 py-6 lg:px-8">
+    <div className="h-full px-4 py-6 lg:px-8 md:w-[calc(100vw-250px)]">
       <Tabs defaultValue="overview" className="h-full space-y-6">
         <div className="space-between flex items-center">
           <TabsList>

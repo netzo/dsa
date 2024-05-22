@@ -1366,7 +1366,7 @@
       "type": "gym",
       "name": "Indoor cycling studio",
       "description": "Una nueva experiencia en ciclismo indoor, con un ambiente de club y una atmósfera de fiesta, con música y luces que te harán sentir en una discoteca. Nuestro estudio de ciclismo indoor cuenta con 30 bicicletas de última generación, con un sistema de resistencia magnética y transmisión por correa, que te permitirá disfrutar de una experiencia de ciclismo indoor única.",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/facilities/indoor-cycling-studio.jpeg?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/facilities/indoor-cycling-studio.jpeg?raw=true",
       "contact": {
         "email": "alycia_gerlach28@gmail.com",
         "phone": "214-330-0417 x2587"
@@ -1794,7 +1794,7 @@
       "type": "event",
       "name": "Festival del Taco",
       "description": "Ven y disfruta de los mejores tacos de la ciudad, acompañados de música en vivo y una gran variedad de cervezas artesanales.",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/amenities/events/festival-del-taco.jpeg?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/amenities/events/festival-del-taco.jpeg?raw=true",
       "facilityIds": [
         "A21AMS01HRW7WPT2S7EYYGGP1J"
       ],
@@ -1826,7 +1826,7 @@
       "type": "event",
       "name": "Padel Match",
       "description": "Participa en el tornéo de pádel y demuestra tus habilidades en la cancha.",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/amenities/events/padel-match.jpeg?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/amenities/events/padel-match.jpeg?raw=true",
       "facilityIds": [
         "A21AMS01HRW7WPT2S7EYYGGP1J"
       ],
@@ -1858,7 +1858,7 @@
       "type": "event",
       "name": "Torneo de volleyball",
       "description": "Participa en el tornéo de volleyball y demuestra tus habilidades en la cancha.",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/amenities/events/torneo-de-volleyball.jpeg?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/amenities/events/torneo-de-volleyball.jpeg?raw=true",
       "facilityIds": [
         "A21AMS01HRW7WPT2S7EYYGGP1J"
       ],
@@ -1890,7 +1890,7 @@
       "type": "sport",
       "name": "Natación",
       "description": "La natación es el movimiento y desplazamiento a través del agua mediante el uso de las extremidades corporales y por lo general sin utilizar ningún instrumento artificial. La natación es una actividad que puede ser útil y recreativa.",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/amenities/swimming.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/amenities/swimming.png?raw=true",
       "facilityIds": [],
       "data": {
         "type": "swimming"
@@ -1910,7 +1910,7 @@
       "type": "sport",
       "name": "Tennis",
       "description": "El tenis es un deporte de raqueta que se puede practicar individualmente contra un solo oponente o entre dos parejas que consta de pelotas de tenis y raquetas. El objetivo del juego es jugar la pelota de tal manera que el oponente no pueda devolverla.",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/amenities/tennis.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/amenities/tennis.png?raw=true",
       "facilityIds": [],
       "data": {
         "type": "tennis"
@@ -1930,7 +1930,7 @@
       "type": "sport",
       "name": "Pádel",
       "description": "El pádel es un deporte de raqueta que se juega en parejas. Se practica en una pista acotada por paredes y se juega con una pelota de tenis. El objetivo del juego es jugar la pelota de tal manera que el oponente no pueda devolverla.",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/amenities/paddle.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/amenities/paddle.png?raw=true",
       "facilityIds": [],
       "data": {
         "type": "paddle"
@@ -1950,7 +1950,7 @@
       "type": "sport",
       "name": "Raquetbol",
       "description": "El raquetbol es un deporte de raqueta que se juega en parejas. Se practica en una pista acotada por paredes y se juega con una pelota de tenis. El objetivo del juego es jugar la pelota de tal manera que el oponente no pueda devolverla.",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/amenities/racquetball.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/amenities/racquetball.png?raw=true",
       "facilityIds": [],
       "data": {
         "type": "racquetball"
@@ -1970,7 +1970,7 @@
       "type": "sport",
       "name": "Gimnasia",
       "description": "La gimnasia es un deporte que se practica en un gimnasio y que consiste en la realización de una serie de ejercicios físicos que requieren fuerza, flexibilidad, agilidad y coordinación.",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/amenities/gymnastics.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/amenities/gymnastics.png?raw=true",
       "facilityIds": [],
       "data": {
         "type": "gymnastics"
@@ -1990,7 +1990,7 @@
       "type": "sport",
       "name": "Fútbol",
       "description": "El fútbol es un deporte de equipo jugado entre dos conjuntos de once jugadores cada uno y algunos árbitros que se ocupan de que las normas se cumplan correctamente. Es ampliamente considerado el deporte más popular del mundo.",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/amenities/soccer.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/amenities/soccer.png?raw=true",
       "facilityIds": [],
       "data": {
         "type": "soccer"
@@ -2010,7 +2010,7 @@
       "type": "sport",
       "name": "Hockey",
       "description": "El hockey es un deporte de equipo en el que dos equipos compiten para llevar una pelota o un disco de goma a la portería contraria con la ayuda de un palo largo llamado stick. El hockey es un deporte de equipo en el que dos equipos compiten para llevar una pelota o un disco de goma a la portería contraria con la ayuda de un palo largo llamado stick.",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/amenities/hockey.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/amenities/hockey.png?raw=true",
       "facilityIds": [],
       "data": {
         "type": "hockey"
@@ -2030,7 +2030,7 @@
       "type": "sport",
       "name": "Patinaje artístico",
       "description": "El patinaje artístico es una actividad que se realiza sobre una superficie de hielo, ya sea natural o artificial, con patines de cuchilla. El patinaje artístico es una actividad que se realiza sobre una superficie de hielo, ya sea natural o artificial, con patines de cuchilla.",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/amenities/ice-skating.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/amenities/ice-skating.png?raw=true",
       "facilityIds": [],
       "data": {
         "type": "ice-skating"
@@ -2050,7 +2050,7 @@
       "type": "sport",
       "name": "Baloncesto",
       "description": "El baloncesto es un deporte de equipo que se puede desarrollar tanto en pista cubierta como en descubierta, en el que dos conjuntos de cinco jugadores cada uno, intenta anotar puntos, también llamados canastas o dobles y/o triples introduciendo un balón en un aro colocado a 3,05 metros del suelo del que cuelga una red.",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/amenities/basketball.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/amenities/basketball.png?raw=true",
       "facilityIds": [],
       "data": {
         "type": "basketball"
@@ -2070,7 +2070,7 @@
       "type": "sport",
       "name": "Danza",
       "description": "La danza es una forma de arte en la que se utiliza el movimiento del cuerpo, usualmente con música, como una forma de expresión, de interacción social, con fines de entretenimiento, artísticos o religiosos.",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/amenities/dance.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/amenities/dance.png?raw=true",
       "facilityIds": [],
       "data": {
         "type": "dance"
@@ -2090,7 +2090,7 @@
       "type": "sport",
       "name": "Karate-do",
       "description": "El karate es un arte marcial que se originó en Okinawa, Japón. El karate es un arte marcial que se originó en Okinawa, Japón. El karate es un arte marcial que se originó en Okinawa, Japón.",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/amenities/karate-do.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/amenities/karate-do.png?raw=true",
       "facilityIds": [],
       "data": {
         "type": "karate-do"
@@ -2110,7 +2110,7 @@
       "type": "sport",
       "name": "Fitness",
       "description": "El fitness es un deporte que se practica en un gimnasio y que consiste en la realización de una serie de ejercicios físicos que requieren fuerza, flexibilidad, agilidad y coordinación.",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/amenities/fitness.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/amenities/fitness.png?raw=true",
       "facilityIds": [],
       "data": {
         "type": "fitness"
@@ -2130,7 +2130,7 @@
       "type": "sport",
       "name": "Boxeo",
       "description": "El boxeo es un deporte de combate en el que dos contrincantes luchan utilizando únicamente sus puños con guantes, golpeando a su adversario de la cintura hacia arriba, dentro de un cuadrilátero especialmente diseñado para tal fin.",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/amenities/box.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/amenities/box.png?raw=true",
       "facilityIds": [],
       "data": {
         "type": "boxing"
@@ -2150,7 +2150,7 @@
       "type": "sport",
       "name": "Triatlón",
       "description": "El triatlón es un deporte que combina tres disciplinas: natación, ciclismo y carrera a pie. El triatlón es un deporte que combina tres disciplinas: natación, ciclismo y carrera a pie.",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/amenities/triathlon.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/amenities/triathlon.png?raw=true",
       "facilityIds": [],
       "data": {
         "type": "triathlon"
@@ -2170,7 +2170,7 @@
       "type": "sport",
       "name": "Yoga",
       "description": "El yoga es una disciplina física y mental que se originó en la India. El yoga es una disciplina física y mental que se originó en la India. El yoga es una disciplina física y mental que se originó en la India.",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/amenities/yoga.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/amenities/yoga.png?raw=true",
       "facilityIds": [],
       "data": {
         "type": "yoga"
@@ -2190,7 +2190,7 @@
       "type": "sport",
       "name": "Tai-chi",
       "description": "El tai chi es un arte marcial chino que se practica por sus beneficios para la salud y por su valor como entrenamiento para la defensa personal. El tai chi es un arte marcial chino que se practica por sus beneficios para la salud y por su valor como entrenamiento para la defensa personal.",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/amenities/tai-chi.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/amenities/tai-chi.png?raw=true",
       "facilityIds": [],
       "data": {
         "type": "tai-chi"
@@ -2210,7 +2210,7 @@
       "type": "sport",
       "name": "Pilates",
       "description": "El pilates es un método de entrenamiento físico que busca el desarrollo de los músculos internos para mantener el equilibrio corporal y dar estabilidad y firmeza a la columna vertebral. El pilates es un método de entrenamiento físico que busca el desarrollo de los músculos internos para mantener el equilibrio corporal y dar estabilidad y firmeza a la columna vertebral.",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/amenities/pilates.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/amenities/pilates.png?raw=true",
       "facilityIds": [],
       "data": {
         "type": "pilates"
@@ -2230,7 +2230,7 @@
       "type": "sport",
       "name": "Crossfit",
       "description": "El crossfit es un sistema de entrenamiento de fuerza y acondicionamiento basado en ejercicios constantemente variados, con movimientos funcionales ejecutados a alta intensidad. El crossfit es un sistema de entrenamiento de fuerza y acondicionamiento basado en ejercicios constantemente variados, con movimientos funcionales ejecutados a alta intensidad.",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/amenities/crossfit.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/amenities/crossfit.png?raw=true",
       "facilityIds": [],
       "data": {
         "type": "crossfit"
@@ -2250,7 +2250,7 @@
       "type": "sport",
       "name": "Tabata",
       "description": "El tabata es un sistema de entrenamiento de alta intensidad que se basa en realizar ejercicios de fuerza y cardiovasculares durante 20 segundos, seguidos de 10 segundos de descanso, durante un total de 4 minutos. El tabata es un sistema de entrenamiento de alta intensidad que se basa en realizar ejercicios de fuerza y cardiovasculares durante 20 segundos, seguidos de 10 segundos de descanso, durante un total de 4 minutos.",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/amenities/tabata.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/amenities/tabata.png?raw=true",
       "facilityIds": [],
       "data": {
         "type": "tabata"
@@ -2270,7 +2270,7 @@
       "type": "sport",
       "name": "Spinning",
       "description": "El spinning es una actividad física que se realiza en una bicicleta estática al ritmo de la música. El spinning es una actividad física que se realiza en una bicicleta estática al ritmo de la música.",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/amenities/spinning.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/amenities/spinning.png?raw=true",
       "facilityIds": [
         "8HGL6T4R7N6MW010RSPTNAW8H"
       ],
@@ -3797,7 +3797,7 @@
       "type": "promotion",
       "name": "¡NUEVO indoor cycling studio!",
       "description": "Te invitamos a conocer nuestro nuevo indoor cycling studio. Conoce los beneficios de esta nueva disciplina y disfruta de una clase de cortesia.",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/notices/indoor-cycling-studio.jpeg?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/notices/indoor-cycling-studio.jpeg?raw=true",
       "notes": "<html lang=\"en\">\r\n\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>NUEVO Indoor Cycling Studio<\/title>\r\n<\/head>\r\n\r\n<body style=\"margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f8f9fa;\">\r\n\r\n    <!-- Header with Logo -->\r\n    <table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" bgcolor=\"#f8f9fa\">\r\n        <tr>\r\n            <td align=\"center\" style=\"padding: 26px 20px;\">\r\n                <img src=\"\/logo.svg\" alt=\"Logo\" style=\"width: 150px; height: auto; max-height: 100px; outline: none; text-decoration: none;\">\r\n            <\/td>\r\n        <\/tr>\r\n    <\/table>\r\n\r\n    <!-- Image Placeholder -->\r\n    <table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">\r\n        <tr>\r\n            <td align=\"center\">\r\n                <img src=\"https://raw.githubusercontent.com/netzo/netzolabs/main/workspaces/dsa/dsa-members-portal/static/notices/indoor-cycling-studio.jpeg?raw=true\"\r\n                    alt=\"Image placeholder\" style=\"border: 0; line-height: 100%; outline: none; text-decoration: none; display: block; font-size: 13px; height: auto; width: 100%; max-width: 600px;\">\r\n            <\/td>\r\n        <\/tr>\r\n    <\/table>\r\n\r\n    <!-- Content -->\r\n    <table width=\"90%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" align=\"center\">\r\n        <tr>\r\n            <td align=\"center\" style=\"padding: 0 10px; padding-top: 20px; word-break: break-word;\">\r\n                <div style=\"font-family: Arial, sans-serif; font-weight: 400; font-size: 32px; letter-spacing: 0; line-height: normal; text-align: center; color: #202124;\">\r\n                   NUEVO Indoor Cycling Studio\r\n                <\/div>\r\n            <\/td>\r\n        <\/tr>\r\n        <tr>\r\n            <td align=\"center\" style=\"padding: 0 10px; padding-top: 18px; word-break: break-word;\">\r\n                <div style=\"font-family: Arial, sans-serif; font-size: 15px; font-weight: 400; letter-spacing: 0; line-height: 1.4; text-align: center; color: #5f6368;\">\r\n                    Ven y conoce este nueva forma de hacer ejercicio, con el nuevo Indoor Cycling Studio. Un proyecto anticipado por muchas de nuestros socios y que ahora es una realidad. Te esperamos para disfrutar de esta nueva experiencia.\r\n                <\/div>\r\n            <\/td>\r\n        <\/tr>\r\n        <tr>\r\n            <td align=\"center\" style=\"padding: 0; padding-top: 30px; word-break: break-word;\">\r\n                <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"button\" style=\"border-collapse: separate; background: #B5C83B; border-radius: 4px; line-height: 100%; padding: 8px 24px;\">\r\n                    <tr>\r\n                        <td align=\"center\" bgcolor=\"#B5C83B\" role=\"presentation\" style=\"border-collapse: collapse; background: #B5C83B; border: none;\" valign=\"middle\">\r\n                            <a href=\"\/amenities\/sports\" style=\"display: inline-block; background: #B5C83B; color: #ffffff; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; line-height: 1.4; letter-spacing: 0; margin: 0; text-decoration: none; text-transform: none;\">\r\n                                \u00A1Reserva tu lugar aqui!\r\n                            <\/a>\r\n                        <\/td>\r\n                    <\/tr>\r\n                <\/table>\r\n            <\/td>\r\n        <\/tr>\r\n    <\/table>\r\n\r\n    <!-- Footer -->\r\n    <table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">\r\n        <tr>\r\n            <td align=\"center\" style=\"padding: 10px 10%; text-align: center;\">\r\n                <div style=\"font-family: Arial, sans-serif; font-size: 12px; font-weight: 400; letter-spacing: 0.3px; line-height: 16px; text-align: center; color: #80868b;\">\r\n                    Deportivo San Agustin, A.C.<br>\r\n                    Av L\u00E1zaro C\u00E1rdenas 2450 Poniente | Zona San Agust\u00EDn | 66260 San Pedro Garza Garc\u00EDa | N.L. | Mexico\r\n                <\/div>\r\n            <\/td>\r\n        <\/tr>\r\n    <\/table>\r\n\r\n<\/body>\r\n\r\n<\/html>"
     }
   },
@@ -3865,7 +3865,7 @@
       "type": "info",
       "name": "LPR - Sistema de lectura de placas",
       "description": "El sistema de lectura de placas autoamtizado (ALPR) ayudara a aumentar la seguridad en nuestro club.",
-      "image": "https://www.wsh-peer.com/wp-content/uploads/2021/08/alpr.png",
+      "image": "https://www.tecnoseguro.com/media/k2/items/cache/5dcac9cd94a93dad01736d5e488c11d9_M.jpg",
       "notes": "<html lang=\"en\">\r\n\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>LPR - Sistema de lectura de placas<\/title>\r\n<\/head>\r\n\r\n<body style=\"margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f8f9fa;\">\r\n\r\n    <!-- Header with Logo -->\r\n    <table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" bgcolor=\"#f8f9fa\">\r\n        <tr>\r\n            <td align=\"center\" style=\"padding: 26px 20px;\">\r\n                <img src=\"\/logo.svg\" alt=\"Logo\" style=\"width: 150px; height: auto; max-height: 100px; outline: none; text-decoration: none;\">\r\n            <\/td>\r\n        <\/tr>\r\n    <\/table>\r\n\r\n    <!-- Image Placeholder -->\r\n    <table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">\r\n        <tr>\r\n            <td align=\"center\">\r\n                <img src=\"https:\/\/www.deportivosanagustin.com\/images\/demo\/avisos\/resizedimages\/7.jpg\"\r\n                    alt=\"Image placeholder\" style=\"border: 0; line-height: 100%; outline: none; text-decoration: none; display: block; font-size: 13px; height: auto; width: 100%; max-width: 600px;\">\r\n            <\/td>\r\n        <\/tr>\r\n    <\/table>\r\n\r\n    <!-- Content -->\r\n    <table width=\"90%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" align=\"center\">\r\n        <tr>\r\n            <td align=\"center\" style=\"padding: 0 10px; padding-top: 20px; word-break: break-word;\">\r\n                <div style=\"font-family: Arial, sans-serif; font-weight: 400; font-size: 32px; letter-spacing: 0; line-height: normal; text-align: center; color: #202124;\">\r\n                   LPR - Sistema de lectura de placas\r\n                <\/div>\r\n            <\/td>\r\n        <\/tr>\r\n        <tr>\r\n            <td align=\"center\" style=\"padding: 0 10px; padding-top: 18px; word-break: break-word;\">\r\n                <div style=\"font-family: Arial, sans-serif; font-size: 15px; font-weight: 400; letter-spacing: 0; line-height: 1.4; text-align: center; color: #5f6368;\">\r\n                    Te invitamos a estar atento a la siguientes etapas del proyecto de ALPR (Automatic License Plate Recognition) que se estar\u00E1 implementando en el club. El sistema de lectura de placas, otorgara a nuestra comunidad DSA mayor seguridad y agilidad de transito.\r\n                <\/div>\r\n            <\/td>\r\n        <\/tr>\r\n        <tr>\r\n            <td align=\"center\" style=\"padding: 0; padding-top: 30px; word-break: break-word;\">\r\n                <!-- <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"button\" style=\"border-collapse: separate; background: #B5C83B; border-radius: 4px; line-height: 100%; padding: 8px 24px;\">\r\n                    <tr>\r\n                        <td align=\"center\" bgcolor=\"#B5C83B\" role=\"presentation\" style=\"border-collapse: collapse; background: #B5C83B; border: none;\" valign=\"middle\">\r\n                            <a href=\"\" style=\"display: inline-block; background: #B5C83B; color: #ffffff; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; line-height: 1.4; letter-spacing: 0; margin: 0; text-decoration: none; text-transform: none;\">\r\n                                Registrate\r\n                            <\/a>\r\n                        <\/td>\r\n                    <\/tr>\r\n                <\/table> -->\r\n            <\/td>\r\n        <\/tr>\r\n    <\/table>\r\n\r\n    <!-- Footer -->\r\n    <table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">\r\n        <tr>\r\n            <td align=\"center\" style=\"padding: 10px 10%; text-align: center;\">\r\n                <div style=\"font-family: Arial, sans-serif; font-size: 12px; font-weight: 400; letter-spacing: 0.3px; line-height: 16px; text-align: center; color: #80868b;\">\r\n                    Deportivo San Agustin, A.C.<br>\r\n                    Av L\u00E1zaro C\u00E1rdenas 2450 Poniente | Zona San Agust\u00EDn | 66260 San Pedro Garza Garc\u00EDa | N.L. | Mexico\r\n                <\/div>\r\n            <\/td>\r\n        <\/tr>\r\n    <\/table>\r\n\r\n<\/body>\r\n\r\n<\/html>"
     }
   },
@@ -3955,19 +3955,19 @@
         {
           "id": "sandwiches",
           "name": "Sandwiches",
-          "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/sandwiches.png?raw=true",
+          "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/sandwiches.png?raw=true",
           "caption": "Acompañados de papas a la francesa o papas gajo"
         },
         {
           "id": "hamburgesas-y-antojitos",
           "name": "Hamburgesas y antojitos",
-          "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/hambuguesas-y-antojitos.png?raw=true",
+          "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/hambuguesas-y-antojitos.png?raw=true",
           "caption": ""
         },
         {
           "id": "pastas-y-pizza",
           "name": "Pastas y pizza",
-          "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/pastas-y-pizza.png?raw=true",
+          "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/pastas-y-pizza.png?raw=true",
           "caption": ""
         },
         {
@@ -3978,13 +3978,13 @@
         {
           "id": "cortes-de-carne",
           "name": "Cortes de carne",
-          "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/cortes-de-carne.png?raw=true",
+          "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/cortes-de-carne.png?raw=true",
           "caption": "Todos los cortes se sircen con: Chiles toreados, cebolla asada, ajo rostizado, papa al horno y verduas al vapor"
         },
         {
           "id": "low-carb",
           "name": "Low carb",
-          "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/low-carb.png?raw=true",
+          "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/low-carb.png?raw=true",
           "caption": "*El consumo de estos alimentos es bajo su responsabilidad"
         },
         {
@@ -4012,7 +4012,7 @@
       "sectionId": "entradas-y-botanas",
       "name": "Coctel de camarón",
       "description": "Con aguacate, cebolla, cilantro, chile serrano, pepino y jitomate",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/coctel-de-camaron.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/coctel-de-camaron.png?raw=true",
       "price": 165,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4029,7 +4029,7 @@
       "sectionId": "entradas-y-botanas",
       "name": "Tostadas de atún marinado (3 piezas)",
       "description": "Pasta de atún marinada en salsa de soya y aderezo de chipotle",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/tostadas-de-atun.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/tostadas-de-atun.png?raw=true",
       "price": 135,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4046,7 +4046,7 @@
       "sectionId": "entradas-y-botanas",
       "name": "Queso panela a la plancha",
       "description": "Con nopal asado, tomate y aguacate, en salsa verde de tomatillo",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/queso-panela.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/queso-panela.png?raw=true",
       "price": 125,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4063,7 +4063,7 @@
       "sectionId": "entradas-y-botanas",
       "name": "Láminas de carne seca",
       "description": "Con salsa de chile piquín, acompañadas de frijoles refritos y guacamole",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/laminas-carne-seca.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/laminas-carne-seca.png?raw=true",
       "price": 265,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4080,7 +4080,7 @@
       "sectionId": "entradas-y-botanas",
       "name": "Queso fundido natural",
       "description": "Con champiñones o chorizo",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/queso-fundido.jpg?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/queso-fundido.jpg?raw=true",
       "price": 165,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4097,7 +4097,7 @@
       "sectionId": "entradas-y-botanas",
       "name": "Guacamole tradicional",
       "description": "Con pico de gallo",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/guacamole-tradicional.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/guacamole-tradicional.png?raw=true",
       "price": 165,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4114,7 +4114,7 @@
       "sectionId": "taquiza",
       "name": "Tacos gobernador (4 piezas)",
       "description": "De camarón a la mexicana con ensalada de col y guacamole",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/tacos-gobernador.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/tacos-gobernador.png?raw=true",
       "price": 190,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4131,7 +4131,7 @@
       "sectionId": "taquiza",
       "name": "Tacos de rib eye (4 piezas)",
       "description": "Con queso y frijoles",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/tacos-de-rib-eye.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/tacos-de-rib-eye.png?raw=true",
       "price": 260,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4147,7 +4147,7 @@
       "id": "1O219XQXF8EQ96V3LJGAF6AT0X07",
       "sectionId": "taquiza",
       "name": "Tacos de filete de res (4 piezas)",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/tacos-de-filete.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/tacos-de-filete.png?raw=true",
       "price": 225,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4164,7 +4164,7 @@
       "sectionId": "taquiza",
       "name": "Tacos de arrachera (4 piezas)",
       "description": "Con queso y frijoles",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/tacos-de-arrachera.jpg?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/tacos-de-arrachera.jpg?raw=true",
       "price": 230,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4181,7 +4181,7 @@
       "sectionId": "sopas-y-ensaladas",
       "name": "Caldo tlalpeño",
       "description": "Con arroz blanco y pechuga de pollo desmenuzada",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/caldo-tlalpeno.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/caldo-tlalpeno.png?raw=true",
       "price": 72,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4198,7 +4198,7 @@
       "sectionId": "sopas-y-ensaladas",
       "name": "Consomé de pollo",
       "description": "Con arroz y verduras",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/consome-de-pollo.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/consome-de-pollo.png?raw=true",
       "price": 72,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4215,7 +4215,7 @@
       "sectionId": "sopas-y-ensaladas",
       "name": "Sopa de tortilla",
       "description": "Con queso, aguacuate y frituras de maíz",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/sopa-de-tortilla.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/sopa-de-tortilla.png?raw=true",
       "price": 72,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4232,7 +4232,7 @@
       "sectionId": "sopas-y-ensaladas",
       "name": "Crema de frijol",
       "description": "Frijol negro con epazote",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/crema-de-frijol.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/crema-de-frijol.png?raw=true",
       "price": 72,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4249,7 +4249,7 @@
       "sectionId": "sopas-y-ensaladas",
       "name": "Crema de chile poblano",
       "description": "Con granos de elote y cruton",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/crema-de-chile-poblano.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/crema-de-chile-poblano.png?raw=true",
       "price": 72,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4266,7 +4266,7 @@
       "sectionId": "sopas-y-ensaladas",
       "name": "Ensalada capresse",
       "description": "Tradicional queso mozarella con tomate y pesto",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/ensalada-capresse.jpg?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/ensalada-capresse.jpg?raw=true",
       "price": 145,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4283,7 +4283,7 @@
       "sectionId": "sopas-y-ensaladas",
       "name": "Ensalada César",
       "description": "Sin pollo",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/ensalada-cesar-sin-pollo.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/ensalada-cesar-sin-pollo.png?raw=true",
       "price": 110,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4300,7 +4300,7 @@
       "sectionId": "sopas-y-ensaladas",
       "name": "Ensalada César",
       "description": "Con pollo",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/ensalada-cesar-con-pollo.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/ensalada-cesar-con-pollo.png?raw=true",
       "price": 145,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4317,7 +4317,7 @@
       "sectionId": "sopas-y-ensaladas",
       "name": "Ensalada de espinacas",
       "description": "Con manzana, queso de cabra, nuez caramelizada, arándanos, queso y zarzamora",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/ensalada-de-espinacas.jpg?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/ensalada-de-espinacas.jpg?raw=true",
       "price": 145,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4334,7 +4334,7 @@
       "sectionId": "sandwiches",
       "name": "Club sandwich",
       "description": "Tradicional con pechuga de pollo, jamón, queso, lechuga, tomate y cebolla",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/club-sandwich.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/club-sandwich.png?raw=true",
       "price": 160,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4351,7 +4351,7 @@
       "sectionId": "sandwiches",
       "name": "Pepito de filete de res",
       "description": "Con queso gratinado, frijoles refritos y guacamole",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/pepito-de-filete-res.jpg?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/pepito-de-filete-res.jpg?raw=true",
       "price": 195,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4368,7 +4368,7 @@
       "sectionId": "sandwiches",
       "name": "Pepito de arrachera",
       "description": "Con queso gratinado, pimientos, cebolla asada, frijoles refritos y guacamole",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/pepito-de-arrachera.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/pepito-de-arrachera.png?raw=true",
       "price": 215,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4385,7 +4385,7 @@
       "sectionId": "hamburgesas-y-antojitos",
       "name": "Hamburguesa chicken buffalo",
       "description": "Bañada en salsa buffalo, gratinada, con mix de lechugas, tomate y aros de cebolla",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/hamburguesa-pollo-buffalo.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/hamburguesa-pollo-buffalo.png?raw=true",
       "price": 140,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4402,7 +4402,7 @@
       "sectionId": "hamburgesas-y-antojitos",
       "name": "Hamburguesa San Agustín",
       "description": "Carne de res sterling, queso, jamón, tocino y aguacate",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/hamburguesa-san-agustin.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/hamburguesa-san-agustin.png?raw=true",
       "price": 225,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4419,7 +4419,7 @@
       "sectionId": "hamburgesas-y-antojitos",
       "name": "Hamburguesa de rib eye",
       "description": "Gratinada, piña asada, champiñones en salsa gravy, aros de cebolla y mix de lechugas",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/hamburguesa-de-rib-eye.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/hamburguesa-de-rib-eye.png?raw=true",
       "price": 230,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4436,7 +4436,7 @@
       "sectionId": "hamburgesas-y-antojitos",
       "name": "Hamburguesa beyond vegetariana",
       "description": "A base de granos, con mix de lechugas, tomate y aguacate",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/hamburguesa-beyond-vegetariana.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/hamburguesa-beyond-vegetariana.png?raw=true",
       "price": 170,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4453,7 +4453,7 @@
       "sectionId": "hamburgesas-y-antojitos",
       "name": "Tostadas de pollo (2 piezas)",
       "description": "Con pechuga de pollo desmenuzada, frijoles refritos, salsa de aguacate, lechuga, tomate, queso panela y crema",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/tostadas-de-pollo.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/tostadas-de-pollo.png?raw=true",
       "price": 130,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4470,7 +4470,7 @@
       "sectionId": "hamburgesas-y-antojitos",
       "name": "Flautas de pollo (4 piezas)",
       "description": "Con salsa de aguacate, lechuga, tomate, queso panela y crema",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/flautas-de-pollo.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/flautas-de-pollo.png?raw=true",
       "price": 135,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4487,7 +4487,7 @@
       "sectionId": "hamburgesas-y-antojitos",
       "name": "Enchiladas suizas (4 piezas)",
       "description": "Rellenas de pechuga de pollo, bailadas en salsa verde cremosa, gratinadas y acompañadas con guacamole y frijoles refritos",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/enchiladas-suizas.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/enchiladas-suizas.png?raw=true",
       "price": 150,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4504,7 +4504,7 @@
       "sectionId": "pastas-y-pizza",
       "name": "Pastas",
       "description": "Salsa Alfredo",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/pasta-alfredo.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/pasta-alfredo.png?raw=true",
       "price": 135,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4521,7 +4521,7 @@
       "sectionId": "pastas-y-pizza",
       "name": "Fetuccini",
       "description": "Salsa al pesto",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/fetuccini-al-pesto.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/fetuccini-al-pesto.png?raw=true",
       "price": 135,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4538,7 +4538,7 @@
       "sectionId": "pastas-y-pizza",
       "name": "Rigotoni",
       "description": "Salsa Carbonara",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/rigotoni-carbonara.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/rigotoni-carbonara.png?raw=true",
       "price": 135,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4555,7 +4555,7 @@
       "sectionId": "pastas-y-pizza",
       "name": "Fusilli",
       "description": "Salsa Boloñesa",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/fusilli-bolognesa.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/fusilli-bolognesa.png?raw=true",
       "price": 135,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4572,7 +4572,7 @@
       "sectionId": "pastas-y-pizza",
       "name": "Pizza de pepperoni",
       "description": "",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/pizza-peperoni.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/pizza-peperoni.png?raw=true",
       "price": 205,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4589,7 +4589,7 @@
       "sectionId": "pastas-y-pizza",
       "name": "Pizza margarita",
       "description": "",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/pizza-margarita.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/pizza-margarita.png?raw=true",
       "price": 180,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4606,7 +4606,7 @@
       "sectionId": "pastas-y-pizza",
       "name": "Pizza vegetariana",
       "description": "",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/pizza-vegetariana.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/pizza-vegetariana.png?raw=true",
       "price": 180,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4623,7 +4623,7 @@
       "sectionId": "aves-y-pescado",
       "name": "Filete de tilapia",
       "description": "Al gusto: A la plancha, Al ajo, Al mojo, Al ajillo, A la mantequilla, A la veracruzana, Almendrado, Alcaparrado, Salsa de queso, Empanizado, Teriyaki, Al piquín",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/filete-de-tilapia.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/filete-de-tilapia.png?raw=true",
       "price": 180,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4640,7 +4640,7 @@
       "sectionId": "aves-y-pescado",
       "name": "Filete de salmón",
       "description": "Al gusto: A la plancha, Al ajo, Al mojo, Al ajillo, A la mantequilla, A la veracruzana, Almendrado, Alcaparrado, Salsa de queso, Empanizado, Teriyaki, Al piquín",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/filete-de-salmon.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/filete-de-salmon.png?raw=true",
       "price": 270,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4657,7 +4657,7 @@
       "sectionId": "aves-y-pescado",
       "name": "Filete de huachinango",
       "description": "Al gusto: A la plancha, Al ajo, Al mojo, Al ajillo, A la mantequilla, A la veracruzana, Almendrado, Alcaparrado, Salsa de queso, Empanizado, Teriyaki, Al piquín",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/filete-de-huachinango.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/filete-de-huachinango.png?raw=true",
       "price": 290,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4674,7 +4674,7 @@
       "sectionId": "aves-y-pescado",
       "name": "Camarones al gusto",
       "description": "Al gusto: A la plancha, Al ajo, Al mojo, Al ajillo, A la mantequilla, A la veracruzana, Almendrado, Alcaparrado, Salsa de queso, Empanizado, Teriyaki, Al piquín",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/camarones-al-gusto.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/camarones-al-gusto.png?raw=true",
       "price": 330,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4691,7 +4691,7 @@
       "sectionId": "aves-y-pescado",
       "name": "Filete de atún",
       "description": "Al gusto: A la plancha, Al ajo, Al mojo, Al ajillo, A la mantequilla, A la veracruzana, Almendrado, Alcaparrado, Salsa de queso, Empanizado, Teriyaki, Al piquín",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/filete-de-atun.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/filete-de-atun.png?raw=true",
       "price": 270,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4708,7 +4708,7 @@
       "sectionId": "aves-y-pescado",
       "name": "Pechuga de pollo a la plancha",
       "description": "Acompañada de arroz y verduras",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/pechuga-de-pollo-a-la-plancha.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/pechuga-de-pollo-a-la-plancha.png?raw=true",
       "price": 185,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4725,7 +4725,7 @@
       "sectionId": "aves-y-pescado",
       "name": "Pechuga de pollo empanizada",
       "description": "Con ensalada de lechuga, tomate, aderezo balsámico y papa gajo",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/pechuga-de-pollo-empanizada.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/pechuga-de-pollo-empanizada.png?raw=true",
       "price": 185,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4742,7 +4742,7 @@
       "sectionId": "aves-y-pescado",
       "name": "Fajitas de pollo con pimientos",
       "description": "Con tocino, cebolla morada y champiñones, gratinadas y acompañados de frijoles refritos, guacamole y queso panela",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/fajitas-de-pollo-con-pimientos.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/fajitas-de-pollo-con-pimientos.png?raw=true",
       "price": 230,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4759,7 +4759,7 @@
       "sectionId": "cortes-de-carne",
       "name": "Rib eye (350 g)",
       "description": "",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/rib-eye.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/rib-eye.png?raw=true",
       "price": 320,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4776,7 +4776,7 @@
       "sectionId": "cortes-de-carne",
       "name": "Arrachera (350 g)",
       "description": "",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/arrachera.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/arrachera.png?raw=true",
       "price": 290,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4793,7 +4793,7 @@
       "sectionId": "cortes-de-carne",
       "name": "Caña de filete de res (220 g)",
       "description": "",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/cana-de-filete.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/cana-de-filete.png?raw=true",
       "price": 290,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4810,7 +4810,7 @@
       "sectionId": "cortes-de-carne",
       "name": "Newyork (350 g)",
       "description": "",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/newyork.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/newyork.png?raw=true",
       "price": 265,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4827,7 +4827,7 @@
       "sectionId": "cortes-de-carne",
       "name": "Orden de tuétano (3 piezas)",
       "description": "Servidos cebolla, cilantro y salsas.",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/orden-de-tuetanos.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/orden-de-tuetanos.png?raw=true",
       "price": 200,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4844,7 +4844,7 @@
       "sectionId": "cortes-de-carne",
       "name": "Salsa para el corte a su elección",
       "description": "Vino tinto, champiñones, a la pimienta o gravy al ajillo",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/salsas-carne.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/salsas-carne.png?raw=true",
       "price": 0,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4861,7 +4861,7 @@
       "sectionId": "cortes-de-carne",
       "name": "Guarniciones adicionales",
       "description": "Verduras mixtas al vapor o asadas, betabel asado, nopal asado, papa al horno o puré de papa",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/verduras-al-vapor.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/verduras-al-vapor.png?raw=true",
       "price": 49,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4878,7 +4878,7 @@
       "sectionId": "cortes-de-carne",
       "name": "Espárragos",
       "description": "Con pimientos, cebolla morada, tocino, gratinados, acompañadas de frijoles, guacamole y queso panela",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/esparragos.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/esparragos.png?raw=true",
       "price": 86,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4895,7 +4895,7 @@
       "sectionId": "cortes-de-carne",
       "name": "Tradicional tampiqueña de filete de res (220 g)",
       "description": "Con arroz, guacamole, rajas con crema y enmolada de pollo",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/tampiquena-de-filete.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/tampiquena-de-filete.png?raw=true",
       "price": 275,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4912,7 +4912,7 @@
       "sectionId": "cortes-de-carne",
       "name": "Puntas de res a la mexicana (220 gr)",
       "description": "Con arroz y frijoles",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/puntas-de-res-a-la-mexicana.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/puntas-de-res-a-la-mexicana.png?raw=true",
       "price": 220,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4928,7 +4928,7 @@
       "id": "1O219XQXF8EQ96V3LJGAF6AT0X64",
       "sectionId": "low-carb",
       "name": "Sopa de champiñones con nopal",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/sopa-de-champinones.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/sopa-de-champinones.png?raw=true",
       "price": 72,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4944,7 +4944,7 @@
       "id": "1O219XQXF8EQ96V3LJGAF6AT0X65",
       "sectionId": "low-carb",
       "name": "Sopa de verduras con pollo",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/sopa-de-verdura-con-pollo.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/sopa-de-verdura-con-pollo.png?raw=true",
       "price": 72,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4961,7 +4961,7 @@
       "sectionId": "low-carb",
       "name": "*Tostada de salmón",
       "description": "Preparado con aguacate, cebolla morada, alcaparras y ajonjolí",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/tostada-de-salmon.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/tostada-de-salmon.png?raw=true",
       "price": 230,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4978,7 +4978,7 @@
       "sectionId": "low-carb",
       "name": "*Tostada de atún",
       "description": "Una (1) tostada de fibrela o nopal. Atún fresco preparado con pepino, tomate, cebolla y cilantro. Con un toque de salsa de soya bajo en sodio y limón",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/tostada-de-atun.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/tostada-de-atun.png?raw=true",
       "price": 76,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -4995,7 +4995,7 @@
       "sectionId": "low-carb",
       "name": "Coctel de camarón",
       "description": "Preparado con salsa coctelera sugar free o estilo Mazatlán (pepino, tomate, cebolla y cilantro)",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/coctel-de-camaron-light.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/coctel-de-camaron-light.png?raw=true",
       "price": 195,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -5012,7 +5012,7 @@
       "sectionId": "low-carb",
       "name": "Fajitas de pollo low carb",
       "description": "Servidas con pimientos asados y aguacate",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/fajitas-de-pollo-light.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/fajitas-de-pollo-light.png?raw=true",
       "price": 230,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -5029,7 +5029,7 @@
       "sectionId": "low-carb",
       "name": "Arrachera natural",
       "description": "Acompañada de rajas de chile poblano y guacamole",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/arrachera-natural.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/arrachera-natural.png?raw=true",
       "price": 290,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -5046,7 +5046,7 @@
       "sectionId": "low-carb",
       "name": "Brochetas de filete de res",
       "description": "Con champiñones, pimientos y calabaza; acompañado de espárragos",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/brochetas-de-filete.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/brochetas-de-filete.png?raw=true",
       "price": 250,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -5063,7 +5063,7 @@
       "sectionId": "low-carb",
       "name": "Salmón a la parrilla con mantequilla de cítricos",
       "description": "Servido con brocoli al gratín",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/salmon-a-la-parrila-con-citricos.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/salmon-a-la-parrila-con-citricos.png?raw=true",
       "price": 145,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -5080,7 +5080,7 @@
       "sectionId": "low-carb",
       "name": "*Atún a la plancha",
       "description": "Con pico de gallo de pepino y piña, acompañado de sandía asada y albahaca",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/atun-a-la-plancha.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/atun-a-la-plancha.png?raw=true",
       "price": 145,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -5096,7 +5096,7 @@
       "id": "1O219XQXF8EQ96V3LJGAF6AT0X73",
       "sectionId": "menu-infantil",
       "name": "Chicken tenders",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/chicken-tenders.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/chicken-tenders.png?raw=true",
       "price": 105,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -5112,7 +5112,7 @@
       "id": "1O219XQXF8EQ96V3LJGAF6AT0X74",
       "sectionId": "menu-infantil",
       "name": "Dedos de queso",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/dedos-de-queso.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/dedos-de-queso.png?raw=true",
       "price": 90,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -5128,7 +5128,7 @@
       "id": "1O219XQXF8EQ96V3LJGAF6AT0X75",
       "sectionId": "menu-infantil",
       "name": "Hot dog",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/hot-dog.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/hot-dog.png?raw=true",
       "price": 54,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -5144,7 +5144,7 @@
       "id": "1O219XQXF8EQ96V3LJGAF6AT0X76",
       "sectionId": "menu-infantil",
       "name": "Mini pizza",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/mini-pizza.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/mini-pizza.png?raw=true",
       "price": 65,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -5160,7 +5160,7 @@
       "id": "1O219XQXF8EQ96V3LJGAF6AT0X77",
       "sectionId": "menu-infantil",
       "name": "Sándwich de jamón y queso",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/sandwich-jamon-y-queso.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/sandwich-jamon-y-queso.png?raw=true",
       "price": 95,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -5176,7 +5176,7 @@
       "id": "1O219XQXF8EQ96V3LJGAF6AT0X78",
       "sectionId": "postres",
       "name": "Brownie",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/brownie.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/brownie.png?raw=true",
       "price": 73,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -5192,7 +5192,7 @@
       "id": "1O219XQXF8EQ96V3LJGAF6AT0X79",
       "sectionId": "postres",
       "name": "Flan napolitano",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/flan-napolitano.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/flan-napolitano.png?raw=true",
       "price": 73,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"
@@ -5208,7 +5208,7 @@
       "id": "1O219XQXF8EQ96V3LJGAF6AT0X80",
       "sectionId": "postres",
       "name": "Pan de elote",
-      "image": "https://github.com/netzo/netzolabs/blob/main/workspaces/dsa/dsa-members-portal/static/menus/items/pan-de-elote.png?raw=true",
+      "image": "https://github.com/netzolabs/dsa/blob/main/projects/dsa-members-portal/static/menus/items/pan-de-elote.png?raw=true",
       "price": 73,
       "menuIds": [
         "1O219XQXF8EQ96V3LJGAF6AX00"

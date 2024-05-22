@@ -33,35 +33,14 @@ import {
 } from "netzo/components/form.tsx";
 import { IconCopy } from "netzo/components/icon-copy.tsx";
 import { Input } from "netzo/components/input.tsx";
+import { useState } from "preact/hooks";
 
 export function PageUsers(props: { users: User[] }) {
-  const table = useTable<User>(props.users, {
-    endpoint: "/api/users",
-    idField: "id",
-    search: {
-      column: "name",
-      placeholder: "Buscar por nombre...",
-    },
-    sorting: [
-      { id: "updatedAt", desc: true },
-      { id: "name", desc: false },
-      { id: "accountNumber", desc: true },
-    ],
-    filters: [
-      {
-        column: "accountId",
-        title: "Cuenta",
-        options: [...new Set(props.users.map((item) => item.account).flat())]
-          .sort()
-          .map(
-            (
-              value,
-            ) => (value
-              ? { label: value.name, value: value.id }
-              : { label: "*no data", value: "" }),
-          ),
-      },
-    ],
+  // table requires useState for data (useSignal/signal not supported)
+  const [data, setData] = useState<User[]>(props.users ?? []);
+
+  const table = useTable<User>({
+    data,
     columns: [
       {
         id: "actions",
@@ -182,6 +161,35 @@ export function PageUsers(props: { users: User[] }) {
         },
       },
     ],
+    // NOTE: columnVisibility, search, sorting, and filters use table.getColumn() and MUST
+    // reference nested columns with underscore syntax (e.g. "data.name" is "data_name")
+    initialState: {
+      search: {
+        column: "name",
+        placeholder: "Buscar por nombre...",
+      },
+      sorting: [
+        { id: "updatedAt", desc: true },
+        { id: "name", desc: false },
+        { id: "accountNumber", desc: true },
+      ],
+      filters: [
+        {
+          column: "accountId",
+          title: "Cuenta",
+          options: [...new Set(props.users.map((item) => item.account).flat())]
+            .sort()
+            .map(
+              (
+                value,
+              ) => (value
+                ? { label: value.name, value: value.id }
+                : { label: "*no data", value: "" }),
+            ),
+        },
+      ],
+    },
+    meta: {}
   });
 
   const onClickCreate = async () => {
