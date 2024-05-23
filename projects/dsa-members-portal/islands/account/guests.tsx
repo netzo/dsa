@@ -1,4 +1,4 @@
-import { type Guest, toQRCode, useTableUtils } from "@/mod.ts";
+import { toQRCode, useTableUtils, type Guest } from "@/mod.ts";
 import { USER_STATUS_OPTIONS } from "@/utils/constants.ts";
 import { useSignal } from "@preact/signals";
 import {
@@ -115,11 +115,11 @@ export function CardGuests(props: {
         title: "Nombre",
         header: (props) => <TableColumnHeader {...props} />,
         cell: ({ row }) => {
-          const { id, name = "", avatar } = row.original;
+          const { id, name = "", image } = row.original;
           return (
             <div className="flex items-center p-1">
               <Avatar className="h-7 w-7 mr-3">
-                <AvatarImage src={avatar} />
+                <AvatarImage src={image} />
                 <AvatarFallback>{name[0]?.toUpperCase()}</AvatarFallback>
               </Avatar>
               <div className="flex items-center py-1">

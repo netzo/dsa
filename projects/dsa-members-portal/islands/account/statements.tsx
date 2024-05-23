@@ -1,5 +1,8 @@
-import { type Statement, toDateTime, toMXN, useTableUtils } from "@/mod.ts";
-import { STATEMENT_TYPE_OPTIONS } from "@/utils/constants.ts";
+import { toDate, toMXN, useTableUtils, type Statement } from "@/mod.ts";
+import {
+  STATEMENT_STATUS_OPTIONS,
+  STATEMENT_TYPE_OPTIONS,
+} from "@/utils/constants.ts";
 import { useSignal } from "@preact/signals";
 import {
   TableActionsReload,
@@ -11,7 +14,7 @@ import {
   TableViewOptions,
   useTable,
 } from "netzo/components/blocks/table/table.tsx";
-import { Button } from "netzo/components/button.tsx";
+import { Button, buttonVariants } from "netzo/components/button.tsx";
 import { IconCopy } from "netzo/components/icon-copy.tsx";
 import { cn } from "netzo/components/utils.ts";
 import { useState } from "preact/hooks";
@@ -44,53 +47,66 @@ export function CardStatements(props: { statements: Statement[] }) {
         title: "Tipo",
         header: (props) => <TableColumnHeader {...props} />,
         cell: ({ row }) => {
-          const { id } = row.original;
-          return (
-            <div className="flex items-center py-1 ml-3">
-              <a
-                href={`/statements/${id}`}
-                className="whitespace-nowrap text-center font-medium text-primary hover:underline"
-              >
-                {id}
-              </a>
-              <IconCopy value={id} tooltip="Copy ID" />
-            </div>
-          );
-        },
-      },
-      {
-        accessorKey: "tipo",
-        title: "Tipo",
-        header: (props) => <TableColumnHeader {...props} />,
-        cell: ({ row }) => {
-          const { type } = row.original;
+          const { id, type } = row.original;
           if (!type) return null;
           const props = STATEMENT_TYPE_OPTIONS.find(({ id }) => id === type);
           if (!props) return type;
           return (
-            <div className={"flex gap-2 items-center justify-center p-1"}>
-              <i
-                {...props.icon}
-                className={cn(props.icon.className, "mb-2px")}
-              />
-              <span className="w-max">{props.label}</span>
+            <div className="flex items-center py-1 ml-2">
+              <div className={"flex gap-2 items-center justify-center p-1"}>
+                <i
+                  {...props.icon}
+                  className={cn(props.icon.className, "mb-2px")}
+                />
+                <a
+                  href={`/netpay-statement-payment.png`}
+                  target="_blank"
+                  className="whitespace-nowrap text-center font-medium text-primary hover:underline"
+                >
+                  {props.label}
+                </a>
+              </div>
+              <IconCopy value={id} tooltip="Copy ID" />
             </div>
           );
         },
         filterFn: (row, id, value) => value.includes(row.getValue(id)),
       },
       {
-        accessorKey: "createdAt",
+        accessorKey: "date",
         title: "Fecha y hora",
         header: (props) => <TableColumnHeader {...props} />,
         cell: ({ row }) => {
-          const { createdAt = "" } = row.original;
+          const { date = "" } = row.original;
           return (
             <div className="flex items-center p-1">
-              <span className="w-max">{toDateTime(createdAt)}</span>
+              <span className="w-max">{toDate(date)}</span>
             </div>
           );
         },
+      },
+      {
+        accessorKey: "status",
+        title: "Estado",
+        header: (props) => <TableColumnHeader {...props} />,
+        cell: ({ row }) => {
+          const { id, status } = row.original;
+          if (!status) return null;
+          const props = STATEMENT_STATUS_OPTIONS.find(({ id }) =>
+            id === status
+          );
+          if (!props) return status;
+          return (
+            <div className={"flex gap-2 items-center justify-center p-1"}>
+              <i
+                {...props.icon}
+                className={cn(props.icon.className, "mb-2px")}
+              />
+              {props.label}
+            </div>
+          );
+        },
+        filterFn: (row, id, value) => value.includes(row.getValue(id)),
       },
       {
         accessorKey: "amount",
@@ -101,6 +117,46 @@ export function CardStatements(props: { statements: Statement[] }) {
           return (
             <div className="ml-auto text-sm font-semibold tracking-wider">
               {toMXN(amount)}
+            </div>
+          );
+        },
+      },
+      {
+        accessorKey: "actionPay",
+        title: "Pago",
+        header: (props) => <TableColumnHeader {...props} />,
+        cell: ({ row }) => {
+          const { status } = row.original;
+          if (["completed"].includes(status)) {
+            return (
+              <div className="flex w-full">
+                <a
+                  href={`/netpay-statement-pdf.png`}
+                  target="_blank"
+                  className={cn(
+                    buttonVariants({ variant: "outline", size: "sm" }),
+                    "mx-auto",
+                  )}
+                >
+                  <i className="mdi mdi-download-outline mr-1" />
+                  Descargar
+                </a>
+              </div>
+            );
+          }
+          return (
+            <div className="flex w-full">
+              <a
+                href={`/netpay-statement-payment.png`}
+                target="_blank"
+                className={cn(
+                  buttonVariants({ size: "sm" }),
+                  "netpay-button mx-auto",
+                )}
+              >
+                <i className="mdi mdi-credit-card-outline mr-1" />
+                Pagar
+              </a>
             </div>
           );
         },

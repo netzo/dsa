@@ -27,28 +27,28 @@ type CardGeneralProps = {
 
 export function AccountMetrics(props: PageAccountProps) {
   const totalStatements = props.statements.length;
-
-  const total = props.statements.reduce(
+  const totalDue = props.statements.reduce(
     (acc, statement) => statement.amount + acc,
     0,
   );
 
-  const totalContributions =
-    props.statements.filter((statement) => statement.type === "contribution")
-      .length;
-
-  const totalOrders =
-    props.statements.filter((statement) => statement.type === "order").length;
-
-  const totalDue = props.statements
-    .filter((statement) => statement.type === "order")
-    .reduce((acc, statement) => statement.amount + acc, 0);
-
+  const contributions = props.statements.filter((statement) =>
+    statement.type === "contribution"
+  );
+  const totalContributions = contributions.length;
   const totalContributionsDue = totalContributions
-    ? total / totalContributions
+    ? (contributions.reduce((acc, statement) => statement.amount + acc, 0) /
+      totalContributions)
     : 0;
 
-  const totalOrdersDue = totalOrders ? totalDue / totalOrders : 0;
+  const order = props.statements.filter((statement) =>
+    statement.type === "order"
+  );
+  const totalOrders = order.length;
+  const totalOrdersDue = totalOrders
+    ? (order.reduce((acc, statement) => statement.amount + acc, 0) /
+      totalOrders)
+    : 0;
 
   return (
     <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
@@ -58,7 +58,7 @@ export function AccountMetrics(props: PageAccountProps) {
             title="El número total de estados de cuenta de la cuenta."
             className="text-sm font-medium"
           >
-            Total Estados de Cuenta
+            Total
           </CardTitle>
           <div className="w-4 h-4 mdi-file-document text-muted-foreground" />
         </CardHeader>
@@ -90,13 +90,13 @@ export function AccountMetrics(props: PageAccountProps) {
             title="El valor total de todas las órdenes por pagar."
             className="text-sm font-medium"
           >
-            Por Pagar {totalContributions} aportaciones
+            Por Pagar (aportaciones)
           </CardTitle>
           <div className="w-4 h-4 mdi-currency-usd text-muted-foreground" />
         </CardHeader>
         <CardContent>
           <div className="text-2xl font-bold">
-            {toMXN(totalOrdersDue)}
+            {toMXN(totalContributionsDue)}
           </div>
         </CardContent>
       </Card>
@@ -106,7 +106,7 @@ export function AccountMetrics(props: PageAccountProps) {
             title="El valor total de todas las órdenes por pagar."
             className="text-sm font-medium"
           >
-            Por Pagar ({totalOrders} ordenes)
+            Por Pagar (ordenes)
           </CardTitle>
           <div className="w-4 h-4 mdi-currency-usd text-muted-foreground" />
         </CardHeader>

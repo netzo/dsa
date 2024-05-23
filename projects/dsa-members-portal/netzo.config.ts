@@ -10,15 +10,15 @@ export const db = datastore();
 export default defineConfig({
   plugins: [
     netzo.environments(),
-    netzo.auth({
-      logo: "/favicon.svg",
-      title: "Deportivo San Agustin",
-      description: "Portal de socios del Deportivo San Agustin",
-      image: { src: "/cover.jpg" },
-      caption:
-        "Al iniciar sesión aceptas los <a>términos y condiciones</a> de uso.",
-      providers: { email: {}, netzo: {}, google: {} },
-    }),
+    // netzo.auth({
+    //   logo: "/favicon.svg",
+    //   title: "Deportivo San Agustin",
+    //   description: "Portal de socios del Deportivo San Agustin",
+    //   image: { src: "/cover.jpg" },
+    //   caption:
+    //     "Al iniciar sesión aceptas los <a>términos y condiciones</a> de uso.",
+    //   providers: { email: {}, netzo: {}, google: {} },
+    // }),
     // netzo.database({ apiKey: undefineDeno.env.get("NETZO_API_KEY") }),
     netzo.datastore({ apiKey: undefined }), // Deno.env.get("NETZO_API_KEY"),
     loader(),

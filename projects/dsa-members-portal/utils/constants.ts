@@ -165,7 +165,7 @@ export const VEHICLE_TYPE_OPTIONS: Option[] = [
   },
 ];
 
-export const STATEMENT_TYPE_OPTIONS = [
+export const STATEMENT_TYPE_OPTIONS: Option[] = [
   {
     id: "contribution",
     label: "Aportación",
@@ -175,5 +175,35 @@ export const STATEMENT_TYPE_OPTIONS = [
     id: "order",
     label: "Orden",
     icon: { className: "mdi-file-document-edit" },
+  },
+];
+
+export const STATEMENT_STATUS_OPTIONS: Option[] = [
+  {
+    id: "completed",
+    value: "completed",
+    title: "Completado",
+    label: "Completado",
+    icon: { className: "mdi-check bg-green-500" },
+    className: `bg-green-500 `,
+    hexaColor: "#34a34a",
+  },
+  {
+    id: "pending",
+    value: "pending",
+    title: "Pendiente",
+    label: "Pendiente",
+    icon: { className: "mdi-clock bg-yellow-500" },
+    className: `bg-yellow-500 `,
+    hexaColor: "#D97706",
+  },
+  {
+    id: "failed",
+    value: "failed",
+    title: "Fallido",
+    label: "Fallido",
+    icon: { className: "mdi-alert bg-red-500" },
+    className: `bg-red-500 `,
+    hexaColor: "#E53E3E",
   },
 ];

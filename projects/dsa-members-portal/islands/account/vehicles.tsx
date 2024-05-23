@@ -129,7 +129,7 @@ export function CardVehicles(props: { vehicles: Vehicle[] }) {
         },
       },
       {
-        accessorKey: "tipo",
+        accessorKey: "type",
         title: "Tipo",
         header: (props) => <TableColumnHeader {...props} />,
         cell: ({ row }) => {

@@ -20,7 +20,7 @@ export default defineRoute(async (req, ctx) => {
     ...account2,
     "email": "test@gmail.com",
     "phone": "528183818381",
-  }
+  };
 
   const allUsers = allUsers2.map((user) => ({
     ...user,
@@ -78,8 +78,16 @@ export default defineRoute(async (req, ctx) => {
 
   const statements = allStatements
     .filter((s) => s.accountId === account?.id)
+    .map((s, index) => ({
+      ...s,
+      type: "contribution", // orders don't really exist
+      status: [0,1,2].includes(index) ? "pending" : "completed",
+      // create a date for the 1st of each month starting from the first of may 2024
+      // and decrementing one month at a time by using the index of the mapping function
+      date: new Date(new Date(2024, 4, 1).setMonth(4 - index)),
+    }))
     .sort((a, b) => {
-      return new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime();
+      return new Date(b.date).getTime() - new Date(a.date).getTime();
     });
 
   // render entire page as island for simplicity

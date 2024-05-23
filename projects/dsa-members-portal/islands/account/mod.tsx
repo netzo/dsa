@@ -66,8 +66,8 @@ export function PageAccount(props: PageAccountProps) {
     <div className="flex flex-col h-screen">
       <AccountHeader form={form} />
       <Separator />
-      <div className="hidden md:block h-full ">
-        <div className="grid grid-cols-[250px_auto] h-[calc(100%-44px-32px)] gap-4">
+      <div className="md:block h-full ">
+        <div className="grid grid-rows-auto lg:grid-cols-[250px_auto] h-[calc(100%-44px-32px)] gap-4">
           <aside className="h-full overflow-y-auto p-4">
             <nav className={cn("flex flex-col space-y-2")}>
               {navItems.map((navItem) => (
@@ -134,6 +134,32 @@ export function PageAccount(props: PageAccountProps) {
                     >
                       <div className="flex flex-col gap-4 p-4">
                         <AccountMetrics {...props} />
+                        <div className="flex items-left justify-end md:items-center space-x-2">
+                          <div className="flex flex-row items-center gap-4">
+                            <TableRowActions
+                              row={{ original: props.account }}
+                              endpoint="/api/accounts"
+                              actions={["duplicate", "copyId", "remove"]}
+                            />
+                            <Button
+                              type="reset"
+                              variant="secondary"
+                              disabled={!form.formState.isDirty}
+                            >
+                              Descartar
+                            </Button>
+                            <Button
+                              type="submit"
+                              disabled={!form.formState.isDirty}
+                            >
+                              {form.formState.isLoading
+                                ? (
+                                  <i className="mdi-loading h-4 w-4 animate-spin" />
+                                )
+                                : "Guardar"}
+                            </Button>
+                          </div>
+                        </div>
                         <AccountCardFormUpdate form={form} />
                       </div>
                     </form>
@@ -173,18 +199,15 @@ function AccountHeader(props: { form: UseFormReturn<Account> }) {
             </BreadcrumbList>
           </Breadcrumb>
         </div>
-        <p className="hidden md:block text-xs text-muted-foreground">
+        <p className="hidden lg:block text-xs text-muted-foreground">
           Gestion de asociados, invitados, accesos, vehículos y estados de
           cuenta.
-        </p>
-        <p className="block md:hidden text-xs text-muted-foreground">
-          Accede desde una computadora para configurar variables y opciones del
-          sistema de inventario.
         </p>
       </div>
       <div className="flex items-left md:items-center space-x-2">
         <div className="flex flex-row items-center gap-4">
-          <TableRowActions
+          {
+            /* <TableRowActions
             row={{ original }}
             endpoint="/api/accounts"
             actions={["duplicate", "copyId", "remove"]}
@@ -203,7 +226,20 @@ function AccountHeader(props: { form: UseFormReturn<Account> }) {
             {props.form.formState.isLoading
               ? <i className="mdi-loading h-4 w-4 animate-spin" />
               : "Guardar"}
-          </Button>
+          </Button> */
+          }
+          <a
+            href={`/netpay-statement-payment.png`}
+            target="_blank"
+            title="Pagar estados de cuenta pendientes con NetPay"
+            className={cn(
+              buttonVariants(),
+              "netpay-button",
+            )}
+          >
+            <i className="mdi mdi-credit-card-outline mr-1" />
+            Configurar NetPay
+          </a>
         </div>
       </div>
     </header>
