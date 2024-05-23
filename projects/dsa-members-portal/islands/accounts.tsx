@@ -124,7 +124,7 @@ export function PageAccounts(props: { accounts: Account[] }) {
       ],
       filters: [],
     },
-    meta: {}
+    meta: {},
   });
 
   const onClickCreate = async () => {

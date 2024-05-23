@@ -24,9 +24,28 @@ import {
   DialogContent,
   DialogTrigger,
 } from "netzo/components/dialog.tsx";
+import {
+  NavigationMenu,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  navigationMenuTriggerStyle,
+} from "netzo/components/navigation-menu.tsx";
+import { Separator } from "netzo/components/separator.tsx";
 import { cn } from "netzo/components/utils.ts";
 import { useState } from "preact/hooks";
 import { FormCreateBooking } from "./bookings.tsx";
+
+const links: { title: string; href: string; icon: string }[] = [
+  { title: "Servicios", href: "/amenities/services", icon: "mdi-room-service" },
+  { title: "Deportes", href: "/amenities/sports", icon: "mdi-weight-lifter" },
+  { title: "Eventos", href: "/amenities/events", icon: "mdi-calendar" },
+  {
+    title: "Gastronomia",
+    href: "/amenities/food-and-drinks",
+    icon: "mdi-food",
+  },
+];
 
 export function PageAmenities(props: { amenities: Amenity[] }) {
   // table requires useState for data (useSignal/signal not supported)
@@ -74,29 +93,49 @@ export function PageAmenities(props: { amenities: Amenity[] }) {
         },
       ],
     },
-    meta: {}
+    meta: {},
   });
 
   return (
     <div className="grid grid-rows-[min-content_auto_min-content] h-screen">
-      <header className="flex items-center justify-between p-4">
-        <div className="flex items-center flex-1 space-x-2">
-          <TableActionsReload table={table} />
-          <TableSearch table={table} />
-          <TableFilters table={table} />
+      <header className="grid gap-2 p-4">
+        <div className="flex items-center justify-between">
+          <NavigationMenu>
+            <NavigationMenuList>
+              {links.map((link, i) => (
+                <NavigationMenuItem key={`link-${i}`}>
+                  <a href={link.href} className="aria-[current]:text-primary">
+                    <NavigationMenuLink
+                      className={navigationMenuTriggerStyle()}
+                    >
+                      {link.title}
+                    </NavigationMenuLink>
+                  </a>
+                </NavigationMenuItem>
+              ))}
+            </NavigationMenuList>
+          </NavigationMenu>
         </div>
-        <div className="flex items-center space-x-2">
-          <TableViewOptions table={table} />
-          <Dialog>
-            <DialogTrigger asChild>
-              <Button variant="default" className="ml-2">
-                Crear Reserva
-              </Button>
-            </DialogTrigger>
-            <DialogContent>
-              <FormCreateBooking defaultValues={getBooking()} />
-            </DialogContent>
-          </Dialog>
+        <Separator className="mb-4" />
+        <div className="flex items-center justify-between">
+          <div className="flex items-center flex-1 space-x-2">
+            <TableActionsReload table={table} />
+            <TableSearch table={table} />
+            <TableFilters table={table} />
+          </div>
+          <div className="flex items-center space-x-2">
+            <TableViewOptions table={table} />
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button variant="default" className="ml-2">
+                  Crear Reserva
+                </Button>
+              </DialogTrigger>
+              <DialogContent>
+                <FormCreateBooking defaultValues={getBooking()} />
+              </DialogContent>
+            </Dialog>
+          </div>
         </div>
       </header>
       <div className="flex-1 overflow-y-auto @container">
@@ -137,8 +176,9 @@ export function PageAmenities(props: { amenities: Amenity[] }) {
                         {row.original?.data?.type && (
                           <CardContent className="flex items-center justify-between gap-1 text-sm font-medium">
                             <Badge
-                              className={`bg-[${toHslColor(row.original.data.type)
-                                }]`}
+                              className={`bg-[${
+                                toHslColor(row.original.data.type)
+                              }]`}
                             >
                               {AMENITY_TYPES?.[row.original.data.type]}
                             </Badge>

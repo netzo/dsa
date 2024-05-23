@@ -117,7 +117,7 @@ function UserHeader(props: { form: UseFormReturn<User> }) {
           variant="secondary"
           disabled={!props.form.formState.isDirty}
         >
-          Discard
+          Descartar
         </Button>
         <Button
           type="submit"
@@ -125,7 +125,7 @@ function UserHeader(props: { form: UseFormReturn<User> }) {
         >
           {props.form.formState.isLoading
             ? <i className="mdi-loading h-4 w-4 animate-spin" />
-            : "Save"}
+            : "Guardar"}
         </Button>
       </div>
     </header>

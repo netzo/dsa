@@ -40,14 +40,3 @@ export const getVehicle = (data?: Partial<Vehicle>) => ({
   accountId: "",
   ...data,
 });
-
-// i18n:
-
-export const VEHICLE_TYPES = {
-  "car": "Carro",
-  "suv": "Camioneta",
-  "pickup": "Pickup",
-  "truck": "Camión",
-  "motorcycle": "Motocicleta",
-  "other": "Otro",
-};

@@ -20,7 +20,13 @@ import * as $sessions_id_ from "./routes/sessions/[id].tsx";
 import * as $sessions_index from "./routes/sessions/index.tsx";
 import * as $users_id_ from "./routes/users/[id].tsx";
 import * as $users_index from "./routes/users/index.tsx";
-import * as $account from "./islands/account.tsx";
+import * as $account_entries from "./islands/account/entries.tsx";
+import * as $account_general from "./islands/account/general.tsx";
+import * as $account_guests from "./islands/account/guests.tsx";
+import * as $account_mod from "./islands/account/mod.tsx";
+import * as $account_statements from "./islands/account/statements.tsx";
+import * as $account_users from "./islands/account/users.tsx";
+import * as $account_vehicles from "./islands/account/vehicles.tsx";
 import * as $accounts from "./islands/accounts.tsx";
 import * as $amenities from "./islands/amenities.tsx";
 import * as $bookings from "./islands/bookings.tsx";
@@ -62,7 +68,13 @@ const manifest = {
     "./routes/users/index.tsx": $users_index,
   },
   islands: {
-    "./islands/account.tsx": $account,
+    "./islands/account/entries.tsx": $account_entries,
+    "./islands/account/general.tsx": $account_general,
+    "./islands/account/guests.tsx": $account_guests,
+    "./islands/account/mod.tsx": $account_mod,
+    "./islands/account/statements.tsx": $account_statements,
+    "./islands/account/users.tsx": $account_users,
+    "./islands/account/vehicles.tsx": $account_vehicles,
     "./islands/accounts.tsx": $accounts,
     "./islands/amenities.tsx": $amenities,
     "./islands/bookings.tsx": $bookings,

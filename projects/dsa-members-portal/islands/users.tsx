@@ -189,7 +189,7 @@ export function PageUsers(props: { users: User[] }) {
         },
       ],
     },
-    meta: {}
+    meta: {},
   });
 
   const onClickCreate = async () => {

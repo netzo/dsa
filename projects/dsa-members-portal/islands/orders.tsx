@@ -103,7 +103,7 @@ export function PageOrders(props: { orders: Order[] }) {
       ],
       filters: [],
     },
-    meta: {}
+    meta: {},
   });
 
   const onClickCreate = async () => {

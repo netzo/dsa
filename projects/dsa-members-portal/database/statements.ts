@@ -42,10 +42,3 @@ export const statements = [
     },
   },
 ];
-
-// i18n:
-
-export const STATEMENT_TYPES = {
-  "contribution": "Aportación",
-  "order": "Orden",
-};

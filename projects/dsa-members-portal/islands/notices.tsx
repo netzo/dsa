@@ -1,4 +1,4 @@
-import { NOTICE_TYPES, getNotice, toDateTime, type Notice } from "@/mod.ts";
+import { getNotice, type Notice, NOTICE_TYPES, toDateTime } from "@/mod.ts";
 import { useSignal } from "@preact/signals";
 import { Badge } from "netzo/components/badge.tsx";
 import {
@@ -7,7 +7,7 @@ import {
   TablePagination,
   TableSearch,
   TableView,
-  useTable
+  useTable,
 } from "netzo/components/blocks/table/table.tsx";
 import { Button } from "netzo/components/button.tsx";
 import {
@@ -65,13 +65,13 @@ export function PageNotices(props: {
             .map((
               value,
             ) => (value
-              ? { label: ({/* TODO */ })?.[value] ?? value, value }
+              ? { label: ({/* TODO */})?.[value] ?? value, value }
               : { label: "*no data", value: "" })
             ),
         },
       ],
     },
-    meta: {}
+    meta: {},
   });
 
   const onClickSelect = (value: Notice) => notice.value = value;
@@ -128,7 +128,7 @@ export function PageNotices(props: {
                         className={cn(
                           "flex space-y-2 rounded-lg border hover:bg-accent hover:cursor-pointer",
                           notice.value.id === row.original.id &&
-                          "bg-muted",
+                            "bg-muted",
                         )}
                       >
                         <div

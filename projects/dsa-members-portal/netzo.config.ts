@@ -15,7 +15,8 @@ export default defineConfig({
       title: "Deportivo San Agustin",
       description: "Portal de socios del Deportivo San Agustin",
       image: { src: "/cover.jpg" },
-      caption: "Al iniciar sesión aceptas los <a>términos y condiciones</a> de uso.",
+      caption:
+        "Al iniciar sesión aceptas los <a>términos y condiciones</a> de uso.",
       providers: { email: {}, netzo: {}, google: {} },
     }),
     // netzo.database({ apiKey: undefineDeno.env.get("NETZO_API_KEY") }),

@@ -153,7 +153,7 @@ export function CardBookings(
       <Card>
         <CardHeader className="flex flex-row items-center justify-between pt-2">
           <CardTitle>
-            Amenity Bookings
+            Mis Reservas
           </CardTitle>
           <DialogTrigger asChild>
             <Button variant="default" size="sm" className="ml-2">

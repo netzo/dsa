@@ -61,7 +61,7 @@ export function PagePublications(props: { publications: Publication[] }) {
             .map((
               value,
             ) => (value
-              ? { label: ({/* TODO */ })?.[value] ?? value, value }
+              ? { label: ({/* TODO */})?.[value] ?? value, value }
               : { label: "*no data", value: "" })
             ),
         },

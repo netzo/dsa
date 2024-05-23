@@ -54,7 +54,9 @@ export function PageFacilities(props: { facilities: Facility[] }) {
         {
           column: "type",
           title: "Tipo",
-          options: [...new Set(props.facilities.map((item) => item.type).flat())]
+          options: [
+            ...new Set(props.facilities.map((item) => item.type).flat()),
+          ]
             .sort()
             .map((
               value,
@@ -65,7 +67,7 @@ export function PageFacilities(props: { facilities: Facility[] }) {
         },
       ],
     },
-    meta: {}
+    meta: {},
   });
 
   const onClickCreate = async () => {
