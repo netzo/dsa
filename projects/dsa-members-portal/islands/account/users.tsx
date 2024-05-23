@@ -30,10 +30,7 @@ import {
   DialogContent,
   DialogTrigger,
 } from "netzo/components/dialog.tsx";
-import {
-  DropdownMenuItem,
-  DropdownMenuSeparator,
-} from "netzo/components/dropdown-menu.tsx";
+import { DropdownMenuItem } from "netzo/components/dropdown-menu.tsx";
 import { cn } from "netzo/components/utils.ts";
 import { useState } from "preact/hooks";
 
@@ -70,21 +67,9 @@ export function CardUsers(props: { user: User[] }) {
             <div className="flex w-max flex-row items-center justify-left gap-2">
               <TableRowActions>
                 <DropdownMenuItem
-                  onSelect={() => duplicate(props.row.original)}
-                >
-                  Duplicar
-                </DropdownMenuItem>
-                <DropdownMenuItem
                   onSelect={() => copyId(props.row.original)}
                 >
                   Copiar ID
-                </DropdownMenuItem>
-                <DropdownMenuSeparator />
-                <DropdownMenuItem
-                  className="text-red-500"
-                  onSelect={() => remove(props.row.original)}
-                >
-                  Eliminar
                 </DropdownMenuItem>
               </TableRowActions>
             </div>
@@ -289,17 +274,6 @@ export function CardUsers(props: { user: User[] }) {
         </div>
         <div className="flex items-center space-x-2">
           <TableViewOptions table={table} />
-          {
-            /* <DialogFormuser
-            method="POST"
-            defaultValues={{}}
-            redirectUrl="/settings?nav=users"
-          >
-            <Button variant="default" size="sm" className="ml-2">
-              <i className="mdi-plus" />
-            </Button>
-          </DialogFormuser> */
-          }
           <Button
             variant="outline"
             size="sm"
@@ -326,96 +300,3 @@ export function CardUsers(props: { user: User[] }) {
     </div>
   );
 }
-
-// export function DialogFormuser(
-//   props: {
-//     method: "POST" | "PATCH";
-//     defaultValues: User;
-//     redirectUrl?: string;
-//     children: ComponentChildren;
-//     cta?: string;
-//   },
-// ) {
-//   const [open, setOpen] = useState(false);
-//   const redirect = props.redirectUrl || "/users";
-
-//   const form = useForm<user>({ defaultValues: props.defaultValues });
-
-//   const url = props.method === "PATCH"
-//     ? `/database/users/${props.defaultValues.id}`
-//     : "/database/users";
-//   const id = props.method === "PATCH" ? "users.patch" : "users.create";
-
-//   const onSubmit = async ({
-//     branches,
-//     ...data
-//   }: user) => {
-//     if (props.method === "PATCH") delete data.id;
-//     await fetch(url, {
-//       method: props.method,
-//       headers: { "content-type": "application/json" },
-//       body: JSON.stringify(data),
-//     });
-//     setOpen(false);
-//     globalThis.location.href = `${redirect}`;
-//   };
-
-//   // NOTE: must manually invoke submit because submit button isteleported
-//   // by dialog out of form (see https://github.com/shadcn-ui/ui/issues/709)
-//   return (
-//     <Dialog open={open} onOpenChange={() => !open && setOpen(true)}>
-//       <DialogTrigger asChild>
-//         {props.children}
-//       </DialogTrigger>
-//       <DialogContentControlled
-//          className="sm:max-w-[625px] overflow-auto max-h-screen"
-//          onClickClose={() => setOpen(false)}
-//       >
-//         <DialogHeader className="text-left">
-//           <DialogTitle>
-//             {props.method === "POST" && (
-//               <DialogTitle>
-//                 Registrar nuevo cliente
-//               </DialogTitle>
-//             )}
-//             {props.method === "PATCH" && (
-//               <DialogTitle>
-//                 Editar cliente
-//               </DialogTitle>
-//             )}
-//           </DialogTitle>
-//         </DialogHeader>
-
-//         <Form {...form}>
-//           <form
-//             id={id}
-//             onSubmit={form.handleSubmit(onSubmit)}
-//             onReset={() => form.reset(props.defaultValues)}
-//           >
-//             <FormFieldInput
-//               name="name"
-//               label="Nombre"
-//               form={form}
-//             />
-//             <FormFieldInput
-//               name="image"
-//               label="Imagen"
-//               type="url"
-//               form={form}
-//             />
-//           </form>
-//         </Form>
-
-//         <DialogFooter>
-//           <Button form={id} type="submit">
-//             {form.formState.isLoading
-//               ? <i className="mdi-loading h-4 w-4 animate-spin" />
-//               : (
-//                 props?.cta || "Crear"
-//               )}
-//           </Button>
-//         </DialogFooter>
-//       </DialogContentControlled>
-//     </Dialog>
-//   );
-// }

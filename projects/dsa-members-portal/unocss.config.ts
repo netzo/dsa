@@ -24,5 +24,6 @@ export default defineUnocssConfig({
     ...Object.values(shortcuts), // required in case shortcuts used in dynamically mounted components
     "pb-2", // requiried by table in accounts/[id]
     "mdi-plus", // required by FormFieldRelation
+    ...("grid grid-cols-2 lg:grid-cols-4 gap-4".split(" ")), // required by accounts/[id]/general cards
   ],
 });

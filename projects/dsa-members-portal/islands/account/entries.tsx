@@ -78,32 +78,10 @@ export function CardEntries(props: { entries: Entry[] }) {
           return (
             <div className="flex w-max flex-row items-center justify-left gap-2">
               <TableRowActions>
-                <DialogFormEntry
-                  method="PATCH"
-                  defaultValues={props.row.original}
-                  redirectUrl="/settings?nav=entries"
-                  cta="Guardar cambios"
-                >
-                  <DropdownMenuItem onSelect={(e) => e.preventDefault()}>
-                    Editar
-                  </DropdownMenuItem>
-                </DialogFormEntry>
-                <DropdownMenuItem
-                  onSelect={() => duplicate(props.row.original)}
-                >
-                  Duplicar
-                </DropdownMenuItem>
                 <DropdownMenuItem
                   onSelect={() => copyId(props.row.original)}
                 >
                   Copiar ID
-                </DropdownMenuItem>
-                <DropdownMenuSeparator />
-                <DropdownMenuItem
-                  className="text-red-500"
-                  onSelect={() => remove(props.row.original)}
-                >
-                  Eliminar
                 </DropdownMenuItem>
               </TableRowActions>
             </div>
@@ -257,15 +235,6 @@ export function CardEntries(props: { entries: Entry[] }) {
         </div>
         <div className="flex items-center space-x-2">
           <TableViewOptions table={table} />
-          <DialogFormEntry
-            method="POST"
-            defaultValues={{}}
-            redirectUrl="/settings?nav=entries"
-          >
-            <Button variant="default" size="sm" className="ml-2">
-              <i className="mdi-plus" />
-            </Button>
-          </DialogFormEntry>
           <Button
             variant="outline"
             size="sm"
@@ -290,111 +259,5 @@ export function CardEntries(props: { entries: Entry[] }) {
         <TablePagination table={table} />
       </footer>
     </div>
-  );
-}
-
-export function DialogFormEntry(
-  props: {
-    method: "POST" | "PATCH";
-    defaultValues: Entry;
-    redirectUrl?: string;
-    children: ComponentChildren;
-    cta?: string;
-  },
-) {
-  const [open, setOpen] = useState(false);
-  const redirect = props.redirectUrl || "/entries";
-
-  const form = useForm<Entry>({ defaultValues: props.defaultValues });
-
-  const url = props.method === "PATCH"
-    ? `/database/entries/${props.defaultValues.id}`
-    : "/database/entries";
-  const id = props.method === "PATCH" ? "entries.patch" : "entries.create";
-
-  const onSubmit = async ({
-    ...data
-  }: Entry) => {
-    if (props.method === "PATCH") delete data.id;
-    await fetch(url, {
-      method: props.method,
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify(data),
-    });
-    setOpen(false);
-    globalThis.location.href = `${redirect}`;
-  };
-
-  // NOTE: must manually invoke submit because submit button isteleported
-  // by dialog out of form (see https://github.com/shadcn-ui/ui/issues/709)
-  // WORKAROUND: use controlled <DialogContentControlled /> variant to prevent
-  // dialog from closing when interacting with form elements like Select, Combobox...
-  return (
-    <Dialog open={open} onOpenChange={() => !open && setOpen(true)}>
-      <DialogTrigger asChild>
-        {props.children}
-      </DialogTrigger>
-      <DialogContentControlled
-        className="sm:max-w-[625px] overflow-auto max-h-screen"
-        onClickClose={() => setOpen(false)}
-      >
-        <DialogHeader className="text-left">
-          <DialogTitle>
-            {props.method === "POST" && (
-              <DialogTitle>
-                Registrar nuevo cliente
-              </DialogTitle>
-            )}
-            {props.method === "PATCH" && (
-              <DialogTitle>
-                Editar cliente
-              </DialogTitle>
-            )}
-          </DialogTitle>
-        </DialogHeader>
-
-        <Form {...form}>
-          <form
-            id={id}
-            onSubmit={form.handleSubmit(onSubmit)}
-            onReset={() => form.reset(props.defaultValues)}
-          >
-            <FormFieldTextarea
-              name="type"
-              label="Tipo"
-              form={form}
-            />
-            <FormFieldInput
-              name="name"
-              label="Nombre"
-              form={form}
-            />
-            <FormFieldInput
-              name="image"
-              label="Imagen"
-              type="url"
-              form={form}
-            />
-            {
-              /* <FormFieldInput
-              name="uid"
-              label="UID"
-              form={form}
-            /> */
-            }
-          </form>
-        </Form>
-
-        <DialogFooter>
-          <Button form={id} type="submit">
-            {form.formState.isLoading
-              ? <i className="mdi-loading h-4 w-4 animate-spin" />
-              : (
-                props?.cta || "Crear"
-              )}
-          </Button>
-        </DialogFooter>
-      </DialogContentControlled>
-    </Dialog>
   );
 }

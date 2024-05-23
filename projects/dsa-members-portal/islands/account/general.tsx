@@ -127,12 +127,12 @@ export function AccountCardFormUpdate(
     <CardContent>
       <FormField
         control={form.control}
-        name="name"
+        name="accountNumber"
         render={({ field }) => (
           <FormItem>
-            <FormLabel>Nombre</FormLabel>
+            <FormLabel>Número de Cuenta</FormLabel>
             <FormControl>
-              <Input {...field} />
+              <Input {...field} disabled={true} />
             </FormControl>
             <FormMessage />
           </FormItem>

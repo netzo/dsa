@@ -9,12 +9,18 @@ export default defineRoute(async (req, ctx) => {
   const { id } = ctx.params;
   const nav = signal(ctx.url.searchParams.get("nav") || "categories");
 
-  const [account, allUsers2, allVehicles, allStatements] = await Promise.all([
+  const [account2, allUsers2, allVehicles, allStatements] = await Promise.all([
     db.get<Account>("accounts", id),
     db.find<User>("users"),
     db.find<Vehicle>("vehicles"),
     db.find<Statement>("statements"),
   ]);
+
+  const account = {
+    ...account2,
+    "email": "test@gmail.com",
+    "phone": "528183818381",
+  }
 
   const allUsers = allUsers2.map((user) => ({
     ...user,

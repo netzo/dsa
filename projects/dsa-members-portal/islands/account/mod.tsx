@@ -20,7 +20,7 @@ import { Separator } from "netzo/components/separator.tsx";
 import { cn } from "netzo/components/utils.ts";
 import { CardEntries } from "./entries.tsx";
 import { CardGuests } from "./guests.tsx";
-import { CardStatementsList } from "./statements.tsx";
+import { CardStatements } from "./statements.tsx";
 import { CardUsers } from "./users.tsx";
 import { CardVehicles } from "./vehicles.tsx";
 
@@ -120,8 +120,7 @@ export function PageAccount(props: PageAccountProps) {
             {props.nav.value === "statements" &&
               (
                 <div className="w-full h-full">
-                  {/* <CardStatements vehicles={props.statements} /> */}
-                  <CardStatementsList {...props} />
+                  <CardStatements statements={props.statements} />
                 </div>
               )}
             {props.nav.value === "general" &&

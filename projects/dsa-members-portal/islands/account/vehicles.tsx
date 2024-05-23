@@ -399,6 +399,33 @@ export function DialogFormVehicle(
             onReset={() => form.reset(props.defaultValues)}
           >
             <FormFieldInput
+              name="accountId"
+              form={form}
+              type="hidden"
+            />
+            <FormFieldInput
+              name="data.brand"
+              label="Marca"
+              form={form}
+            />
+            <FormFieldInput
+              name="data.model"
+              label="Modelo"
+              form={form}
+            />
+            <FormFieldInput
+              name="data.year"
+              label="Año"
+              form={form}
+              type="number"
+            />
+            <FormFieldInput
+              name="data.color"
+              label="Color"
+              form={form}
+              type="color"
+            />
+            <FormFieldInput
               name="plateNumber"
               label="Placas"
               form={form}

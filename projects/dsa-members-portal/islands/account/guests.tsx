@@ -385,8 +385,18 @@ export function DialogFormGuest(
             onReset={() => form.reset(props.defaultValues)}
           >
             <FormFieldInput
+              name="type"
+              label="Tipo"
+              form={form}
+            />
+            <FormFieldInput
               name="name"
               label="Nombre"
+              form={form}
+            />
+            <FormFieldInput
+              name="status"
+              label="Estado"
               form={form}
             />
           </form>
