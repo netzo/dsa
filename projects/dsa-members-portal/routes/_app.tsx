@@ -1,4 +1,4 @@
-import { defineApp } from "$fresh/server.ts";
+import { defineApp } from "fresh/server.ts";
 import { Nav /* , NetzoToolbar */ } from "@/islands/mod.tsx";
 import { Head } from "netzo/components/head.tsx";
 import { cn } from "netzo/components/utils.ts";

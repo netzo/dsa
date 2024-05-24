@@ -1,4 +1,4 @@
-import { IS_BROWSER } from "$fresh/runtime.ts";
+import { IS_BROWSER } from "fresh/runtime.ts";
 import { type Signal } from "@preact/signals";
 import { qrcode } from "jsr:@libs/qrcode";
 import { download, generateCsv, mkConfig } from "npm:export-to-csv@1.2.4";

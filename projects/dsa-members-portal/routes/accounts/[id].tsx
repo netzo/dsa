@@ -1,4 +1,4 @@
-import { defineRoute } from "$fresh/server.ts";
+import { defineRoute } from "fresh/server.ts";
 import type { Account, Statement, Vehicle } from "@/mod.ts";
 import { generateHexColor } from "@/mod.ts";
 import { db } from "@/netzo.config.ts";

@@ -1,4 +1,4 @@
-import { defineRoute } from "$fresh/server.ts";
+import { defineRoute } from "fresh/server.ts";
 import { PageUser } from "@/islands/user.tsx";
 import type { Booking, User } from "@/mod.ts";
 import { Account } from "@/mod.ts";

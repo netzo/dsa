@@ -1,4 +1,4 @@
-import { defineRoute } from "$fresh/server.ts";
+import { defineRoute } from "fresh/server.ts";
 import { PageSession } from "@/islands/session.tsx";
 import type { Booking, Session } from "@/mod.ts";
 import { db } from "@/netzo.config.ts";

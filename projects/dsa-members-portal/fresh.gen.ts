@@ -44,7 +44,7 @@ import * as $sessions from "./islands/sessions.tsx";
 import * as $user from "./islands/user.tsx";
 import * as $users from "./islands/users.tsx";
 import * as $vehicles from "./islands/vehicles.tsx";
-import { type Manifest } from "$fresh/server.ts";
+import { type Manifest } from "fresh/server.ts";
 
 const manifest = {
   routes: {

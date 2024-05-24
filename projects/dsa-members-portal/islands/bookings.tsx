@@ -1,4 +1,4 @@
-import { Head } from "$fresh/runtime.ts";
+import { Head } from "fresh/runtime.ts";
 import { Booking, getBooking, getPublication } from "@/mod.ts";
 import {
   Calendar,

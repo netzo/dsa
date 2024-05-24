@@ -1,4 +1,4 @@
-import { defineRoute } from "$fresh/server.ts";
+import { defineRoute } from "fresh/server.ts";
 import { PageUsers } from "@/islands/users.tsx";
 import type { Account, User } from "@/mod.ts";
 import { db } from "@/netzo.config.ts";
