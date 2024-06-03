@@ -29,7 +29,7 @@
       ]
     }
   },
-  "fmt": {},
+  "fmt": { "lineWidth": 100 },
   "compilerOptions": {
     "jsx": "react-jsx",
     "jsxImportSource": "preact"
