@@ -81,7 +81,7 @@ export default defineRoute(async (req, ctx) => {
     .map((s, index) => ({
       ...s,
       type: "contribution", // orders don't really exist
-      status: [0,1,2].includes(index) ? "pending" : "completed",
+      status: [0, 1, 2].includes(index) ? "pending" : "completed",
       // create a date for the 1st of each month starting from the first of may 2024
       // and decrementing one month at a time by using the index of the mapping function
       date: new Date(new Date(2024, 4, 1).setMonth(4 - index)),

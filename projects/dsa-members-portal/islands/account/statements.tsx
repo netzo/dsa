@@ -1,4 +1,4 @@
-import { toDate, toMXN, useTableUtils, type Statement } from "@/mod.ts";
+import { type Statement, toDate, toMXN, useTableUtils } from "@/mod.ts";
 import {
   STATEMENT_STATUS_OPTIONS,
   STATEMENT_TYPE_OPTIONS,

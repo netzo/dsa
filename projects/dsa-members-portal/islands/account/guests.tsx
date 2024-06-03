@@ -1,4 +1,4 @@
-import { toQRCode, useTableUtils, type Guest } from "@/mod.ts";
+import { type Guest, toQRCode, useTableUtils } from "@/mod.ts";
 import { USER_STATUS_OPTIONS } from "@/utils/constants.ts";
 import { useSignal } from "@preact/signals";
 import {

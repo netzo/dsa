@@ -27,7 +27,8 @@ export default defineUnocssConfig({
       "pb-2", // requiried by table in accounts/[id]
       "mdi-plus", // required by FormFieldRelation
       ...("grid grid-cols-2 lg:grid-cols-4 gap-4".split(" ")), // required by accounts/[id]/general cards
-      ...("flex flex-col gap-4 p-4 items-left justify-end md:items-center space-x-2".split(" ")), // required by accounts/[id]
-    ])
+      ...("flex flex-col gap-4 p-4 items-left justify-end md:items-center space-x-2"
+        .split(" ")), // required by accounts/[id]
+    ]),
   ],
 });
