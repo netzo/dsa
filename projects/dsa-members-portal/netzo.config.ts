@@ -21,7 +21,11 @@ export default defineConfig({
     // }),
     // netzo.database({ apiKey: undefineDeno.env.get("NETZO_API_KEY") }),
     netzo.datastore({ apiKey: undefined }), // Deno.env.get("NETZO_API_KEY"),
-    netzo.netzolabs({ denoJson: JSON.parse(await Deno.readTextFile("deno.json")) }),
+    netzo.toolbar({
+      locale: "es",
+      denoJson: JSON.parse(await Deno.readTextFile("deno.json")),
+      links: [],
+    }),
     loader(),
     unocss(unocssConfig),
   ],
