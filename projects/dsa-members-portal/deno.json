@@ -1,20 +1,17 @@
 {
   "name": "@netzolabs/dsa-members-portal",
   "version": "0.0.0",
-  "exclude": [
-    "_fresh/",
-    "**/_fresh/*"
-  ],
+  "exclude": ["**/_fresh/*"],
   "lock": false,
   "tasks": {
-    "build": "deno run -A --env dev.ts build",
-    "check:types": "deno check **/*.ts **/*.tsx",
     "db:load": "deno run -A --env tasks/db:load.ts",
     "db:reset": "deno run -A --env tasks/db:reset.ts",
-    "ok": "deno fmt --check && deno lint && deno task check:types && deno task test",
-    "preview": "deno run -A --env main.ts",
-    "start": "deno run -A --env --watch=static/,routes/ dev.ts",
+    "dev": "deno run -A --env --watch=static/,routes/ dev.ts",
+    "check:types": "deno check **/*.ts **/*.tsx",
     "test": "deno test -A --env --parallel",
+    "ok": "deno fmt --check && deno lint && deno task check:types && deno task test",
+    "build": "deno run -A --env dev.ts build",
+    "start": "deno run -A --env main.ts",
     "update": "deno run -A -r https://fresh.deno.dev/update ."
   },
   "unstable": [
@@ -31,6 +28,7 @@
   },
   "fmt": { "lineWidth": 100 },
   "compilerOptions": {
+    "lib": ["dom", "dom.asynciterable", "deno.ns"],
     "jsx": "react-jsx",
     "jsxImportSource": "preact"
   },
