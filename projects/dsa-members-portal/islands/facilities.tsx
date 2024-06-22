@@ -2,22 +2,22 @@ import type { Facility } from "@/mod.ts";
 import { FACILITY_TYPES, getDay, getFacility, toHslColor } from "@/mod.ts";
 import { Badge } from "netzo/components/badge.tsx";
 import {
-  TableActionsReload,
-  TableFilters,
-  TablePagination,
-  TableRowActions,
-  TableSearch,
-  TableView,
-  TableViewOptions,
-  useTable,
+    TableActionsReload,
+    TableFilters,
+    TablePagination,
+    TableRowActions,
+    TableSearch,
+    TableView,
+    TableViewOptions,
+    useTable,
 } from "netzo/components/blocks/table/table.tsx";
 import { Button } from "netzo/components/button.tsx";
 import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
+    Card,
+    CardContent,
+    CardDescription,
+    CardHeader,
+    CardTitle,
 } from "netzo/components/card.tsx";
 import { useState } from "preact/hooks";
 
@@ -144,7 +144,7 @@ export function PageFacilities(props: { facilities: Facility[] }) {
                               "",
                             )}
                         >
-                          <i className="mdi-clock w-4 h-4 mr-1.5 flex-shrink-0" />
+                          <i className="i-mdi-clock w-4 h-4 mr-1.5 flex-shrink-0" />
                           <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
                             {row.original.openingHours?.[getDay()]}
                           </span>

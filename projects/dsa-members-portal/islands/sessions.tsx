@@ -1,19 +1,19 @@
-import { getSession, type Session, toDateTime } from "@/mod.ts";
+import { getSession, toDateTime, type Session } from "@/mod.ts";
 import {
-  Avatar,
-  AvatarFallback,
-  AvatarImage,
+    Avatar,
+    AvatarFallback,
+    AvatarImage,
 } from "netzo/components/avatar.tsx";
 import {
-  TableActionsReload,
-  TableColumnHeader,
-  TableFilters,
-  TablePagination,
-  TableRowActions,
-  TableSearch,
-  TableView,
-  TableViewOptions,
-  useTable,
+    TableActionsReload,
+    TableColumnHeader,
+    TableFilters,
+    TablePagination,
+    TableRowActions,
+    TableSearch,
+    TableView,
+    TableViewOptions,
+    useTable,
 } from "netzo/components/blocks/table/table.tsx";
 import { Button } from "netzo/components/button.tsx";
 import { IconCopy } from "netzo/components/icon-copy.tsx";
@@ -89,9 +89,9 @@ export function PageSessions(props: { sessions: Session[] }) {
         cell: ({ row }) => {
           const { phones = {} } = row.original;
           const ICONS = {
-            work: "mdi-phone",
-            mobile: "mdi-cellphone",
-            personal: "mdi-cellphone-lock",
+            work: "i-mdi-phone",
+            mobile: "i-mdi-cellphone",
+            personal: "i-mdi-cellphone-lock",
           } as const;
           const items = Object.entries(phones)
             .filter(([name, value]) => value)
@@ -117,8 +117,8 @@ export function PageSessions(props: { sessions: Session[] }) {
         cell: ({ row }) => {
           const { emails = {} } = row.original;
           const ICONS = {
-            work: "mdi-email",
-            personal: "mdi-email-lock",
+            work: "i-mdi-email",
+            personal: "i-mdi-email-lock",
           } as const;
           const items = Object.entries(emails)
             .filter(([name, value]) => value)

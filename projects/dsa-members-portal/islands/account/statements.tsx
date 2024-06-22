@@ -1,18 +1,18 @@
-import { type Statement, toDate, toMXN, useTableUtils } from "@/mod.ts";
+import { toDate, toMXN, useTableUtils, type Statement } from "@/mod.ts";
 import {
-  STATEMENT_STATUS_OPTIONS,
-  STATEMENT_TYPE_OPTIONS,
+    STATEMENT_STATUS_OPTIONS,
+    STATEMENT_TYPE_OPTIONS,
 } from "@/utils/constants.ts";
 import { useSignal } from "@preact/signals";
 import {
-  TableActionsReload,
-  TableColumnHeader,
-  TableFilters,
-  TablePagination,
-  TableSearch,
-  TableView,
-  TableViewOptions,
-  useTable,
+    TableActionsReload,
+    TableColumnHeader,
+    TableFilters,
+    TablePagination,
+    TableSearch,
+    TableView,
+    TableViewOptions,
+    useTable,
 } from "netzo/components/blocks/table/table.tsx";
 import { Button, buttonVariants } from "netzo/components/button.tsx";
 import { IconCopy } from "netzo/components/icon-copy.tsx";
@@ -138,7 +138,7 @@ export function CardStatements(props: { statements: Statement[] }) {
                     "mx-auto",
                   )}
                 >
-                  <i className="mdi mdi-download-outline mr-1" />
+                  <i className="i-mdi-download-outline mr-1" />
                   Descargar
                 </a>
               </div>
@@ -154,7 +154,7 @@ export function CardStatements(props: { statements: Statement[] }) {
                   "netpay-button mx-auto",
                 )}
               >
-                <i className="mdi mdi-credit-card-outline mr-1" />
+                <i className="i-mdi-credit-card-outline mr-1" />
                 Pagar
               </a>
             </div>
@@ -209,7 +209,7 @@ export function CardStatements(props: { statements: Statement[] }) {
               downloadAsCsv(data, "statements");
             }}
           >
-            <i className="mdi-download" />
+            <i className="i-mdi-download" />
           </Button>
         </div>
       </header>

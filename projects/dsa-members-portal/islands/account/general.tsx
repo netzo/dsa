@@ -1,18 +1,18 @@
 import type { Account } from "@/mod.ts";
 import { Statement, toMXN, User, Vehicle } from "@/mod.ts";
 import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
+    Card,
+    CardContent,
+    CardHeader,
+    CardTitle,
 } from "netzo/components/card.tsx";
 import {
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-  UseFormReturn,
+    FormControl,
+    FormField,
+    FormItem,
+    FormLabel,
+    FormMessage,
+    UseFormReturn,
 } from "netzo/components/form.tsx";
 import { Input } from "netzo/components/input.tsx";
 import type { PageAccountProps } from "./mod.tsx";
@@ -60,7 +60,7 @@ export function AccountMetrics(props: PageAccountProps) {
           >
             Total
           </CardTitle>
-          <div className="w-4 h-4 mdi-file-document text-muted-foreground" />
+          <div className="w-4 h-4 i-mdi-file-document text-muted-foreground" />
         </CardHeader>
         <CardContent>
           <div className="text-2xl font-bold">
@@ -76,7 +76,7 @@ export function AccountMetrics(props: PageAccountProps) {
           >
             Por Pagar
           </CardTitle>
-          <div className="w-4 h-4 mdi-currency-usd text-muted-foreground" />
+          <div className="w-4 h-4 i-mdi-currency-usd text-muted-foreground" />
         </CardHeader>
         <CardContent>
           <div className="text-2xl font-bold">
@@ -92,7 +92,7 @@ export function AccountMetrics(props: PageAccountProps) {
           >
             Por Pagar (aportaciones)
           </CardTitle>
-          <div className="w-4 h-4 mdi-currency-usd text-muted-foreground" />
+          <div className="w-4 h-4 i-mdi-currency-usd text-muted-foreground" />
         </CardHeader>
         <CardContent>
           <div className="text-2xl font-bold">
@@ -108,7 +108,7 @@ export function AccountMetrics(props: PageAccountProps) {
           >
             Por Pagar (ordenes)
           </CardTitle>
-          <div className="w-4 h-4 mdi-currency-usd text-muted-foreground" />
+          <div className="w-4 h-4 i-mdi-currency-usd text-muted-foreground" />
         </CardHeader>
         <CardContent>
           <div className="text-2xl font-bold">

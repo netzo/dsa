@@ -1,39 +1,39 @@
 import type { Facility } from "@/mod.ts";
 import { Booking, getFacility } from "@/mod.ts";
 import {
-  Avatar,
-  AvatarFallback,
-  AvatarImage,
+    Avatar,
+    AvatarFallback,
+    AvatarImage,
 } from "netzo/components/avatar.tsx";
 import { TableRowActions } from "netzo/components/blocks/table/table.tsx";
 import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbSeparator,
+    Breadcrumb,
+    BreadcrumbItem,
+    BreadcrumbLink,
+    BreadcrumbList,
+    BreadcrumbSeparator,
 } from "netzo/components/breadcrumb.tsx";
 import { Button } from "netzo/components/button.tsx";
 import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
+    Card,
+    CardContent,
+    CardHeader,
+    CardTitle,
 } from "netzo/components/card.tsx";
 import {
-  Dialog,
-  DialogContent,
-  DialogTrigger,
+    Dialog,
+    DialogContent,
+    DialogTrigger,
 } from "netzo/components/dialog.tsx";
 import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-  useForm,
-  type UseFormReturn,
+    Form,
+    FormControl,
+    FormField,
+    FormItem,
+    FormLabel,
+    FormMessage,
+    useForm,
+    type UseFormReturn,
 } from "netzo/components/form.tsx";
 import { Input } from "netzo/components/input.tsx";
 import { Textarea } from "netzo/components/textarea.tsx";
@@ -126,7 +126,7 @@ function FacilityHeader(props: { form: UseFormReturn<Facility> }) {
           disabled={!props.form.formState.isDirty}
         >
           {props.form.formState.isLoading
-            ? <i className="mdi-loading h-4 w-4 animate-spin" />
+            ? <i className="i-mdi-loading h-4 w-4 animate-spin" />
             : "Guardar"}
         </Button>
       </div>

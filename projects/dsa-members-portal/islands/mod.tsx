@@ -1,11 +1,11 @@
 import {
-  NavHeader,
-  NavItem,
-  NavItemHeader,
-  NavItemUser,
-  NavRoot,
-  NavSeparator,
-  NavSpacer,
+    NavHeader,
+    NavItem,
+    NavItemHeader,
+    NavItemUser,
+    NavRoot,
+    NavSeparator,
+    NavSpacer,
 } from "netzo/components/blocks/nav.tsx";
 import type { NetzoState } from "netzo/mod.ts";
 
@@ -21,37 +21,37 @@ export const Nav = (props: { state: NetzoState }) => {
         <NavHeader title="San Agustin" image="/symbol.svg" />
       </a>
       <NavSeparator />
-      {/* <NavItem icon="mdi-home" text="Inicio" href="/" exact={true} /> */}
+      {/* <NavItem icon="i-mdi-home" text="Inicio" href="/" exact={true} /> */}
       <NavItemHeader text="Gestión" />
       <NavItem
-        icon="mdi-wallet-membership"
+        icon="i-mdi-wallet-membership"
         text="Mi Acción"
         href={`/accounts/${ACCOUNT_ID}`}
       />
       {
         /* <NavItem
-        icon="mdi-account-group"
+        icon="i-mdi-account-group"
         text="Mi Perfil"
         href={`/users/${USER_ID}`}
       /> */
       }
       <NavItemHeader text="Información" />
       <NavItem
-        icon="mdi-dots-grid"
+        icon="i-mdi-dots-grid"
         text="Amenidades"
         href="/amenities/services"
       />
       <NavItem
-        icon="mdi-nature-people"
+        icon="i-mdi-nature-people"
         text="Instalaciones"
         href="/facilities"
       />
       <NavItemHeader text="Comunidad" />
-      <NavItem icon="mdi-newspaper" text="Avisos" href="/notices" />
-      <NavItem icon="mdi-store" text="Publicaciones" href="/publications" />
+      <NavItem icon="i-mdi-newspaper" text="Avisos" href="/notices" />
+      <NavItem icon="i-mdi-store" text="Publicaciones" href="/publications" />
       <NavItemHeader text="Reservas" />
       <NavItem
-        icon="mdi-calendar-clock"
+        icon="i-mdi-calendar-clock"
         text="Mis Reservas"
         href={`/bookings?userId=${USER_ID}`}
       />

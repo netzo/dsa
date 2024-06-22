@@ -1,34 +1,34 @@
-import { Head } from "fresh/runtime.ts";
 import { Booking, getBooking, getPublication } from "@/mod.ts";
+import { Head } from "fresh/runtime.ts";
 import {
-  Calendar,
-  momentLocalizer,
-  Views,
+    Calendar,
+    Views,
+    momentLocalizer,
 } from "https://esm.sh/react-big-calendar@1.11.2?external=react,react-dom&target=es2022";
 import { Button } from "netzo/components/button.tsx";
 import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
+    Card,
+    CardContent,
+    CardHeader,
+    CardTitle,
 } from "netzo/components/card.tsx";
 import { Combobox } from "netzo/components/combobox.tsx";
 import {
-  Dialog,
-  DialogContent,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
+    Dialog,
+    DialogContent,
+    DialogFooter,
+    DialogHeader,
+    DialogTitle,
+    DialogTrigger,
 } from "netzo/components/dialog.tsx";
 import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-  useForm,
+    Form,
+    FormControl,
+    FormField,
+    FormItem,
+    FormLabel,
+    FormMessage,
+    useForm,
 } from "netzo/components/form.tsx";
 import { Input } from "netzo/components/input.tsx";
 import moment from "npm:moment@2.30.1";
@@ -177,7 +177,7 @@ export function CardBookingsList(props: { bookings: Booking[] }) {
     return (
       <div className="grid place-items-center w-full h-full py-20">
         <div className="text-center">
-          <i className="mdi-tag text-4xl text-muted-foreground mb-2" />
+          <i className="i-mdi-tag text-4xl text-muted-foreground mb-2" />
           <h2 className="text-xl font-medium text-muted-foreground mb-1">
             No se encontraron reservas
           </h2>
@@ -290,7 +290,7 @@ export function FormCreateBooking(props: { defaultValues: Booking }) {
       <DialogFooter>
         <Button form="bookings.create" type="submit">
           {form.formState.isLoading
-            ? <i className="mdi-loading h-4 w-4 animate-spin" />
+            ? <i className="i-mdi-loading h-4 w-4 animate-spin" />
             : "Create"}
         </Button>
       </DialogFooter>

@@ -3,36 +3,36 @@ import { ENTRY_TYPE_OPTIONS, VEHICLE_TYPE_OPTIONS } from "@/utils/constants.ts";
 import { useSignal } from "@preact/signals";
 import { Avatar, AvatarFallback } from "netzo/components/avatar.tsx";
 import {
-  TableActionsReload,
-  TableColumnHeader,
-  TableFilters,
-  TablePagination,
-  TableRowActions,
-  TableSearch,
-  TableView,
-  TableViewOptions,
-  useTable,
+    TableActionsReload,
+    TableColumnHeader,
+    TableFilters,
+    TablePagination,
+    TableRowActions,
+    TableSearch,
+    TableView,
+    TableViewOptions,
+    useTable,
 } from "netzo/components/blocks/table/table.tsx";
 import { Button } from "netzo/components/button.tsx";
 import {
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
+    CardContent,
+    CardDescription,
+    CardFooter,
+    CardHeader,
+    CardTitle,
 } from "netzo/components/card.tsx";
 import {
-  Dialog,
-  DialogContent,
-  DialogContentControlled,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
+    Dialog,
+    DialogContent,
+    DialogContentControlled,
+    DialogFooter,
+    DialogHeader,
+    DialogTitle,
+    DialogTrigger,
 } from "netzo/components/dialog.tsx";
 import {
-  DropdownMenuItem,
-  DropdownMenuSeparator,
+    DropdownMenuItem,
+    DropdownMenuSeparator,
 } from "netzo/components/dropdown-menu.tsx";
 import { FormFieldInput } from "netzo/components/form-fields.tsx";
 import { Form, useForm } from "netzo/components/form.tsx";
@@ -301,7 +301,7 @@ export function CardVehicles(props: { vehicles: Vehicle[] }) {
             redirectUrl="/settings?nav=vehicles"
           >
             <Button variant="default" size="sm" className="ml-2">
-              <i className="mdi-plus" />
+              <i className="i-mdi-plus" />
             </Button>
           </DialogFormVehicle>
           <Button
@@ -317,7 +317,7 @@ export function CardVehicles(props: { vehicles: Vehicle[] }) {
               downloadAsCsv(data, "vehicles");
             }}
           >
-            <i className="mdi-download" />
+            <i className="i-mdi-download" />
           </Button>
         </div>
       </header>
@@ -436,7 +436,7 @@ export function DialogFormVehicle(
         <DialogFooter>
           <Button form={id} type="submit">
             {form.formState.isLoading
-              ? <i className="mdi-loading h-4 w-4 animate-spin" />
+              ? <i className="i-mdi-loading h-4 w-4 animate-spin" />
               : (
                 props?.cta || "Crear"
               )}

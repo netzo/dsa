@@ -2,37 +2,37 @@
 import type { Item } from "@/mod.ts";
 import { getItem, toMXN } from "@/mod.ts";
 import {
-  TableActionsReload,
-  TableFilters,
-  TablePagination,
-  TableRowActions,
-  TableSearch,
-  TableView,
-  TableViewOptions,
-  useTable,
+    TableActionsReload,
+    TableFilters,
+    TablePagination,
+    TableRowActions,
+    TableSearch,
+    TableView,
+    TableViewOptions,
+    useTable,
 } from "netzo/components/blocks/table/table.tsx";
 import { Button } from "netzo/components/button.tsx";
 import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
+    Card,
+    CardContent,
+    CardDescription,
+    CardFooter,
+    CardHeader,
+    CardTitle,
 } from "netzo/components/card.tsx";
 import { Input } from "netzo/components/input.tsx";
 import {
-  ResizableHandle,
-  ResizablePanel,
-  ResizablePanelGroup,
+    ResizableHandle,
+    ResizablePanel,
+    ResizablePanelGroup,
 } from "netzo/components/resizable.tsx";
 import { ScrollArea } from "netzo/components/scroll-area.tsx";
 import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectTrigger,
+    SelectValue,
 } from "netzo/components/select.tsx";
 import { useState } from "preact/hooks";
 
@@ -173,7 +173,7 @@ export function PageOrder(props: {
                     </CardFooter>
                     <CardContent className="p-3 flex items-center justify-between gap-1 text-sm font-medium">
                       <Button variant="secondary" size="icon">
-                        <i className="mdi-minus" />
+                        <i className="i-mdi-minus" />
                       </Button>
                       <Input
                         className="w-full mx-2"
@@ -181,7 +181,7 @@ export function PageOrder(props: {
                         type="number"
                       />
                       <Button variant="secondary" size="icon">
-                        <i className="mdi-plus" />
+                        <i className="i-mdi-plus" />
                       </Button>
                     </CardContent>
                   </Card>
@@ -229,7 +229,7 @@ export function PageOrder(props: {
                   />
                 </div>
                 <div>$72.00</div>
-                <i className="mdi-delete cursor-pointer" />
+                <i className="i-mdi-delete cursor-pointer" />
               </div>
 
               {/* Add more items for the first ScrollArea */}
@@ -249,7 +249,7 @@ export function PageOrder(props: {
                   />
                 </div>
                 <div>$145.00</div>
-                <i className="mdi-delete cursor-pointer" />
+                <i className="i-mdi-delete cursor-pointer" />
               </div>
 
               {/* Add more items for the second ScrollArea */}
@@ -269,7 +269,7 @@ export function PageOrder(props: {
                   />
                 </div>
                 <div>$230.00</div>
-                <i className="mdi-delete cursor-pointer" />
+                <i className="i-mdi-delete cursor-pointer" />
               </div>
 
               {/* Add more items for the third ScrollArea */}
@@ -289,7 +289,7 @@ export function PageOrder(props: {
                   />
                 </div>
                 <div>$160.00</div>
-                <i className="mdi-delete cursor-pointer" />
+                <i className="i-mdi-delete cursor-pointer" />
               </div>
 
               {/* Add more items for the fourth ScrollArea */}

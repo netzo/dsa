@@ -1,35 +1,35 @@
 import { getPublication, getUser, toDateTime, User } from "@/mod.ts";
 import {
-  Avatar,
-  AvatarFallback,
-  AvatarImage,
+    Avatar,
+    AvatarFallback,
+    AvatarImage,
 } from "netzo/components/avatar.tsx";
 import {
-  TableActionsReload,
-  TableColumnHeader,
-  TableFilters,
-  TablePagination,
-  TableRowActions,
-  TableSearch,
-  TableView,
-  TableViewOptions,
-  useTable,
+    TableActionsReload,
+    TableColumnHeader,
+    TableFilters,
+    TablePagination,
+    TableRowActions,
+    TableSearch,
+    TableView,
+    TableViewOptions,
+    useTable,
 } from "netzo/components/blocks/table/table.tsx";
 import { Button } from "netzo/components/button.tsx";
 import { Combobox } from "netzo/components/combobox.tsx";
 import {
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
+    DialogFooter,
+    DialogHeader,
+    DialogTitle,
 } from "netzo/components/dialog.tsx";
 import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-  useForm,
+    Form,
+    FormControl,
+    FormField,
+    FormItem,
+    FormLabel,
+    FormMessage,
+    useForm,
 } from "netzo/components/form.tsx";
 import { IconCopy } from "netzo/components/icon-copy.tsx";
 import { Input } from "netzo/components/input.tsx";
@@ -101,9 +101,9 @@ export function PageUsers(props: { users: User[] }) {
         cell: ({ row }) => {
           const { phones = {} } = row.original;
           const ICONS = {
-            work: "mdi-phone",
-            mobile: "mdi-cellphone",
-            useral: "mdi-cellphone-lock",
+            work: "i-mdi-phone",
+            mobile: "i-mdi-cellphone",
+            useral: "i-mdi-cellphone-lock",
           } as const;
           const items = Object.entries(phones)
             .filter(([name, value]) => value)
@@ -129,8 +129,8 @@ export function PageUsers(props: { users: User[] }) {
         cell: ({ row }) => {
           const { emails = {} } = row.original;
           const ICONS = {
-            work: "mdi-email",
-            useral: "mdi-email-lock",
+            work: "i-mdi-email",
+            useral: "i-mdi-email-lock",
           } as const;
           const items = Object.entries(emails)
             .filter(([name, value]) => value)
@@ -310,7 +310,7 @@ export function FormCreateUser(props: { defaultValues: User }) {
       <DialogFooter>
         <Button form="users.create" type="submit">
           {form.formState.isLoading
-            ? <i className="mdi-loading h-4 w-4 animate-spin" />
+            ? <i className="i-mdi-loading h-4 w-4 animate-spin" />
             : "Create"}
         </Button>
       </DialogFooter>

@@ -1,34 +1,34 @@
 import type { Booking } from "@/mod.ts";
 import { getUser, toMXN, toPercent, User } from "@/mod.ts";
 import {
-  Avatar,
-  AvatarFallback,
-  AvatarImage,
+    Avatar,
+    AvatarFallback,
+    AvatarImage,
 } from "netzo/components/avatar.tsx";
 import { TableRowActions } from "netzo/components/blocks/table/table.tsx";
 import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbSeparator,
+    Breadcrumb,
+    BreadcrumbItem,
+    BreadcrumbLink,
+    BreadcrumbList,
+    BreadcrumbSeparator,
 } from "netzo/components/breadcrumb.tsx";
 import { Button } from "netzo/components/button.tsx";
 import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
+    Card,
+    CardContent,
+    CardHeader,
+    CardTitle,
 } from "netzo/components/card.tsx";
 import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-  useForm,
-  type UseFormReturn,
+    Form,
+    FormControl,
+    FormField,
+    FormItem,
+    FormLabel,
+    FormMessage,
+    useForm,
+    type UseFormReturn,
 } from "netzo/components/form.tsx";
 import { Input } from "netzo/components/input.tsx";
 import { CardBookings } from "./bookings.tsx";
@@ -124,7 +124,7 @@ function UserHeader(props: { form: UseFormReturn<User> }) {
           disabled={!props.form.formState.isDirty}
         >
           {props.form.formState.isLoading
-            ? <i className="mdi-loading h-4 w-4 animate-spin" />
+            ? <i className="i-mdi-loading h-4 w-4 animate-spin" />
             : "Guardar"}
         </Button>
       </div>
@@ -159,7 +159,7 @@ function UserMetrics(props: PageUserProps) {
           >
             Total Bookings
           </CardTitle>
-          <div className="w-4 h-4 mdi-tag text-muted-foreground" />
+          <div className="w-4 h-4 i-mdi-tag text-muted-foreground" />
         </CardHeader>
         <CardContent>
           <div className="text-2xl font-bold">
@@ -175,7 +175,7 @@ function UserMetrics(props: PageUserProps) {
           >
             Total por Pagar
           </CardTitle>
-          <div className="w-4 h-4 mdi-currency-usd text-muted-foreground" />
+          <div className="w-4 h-4 i-mdi-currency-usd text-muted-foreground" />
         </CardHeader>
         <CardContent>
           <div className="text-2xl font-bold">
@@ -191,7 +191,7 @@ function UserMetrics(props: PageUserProps) {
           >
             Total Ordenes
           </CardTitle>
-          <div className="w-4 h-4 mdi-currency-usd-circle text-muted-foreground" />
+          <div className="w-4 h-4 i-mdi-currency-usd-circle text-muted-foreground" />
         </CardHeader>
         <CardContent>
           <div className="text-2xl font-bold">
@@ -207,7 +207,7 @@ function UserMetrics(props: PageUserProps) {
           >
             Total por Pagar (Ordenes)
           </CardTitle>
-          <div className="w-4 h-4 mdi-history text-muted-foreground" />
+          <div className="w-4 h-4 i-mdi-history text-muted-foreground" />
         </CardHeader>
         <CardContent>
           <div className="text-2xl font-bold">

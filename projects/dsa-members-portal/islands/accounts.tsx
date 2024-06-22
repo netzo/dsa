@@ -3,15 +3,15 @@ import { getAccount, toDateTime } from "@/mod.ts";
 import { Avatar, AvatarFallback } from "netzo/components/avatar.tsx";
 import { Badge } from "netzo/components/badge.tsx";
 import {
-  TableActionsReload,
-  TableColumnHeader,
-  TableFilters,
-  TablePagination,
-  TableRowActions,
-  TableSearch,
-  TableView,
-  TableViewOptions,
-  useTable,
+    TableActionsReload,
+    TableColumnHeader,
+    TableFilters,
+    TablePagination,
+    TableRowActions,
+    TableSearch,
+    TableView,
+    TableViewOptions,
+    useTable,
 } from "netzo/components/blocks/table/table.tsx";
 import { Button } from "netzo/components/button.tsx";
 import { IconCopy } from "netzo/components/icon-copy.tsx";
@@ -66,7 +66,7 @@ export function PageAccounts(props: { accounts: Account[] }) {
               className="hover:underline"
             >
               <Badge variant="secondary" className="w-max">
-                <i className="mdi-radiobox-marked mr-1" />
+                <i className="i-mdi-radiobox-marked mr-1" />
                 {users.length} socios
               </Badge>
             </a>
@@ -85,7 +85,7 @@ export function PageAccounts(props: { accounts: Account[] }) {
                   href={`mailto:${email}`}
                   title={email}
                   target="_blank"
-                  className="mdi-email"
+                  className="i-mdi-email"
                 />
               )}
               {phone && (
@@ -93,7 +93,7 @@ export function PageAccounts(props: { accounts: Account[] }) {
                   href={`tel:${phone}`}
                   title={email}
                   target="_blank"
-                  className="mdi-phone"
+                  className="i-mdi-phone"
                 />
               )}
             </div>

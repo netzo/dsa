@@ -1,34 +1,34 @@
-import { toQRCode, type User, useTableUtils } from "@/mod.ts";
+import { toQRCode, useTableUtils, type User } from "@/mod.ts";
 import { USER_STATUS_OPTIONS, USER_TYPE_OPTIONS } from "@/utils/constants.ts";
 import { useSignal } from "@preact/signals";
 import {
-  Avatar,
-  AvatarFallback,
-  AvatarImage,
+    Avatar,
+    AvatarFallback,
+    AvatarImage,
 } from "netzo/components/avatar.tsx";
 import {
-  TableActionsReload,
-  TableColumnHeader,
-  TableFilters,
-  TablePagination,
-  TableRowActions,
-  TableSearch,
-  TableView,
-  TableViewOptions,
-  useTable,
+    TableActionsReload,
+    TableColumnHeader,
+    TableFilters,
+    TablePagination,
+    TableRowActions,
+    TableSearch,
+    TableView,
+    TableViewOptions,
+    useTable,
 } from "netzo/components/blocks/table/table.tsx";
 import { Button } from "netzo/components/button.tsx";
 import {
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
+    CardContent,
+    CardDescription,
+    CardFooter,
+    CardHeader,
+    CardTitle,
 } from "netzo/components/card.tsx";
 import {
-  Dialog,
-  DialogContent,
-  DialogTrigger,
+    Dialog,
+    DialogContent,
+    DialogTrigger,
 } from "netzo/components/dialog.tsx";
 import { DropdownMenuItem } from "netzo/components/dropdown-menu.tsx";
 import { cn } from "netzo/components/utils.ts";
@@ -287,7 +287,7 @@ export function CardUsers(props: { user: User[] }) {
               downloadAsCsv(data, "users");
             }}
           >
-            <i className="mdi-download" />
+            <i className="i-mdi-download" />
           </Button>
         </div>
       </header>

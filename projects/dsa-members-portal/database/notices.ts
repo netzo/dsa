@@ -39,42 +39,42 @@ export const getNotice = (data?: Partial<Notice>) => ({
 
 export const NOTICE_TYPES = {
   info: {
-    icon: "mdi-information",
+    icon: "i-mdi-information",
     text: "Información",
     className: `bg-blue hover:bg-blue bg-opacity-80 text-white`,
   },
   security: {
-    icon: "mdi-shield",
+    icon: "i-mdi-shield",
     text: "Seguridad",
     className: `bg-red hover:bg-red bg-opacity-80 text-white`,
   },
   legal: {
-    icon: "mdi-file-document",
+    icon: "i-mdi-file-document",
     text: "Legal",
     className: `bg-purple hover:bg-purple bg-opacity-80 text-white`,
   },
   achievement: {
-    icon: "mdi-trophy",
+    icon: "i-mdi-trophy",
     text: "Logros",
     className: `bg-purple hover:bg-purple bg-opacity-80 text-white`,
   },
   promotion: {
-    icon: "mdi-gift",
+    icon: "i-mdi-gift",
     text: "Promoción",
     className: `bg-yellow hover:bg-yellow bg-opacity-80 text-white`,
   },
   "advertisement": {
-    icon: "mdi-bullhorn",
+    icon: "i-mdi-bullhorn",
     text: "Anuncio",
     className: `bg-green hover:bg-green bg-opacity-80 text-white`,
   },
   "maintenance": {
-    icon: "mdi-wrench",
+    icon: "i-mdi-wrench",
     text: "Mantenimiento",
     className: `bg-gray hover:bg-gray bg-opacity-80 text-white`,
   },
   other: {
-    icon: "mdi-dots-horizontal",
+    icon: "i-mdi-dots-horizontal",
     text: "Otro",
     className: `bg-gray hover:bg-gray bg-opacity-80 text-white`,
   },

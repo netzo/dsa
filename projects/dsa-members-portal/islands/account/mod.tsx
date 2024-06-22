@@ -1,6 +1,6 @@
 import {
-  AccountCardFormUpdate,
-  AccountMetrics,
+    AccountCardFormUpdate,
+    AccountMetrics,
 } from "@/islands/account/general.tsx";
 import type { Account, Entry, Guest, Statement, User, Vehicle } from "@/mod.ts";
 import { getAccount, updateSearchParam } from "@/mod.ts";
@@ -8,11 +8,11 @@ import { type Signal } from "@preact/signals";
 import { Avatar, AvatarFallback } from "netzo/components/avatar.tsx";
 import { TableRowActions } from "netzo/components/blocks/table/table.tsx";
 import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbSeparator,
+    Breadcrumb,
+    BreadcrumbItem,
+    BreadcrumbLink,
+    BreadcrumbList,
+    BreadcrumbSeparator,
 } from "netzo/components/breadcrumb.tsx";
 import { Button, buttonVariants } from "netzo/components/button.tsx";
 import { Form, useForm, type UseFormReturn } from "netzo/components/form.tsx";
@@ -154,7 +154,7 @@ export function PageAccount(props: PageAccountProps) {
                             >
                               {form.formState.isLoading
                                 ? (
-                                  <i className="mdi-loading h-4 w-4 animate-spin" />
+                                  <i className="i-mdi-loading h-4 w-4 animate-spin" />
                                 )
                                 : "Guardar"}
                             </Button>
@@ -224,7 +224,7 @@ function AccountHeader(props: { form: UseFormReturn<Account> }) {
             disabled={!props.form.formState.isDirty}
           >
             {props.form.formState.isLoading
-              ? <i className="mdi-loading h-4 w-4 animate-spin" />
+              ? <i className="i-mdi-loading h-4 w-4 animate-spin" />
               : "Guardar"}
           </Button> */
           }
@@ -237,7 +237,7 @@ function AccountHeader(props: { form: UseFormReturn<Account> }) {
               "netpay-button",
             )}
           >
-            <i className="mdi mdi-credit-card-outline mr-1" />
+            <i className="i-mdi-credit-card-outline mr-1" />
             Configurar NetPay
           </a>
         </div>
