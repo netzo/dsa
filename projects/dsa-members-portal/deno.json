@@ -14,36 +14,27 @@
     "start": "deno run -A --env main.ts",
     "update": "deno run -A -r https://fresh.deno.dev/update ."
   },
-  "unstable": [
-    "cron",
-    "kv"
-  ],
-  "lint": {
-    "rules": {
-      "tags": [
-        "fresh",
-        "recommended"
-      ]
-    }
-  },
+  "unstable": ["cron", "kv", "temporal"],
+  "lint": { "rules": { "tags": ["fresh", "recommended"] } },
   "fmt": { "lineWidth": 100 },
   "compilerOptions": {
     "lib": ["dom", "dom.asynciterable", "deno.ns"],
     "jsx": "react-jsx",
-    "jsxImportSource": "preact"
+    "jsxImportSource": "preact",
+    "jsxPrecompileSkipElements": ["a", "img", "source", "body", "html", "head"]
   },
   "imports": {
     "@/": "./",
-    "netzo/": "https://deno.land/x/netzo@0.5.49/",
     "fresh/": "https://deno.land/x/fresh@1.6.8/",
-    "preact": "https://esm.sh/preact@10.19.6",
-    "preact/": "https://esm.sh/preact@10.19.6/",
-    "@preact/signals": "https://esm.sh/*@preact/signals@1.2.2",
-    "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.5.1",
-    "react": "https://esm.sh/preact@10.19.6/compat",
-    "react-dom": "https://esm.sh/preact@10.19.6/compat",
+    "$fresh/": "https://deno.land/x/fresh@1.6.8/",
+    "preact": "npm:preact@10.22.0",
+    "react": "npm:preact@10.22.0/compat",
+    "react-dom": "npm:preact@10.22.0/compat",
+    "@preact/signals": "npm:@preact/signals@1.2.3",
+    "@preact/signals-core": "npm:@preact/signals-core@1.6.1",
+    "netzo/": "https://deno.land/x/netzo@0.5.49/",
     "std/": "https://deno.land/std@0.208.0/",
-    "react/jsx-runtime": "https://esm.sh/preact@10.20.0/compat",
+    "react/jsx-runtime": "npm:preact@10.20.0/compat",
     "case/": "https://deno.land/x/case@2.2.0/",
     "zod": "https://deno.land/x/zod@v3.22.4/mod.ts"
   }
