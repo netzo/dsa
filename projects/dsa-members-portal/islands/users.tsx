@@ -1,35 +1,35 @@
 import { getPublication, getUser, toDateTime, User } from "@/mod.ts";
 import {
-    Avatar,
-    AvatarFallback,
-    AvatarImage,
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
 } from "netzo/components/avatar.tsx";
 import {
-    TableActionsReload,
-    TableColumnHeader,
-    TableFilters,
-    TablePagination,
-    TableRowActions,
-    TableSearch,
-    TableView,
-    TableViewOptions,
-    useTable,
+  TableActionsReload,
+  TableColumnHeader,
+  TableFilters,
+  TablePagination,
+  TableRowActions,
+  TableSearch,
+  TableView,
+  TableViewOptions,
+  useTable,
 } from "netzo/components/blocks/table/table.tsx";
 import { Button } from "netzo/components/button.tsx";
 import { Combobox } from "netzo/components/combobox.tsx";
 import {
-    DialogFooter,
-    DialogHeader,
-    DialogTitle,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
 } from "netzo/components/dialog.tsx";
 import {
-    Form,
-    FormControl,
-    FormField,
-    FormItem,
-    FormLabel,
-    FormMessage,
-    useForm,
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+  useForm,
 } from "netzo/components/form.tsx";
 import { IconCopy } from "netzo/components/icon-copy.tsx";
 import { Input } from "netzo/components/input.tsx";

@@ -1,18 +1,18 @@
 import type { Account } from "@/mod.ts";
 import { Statement, toMXN, User, Vehicle } from "@/mod.ts";
 import {
-    Card,
-    CardContent,
-    CardHeader,
-    CardTitle,
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
 } from "netzo/components/card.tsx";
 import {
-    FormControl,
-    FormField,
-    FormItem,
-    FormLabel,
-    FormMessage,
-    UseFormReturn,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+  UseFormReturn,
 } from "netzo/components/form.tsx";
 import { Input } from "netzo/components/input.tsx";
 import type { PageAccountProps } from "./mod.tsx";

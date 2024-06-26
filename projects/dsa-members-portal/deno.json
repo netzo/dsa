@@ -21,7 +21,19 @@
     "lib": ["dom", "dom.asynciterable", "deno.ns"],
     "jsx": "precompile",
     "jsxImportSource": "preact",
-    "jsxPrecompileSkipElements": ["a", "img", "source", "body", "html", "head", "title", "link", "style", "meta"]
+    "jsxImportSourceTypes": "preact/compat",
+    "jsxPrecompileSkipElements": [
+      "a",
+      "img",
+      "source",
+      "body",
+      "html",
+      "head",
+      "title",
+      "link",
+      "style",
+      "meta"
+    ]
   },
   "imports": {
     "@/": "./",
@@ -32,7 +44,7 @@
     "react-dom": "npm:preact@10.22.0/compat",
     "@preact/signals": "npm:@preact/signals@1.2.3",
     "@preact/signals-core": "npm:@preact/signals-core@1.6.1",
-    "netzo/": "https://deno.land/x/netzo@0.5.49/",
+    "netzo/": "https://deno.land/x/netzo@0.5.106/",
     "std/": "https://deno.land/std@0.208.0/",
     "react/jsx-runtime": "npm:preact@10.20.0/compat",
     "case/": "https://deno.land/x/case@2.2.0/",

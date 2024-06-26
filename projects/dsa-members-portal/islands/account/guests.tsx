@@ -1,42 +1,42 @@
-import { toQRCode, useTableUtils, type Guest } from "@/mod.ts";
+import { type Guest, toQRCode, useTableUtils } from "@/mod.ts";
 import { USER_STATUS_OPTIONS } from "@/utils/constants.ts";
 import { useSignal } from "@preact/signals";
 import {
-    Avatar,
-    AvatarFallback,
-    AvatarImage,
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
 } from "netzo/components/avatar.tsx";
 import {
-    TableActionsReload,
-    TableColumnHeader,
-    TableFilters,
-    TablePagination,
-    TableRowActions,
-    TableSearch,
-    TableView,
-    TableViewOptions,
-    useTable,
+  TableActionsReload,
+  TableColumnHeader,
+  TableFilters,
+  TablePagination,
+  TableRowActions,
+  TableSearch,
+  TableView,
+  TableViewOptions,
+  useTable,
 } from "netzo/components/blocks/table/table.tsx";
 import { Button } from "netzo/components/button.tsx";
 import {
-    CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
 } from "netzo/components/card.tsx";
 import {
-    Dialog,
-    DialogContent,
-    DialogContentControlled,
-    DialogFooter,
-    DialogHeader,
-    DialogTitle,
-    DialogTrigger,
+  Dialog,
+  DialogContent,
+  DialogContentControlled,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
 } from "netzo/components/dialog.tsx";
 import {
-    DropdownMenuItem,
-    DropdownMenuSeparator,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
 } from "netzo/components/dropdown-menu.tsx";
 import { FormFieldInput } from "netzo/components/form-fields.tsx";
 import { Form, useForm } from "netzo/components/form.tsx";

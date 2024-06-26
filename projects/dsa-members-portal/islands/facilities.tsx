@@ -2,22 +2,22 @@ import type { Facility } from "@/mod.ts";
 import { FACILITY_TYPES, getDay, getFacility, toHslColor } from "@/mod.ts";
 import { Badge } from "netzo/components/badge.tsx";
 import {
-    TableActionsReload,
-    TableFilters,
-    TablePagination,
-    TableRowActions,
-    TableSearch,
-    TableView,
-    TableViewOptions,
-    useTable,
+  TableActionsReload,
+  TableFilters,
+  TablePagination,
+  TableRowActions,
+  TableSearch,
+  TableView,
+  TableViewOptions,
+  useTable,
 } from "netzo/components/blocks/table/table.tsx";
 import { Button } from "netzo/components/button.tsx";
 import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardHeader,
-    CardTitle,
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
 } from "netzo/components/card.tsx";
 import { useState } from "preact/hooks";
 

@@ -1,18 +1,18 @@
-import { toDate, toMXN, useTableUtils, type Statement } from "@/mod.ts";
+import { type Statement, toDate, toMXN, useTableUtils } from "@/mod.ts";
 import {
-    STATEMENT_STATUS_OPTIONS,
-    STATEMENT_TYPE_OPTIONS,
+  STATEMENT_STATUS_OPTIONS,
+  STATEMENT_TYPE_OPTIONS,
 } from "@/utils/constants.ts";
 import { useSignal } from "@preact/signals";
 import {
-    TableActionsReload,
-    TableColumnHeader,
-    TableFilters,
-    TablePagination,
-    TableSearch,
-    TableView,
-    TableViewOptions,
-    useTable,
+  TableActionsReload,
+  TableColumnHeader,
+  TableFilters,
+  TablePagination,
+  TableSearch,
+  TableView,
+  TableViewOptions,
+  useTable,
 } from "netzo/components/blocks/table/table.tsx";
 import { Button, buttonVariants } from "netzo/components/button.tsx";
 import { IconCopy } from "netzo/components/icon-copy.tsx";

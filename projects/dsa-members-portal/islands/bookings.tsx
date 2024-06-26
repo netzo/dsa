@@ -1,34 +1,34 @@
 import { Booking, getBooking, getPublication } from "@/mod.ts";
 import { Head } from "fresh/runtime.ts";
 import {
-    Calendar,
-    Views,
-    momentLocalizer,
+  Calendar,
+  momentLocalizer,
+  Views,
 } from "https://esm.sh/react-big-calendar@1.11.2?external=react,react-dom&target=es2022";
 import { Button } from "netzo/components/button.tsx";
 import {
-    Card,
-    CardContent,
-    CardHeader,
-    CardTitle,
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
 } from "netzo/components/card.tsx";
 import { Combobox } from "netzo/components/combobox.tsx";
 import {
-    Dialog,
-    DialogContent,
-    DialogFooter,
-    DialogHeader,
-    DialogTitle,
-    DialogTrigger,
+  Dialog,
+  DialogContent,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
 } from "netzo/components/dialog.tsx";
 import {
-    Form,
-    FormControl,
-    FormField,
-    FormItem,
-    FormLabel,
-    FormMessage,
-    useForm,
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+  useForm,
 } from "netzo/components/form.tsx";
 import { Input } from "netzo/components/input.tsx";
 import moment from "npm:moment@2.30.1";

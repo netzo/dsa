@@ -1,34 +1,34 @@
 import type { Booking } from "@/mod.ts";
 import { getUser, toMXN, toPercent, User } from "@/mod.ts";
 import {
-    Avatar,
-    AvatarFallback,
-    AvatarImage,
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
 } from "netzo/components/avatar.tsx";
 import { TableRowActions } from "netzo/components/blocks/table/table.tsx";
 import {
-    Breadcrumb,
-    BreadcrumbItem,
-    BreadcrumbLink,
-    BreadcrumbList,
-    BreadcrumbSeparator,
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbSeparator,
 } from "netzo/components/breadcrumb.tsx";
 import { Button } from "netzo/components/button.tsx";
 import {
-    Card,
-    CardContent,
-    CardHeader,
-    CardTitle,
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
 } from "netzo/components/card.tsx";
 import {
-    Form,
-    FormControl,
-    FormField,
-    FormItem,
-    FormLabel,
-    FormMessage,
-    useForm,
-    type UseFormReturn,
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+  useForm,
+  type UseFormReturn,
 } from "netzo/components/form.tsx";
 import { Input } from "netzo/components/input.tsx";
 import { CardBookings } from "./bookings.tsx";

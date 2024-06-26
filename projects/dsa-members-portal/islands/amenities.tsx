@@ -2,34 +2,34 @@ import type { Amenity } from "@/mod.ts";
 import { AMENITY_TYPES, getBooking, toHslColor } from "@/mod.ts";
 import { Badge } from "netzo/components/badge.tsx";
 import {
-    TableActionsReload,
-    TableFilters,
-    TablePagination,
-    TableRowActions,
-    TableSearch,
-    TableView,
-    TableViewOptions,
-    useTable,
+  TableActionsReload,
+  TableFilters,
+  TablePagination,
+  TableRowActions,
+  TableSearch,
+  TableView,
+  TableViewOptions,
+  useTable,
 } from "netzo/components/blocks/table/table.tsx";
 import { Button } from "netzo/components/button.tsx";
 import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardHeader,
-    CardTitle,
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
 } from "netzo/components/card.tsx";
 import {
-    Dialog,
-    DialogContent,
-    DialogTrigger,
+  Dialog,
+  DialogContent,
+  DialogTrigger,
 } from "netzo/components/dialog.tsx";
 import {
-    NavigationMenu,
-    NavigationMenuItem,
-    NavigationMenuLink,
-    NavigationMenuList,
-    navigationMenuTriggerStyle,
+  NavigationMenu,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  navigationMenuTriggerStyle,
 } from "netzo/components/navigation-menu.tsx";
 import { Separator } from "netzo/components/separator.tsx";
 import { cn } from "netzo/components/utils.ts";
@@ -37,7 +37,11 @@ import { useState } from "preact/hooks";
 import { FormCreateBooking } from "./bookings.tsx";
 
 const links: { title: string; href: string; icon: string }[] = [
-  { title: "Servicios", href: "/amenities/services", icon: "i-mdi-room-service" },
+  {
+    title: "Servicios",
+    href: "/amenities/services",
+    icon: "i-mdi-room-service",
+  },
   { title: "Deportes", href: "/amenities/sports", icon: "i-mdi-weight-lifter" },
   { title: "Eventos", href: "/amenities/events", icon: "i-mdi-calendar" },
   {

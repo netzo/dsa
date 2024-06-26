@@ -2,18 +2,18 @@ import { getPublication, getVehicle, Vehicle } from "@/mod.ts";
 import { Button } from "netzo/components/button.tsx";
 import { Combobox } from "netzo/components/combobox.tsx";
 import {
-    DialogFooter,
-    DialogHeader,
-    DialogTitle,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
 } from "netzo/components/dialog.tsx";
 import {
-    Form,
-    FormControl,
-    FormField,
-    FormItem,
-    FormLabel,
-    FormMessage,
-    useForm,
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+  useForm,
 } from "netzo/components/form.tsx";
 import { Input } from "netzo/components/input.tsx";
 

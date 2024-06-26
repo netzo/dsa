@@ -272,4 +272,3 @@ export * from "@/database/slots.ts";
 export * from "@/database/statements.ts";
 export * from "@/database/users.ts";
 export * from "@/database/vehicles.ts";
-

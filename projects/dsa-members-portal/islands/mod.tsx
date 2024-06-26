@@ -1,11 +1,11 @@
 import {
-    NavHeader,
-    NavItem,
-    NavItemHeader,
-    NavItemUser,
-    NavRoot,
-    NavSeparator,
-    NavSpacer,
+  NavHeader,
+  NavItem,
+  NavItemHeader,
+  NavItemUser,
+  NavRoot,
+  NavSeparator,
+  NavSpacer,
 } from "netzo/components/blocks/nav.tsx";
 import type { NetzoState } from "netzo/mod.ts";
 
