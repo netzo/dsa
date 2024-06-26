@@ -1,5 +1,5 @@
-import { IS_BROWSER } from "fresh/runtime.ts";
 import { type Signal } from "@preact/signals";
+import { IS_BROWSER } from "fresh/runtime.ts";
 import { qrcode } from "jsr:@libs/qrcode";
 import { download, generateCsv, mkConfig } from "npm:export-to-csv@1.2.4";
 import { flatten } from "npm:flat@6.0.1";
@@ -60,19 +60,19 @@ export const toPercent = (value: number) =>
     minimumFractionDigits: 2,
   }).format(value);
 
-export const getYearsFromToday = (years = 0) => {
+export const getDateAtYearsFromToday = (years = 0) => {
   const date = new Date();
   date.setFullYear(date.getFullYear() + years);
   return date;
 };
 
-export const getMonthsFromToday = (months = 0) => {
+export const getDateAtMonthsFromToday = (months = 0) => {
   const date = new Date();
   date.setMonth(date.getMonth() + months);
   return date;
 };
 
-export const getDaysFromToday = (days = 0) => {
+export const getDateAtDaysFromToday = (days = 0) => {
   const date = new Date();
   date.setDate(date.getDate() + days);
   return date;
@@ -272,3 +272,4 @@ export * from "@/database/slots.ts";
 export * from "@/database/statements.ts";
 export * from "@/database/users.ts";
 export * from "@/database/vehicles.ts";
+
