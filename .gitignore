@@ -11,6 +11,7 @@ _fresh/
 tmp/
 vendor/
 node_modules/
+vendor/
 *.db
 *.db-shm
 *.db-wal
