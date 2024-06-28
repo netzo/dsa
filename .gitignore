@@ -9,7 +9,6 @@ html_cov/
 _fresh/
 **/_fresh/*
 tmp/
-vendor/
 node_modules/
 vendor/
 *.db
