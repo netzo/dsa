@@ -1,11 +1,12 @@
-import { defineRoute } from "fresh/server.ts";
 import type { Account, Statement, Vehicle } from "@/mod.ts";
 import { generateHexColor } from "@/mod.ts";
 import { db } from "@/netzo.config.ts";
 import { signal } from "@preact/signals";
+import { defineRoute } from "fresh/server.ts";
+import type { NetzoState } from "netzo/mod.ts";
 import { PageAccount } from "../../islands/account/mod.tsx";
 
-export default defineRoute(async (req, ctx) => {
+export default defineRoute<NetzoState>(async (req, ctx) => {
   const { id } = ctx.params;
   const nav = signal(ctx.url.searchParams.get("nav") || "categories");
 

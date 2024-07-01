@@ -1,9 +1,10 @@
-import { defineRoute } from "fresh/server.ts";
 import { PageSession } from "@/islands/session.tsx";
 import type { Booking, Session } from "@/mod.ts";
 import { db } from "@/netzo.config.ts";
+import { defineRoute } from "fresh/server.ts";
+import type { NetzoState } from "netzo/mod.ts";
 
-export default defineRoute(async (req, ctx) => {
+export default defineRoute<NetzoState>(async (req, ctx) => {
   const { id } = ctx.params;
   const [session, amenities, allBookings] = await Promise.all([
     db.get<Session>("sessions", id),

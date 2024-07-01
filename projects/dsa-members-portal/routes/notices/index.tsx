@@ -1,9 +1,10 @@
-import { defineRoute } from "fresh/server.ts";
 import { PageNotices } from "@/islands/notices.tsx";
 import type { Notice } from "@/mod.ts";
 import { db } from "@/netzo.config.ts";
+import { defineRoute } from "fresh/server.ts";
+import type { NetzoState } from "netzo/mod.ts";
 
-export default defineRoute(async (req, ctx) => {
+export default defineRoute<NetzoState>(async (req, ctx) => {
   const id = ctx.url.searchParams.get("id");
   const notices = await db.find<Notice>("notices");
 
