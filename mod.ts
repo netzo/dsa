@@ -258,17 +258,18 @@ export function useTableUtils<
   };
 }
 
-export * from "@/database/accounts.ts";
-export * from "@/database/amenities.ts";
-export * from "@/database/bookings.ts";
-export * from "@/database/facilities.ts";
-export * from "@/database/items.ts";
-export * from "@/database/menus.ts";
-export * from "@/database/notices.ts";
-export * from "@/database/orders.ts";
-export * from "@/database/publications.ts";
-export * from "@/database/sessions.ts";
-export * from "@/database/slots.ts";
-export * from "@/database/statements.ts";
-export * from "@/database/users.ts";
-export * from "@/database/vehicles.ts";
+export * from "./datastore/accounts.ts";
+export * from "./datastore/amenities.ts";
+export * from "./datastore/bookings.ts";
+export * from "./datastore/facilities.ts";
+export * from "./datastore/items.ts";
+export * from "./datastore/menus.ts";
+export * from "./datastore/notices.ts";
+export * from "./datastore/orders.ts";
+export * from "./datastore/publications.ts";
+export * from "./datastore/sessions.ts";
+export * from "./datastore/slots.ts";
+export * from "./datastore/statements.ts";
+export * from "./datastore/users.ts";
+export * from "./datastore/vehicles.ts";
+
