@@ -44,7 +44,7 @@
     "react-dom": "npm:preact@10.22.0/compat",
     "@preact/signals": "npm:@preact/signals@1.2.3",
     "@preact/signals-core": "npm:@preact/signals-core@1.6.1",
-    "netzo/": "https://deno.land/x/netzo@0.5.108/",
+    "netzo/": "https://deno.land/x/netzo@0.5.110/",
     "case/": "https://deno.land/x/case@2.2.0/",
     "zod": "https://deno.land/x/zod@v3.22.4/mod.ts"
   }
