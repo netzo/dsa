@@ -6,12 +6,13 @@
   "tasks": {
     "db:load": "deno run -A --env tasks/db:load.ts",
     "db:reset": "deno run -A --env tasks/db:reset.ts",
-    "dev": "deno run -A --env --watch=static/,routes/ dev.ts",
-    "check:types": "deno check **/*.ts **/*.tsx",
     "test": "deno test -A --env --parallel",
-    "ok": "deno fmt --check && deno lint && deno task check:types && deno task test",
+    "check:types": "deno check **/*.ts **/*.tsx",
+    "check": "deno fmt --check && deno lint && deno check **/*.ts && deno check **/*.tsx",
+    "dev": "deno run -A --env --watch=static/,routes/ dev.ts",
     "build": "deno run -A --env dev.ts build",
     "start": "deno run -A --env main.ts",
+    "deploy": "netzo deploy --exclude=./database",
     "update": "deno run -A -r https://fresh.deno.dev/update ."
   },
   "unstable": ["cron", "kv", "temporal"],
