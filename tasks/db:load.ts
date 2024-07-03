@@ -1,4 +1,4 @@
-export const FILEPATH = "../../../database/db.entries.json";
+export const FILEPATH = "../../../datastore/db.entries.json";
 
 const kv = await Deno.openKv(Deno.env.get("DENO_KV_PATH"));
 

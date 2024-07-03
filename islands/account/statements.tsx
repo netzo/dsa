@@ -1,4 +1,4 @@
-import { type Statement, toDate, toMXN, useTableUtils } from "@/mod.ts";
+import { toDate, toMXN, useTableUtils, type Statement } from "@/mod.ts";
 import {
   STATEMENT_STATUS_OPTIONS,
   STATEMENT_TYPE_OPTIONS,
@@ -32,7 +32,7 @@ export function CardStatements(props: { statements: Statement[] }) {
     copyId,
     downloadAsCsv,
   } = useTableUtils<Statement>({
-    endpoint: "/database/statements",
+    endpoint: "/datastore/statements",
     data,
     setData,
     active,

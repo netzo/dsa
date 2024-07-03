@@ -1,4 +1,4 @@
-import { type Entry, toDate, toQRCode, useTableUtils } from "@/mod.ts";
+import { toDate, toQRCode, useTableUtils, type Entry } from "@/mod.ts";
 import { ENTRY_TYPE_OPTIONS } from "@/utils/constants.ts";
 import { useSignal } from "@preact/signals";
 import {
@@ -46,7 +46,7 @@ export function CardEntries(props: { entries: Entry[] }) {
     copyId,
     downloadAsCsv,
   } = useTableUtils<Entry>({
-    endpoint: "/database/entries",
+    endpoint: "/datastore/entries",
     data,
     setData,
     active,

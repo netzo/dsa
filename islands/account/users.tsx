@@ -1,4 +1,4 @@
-import { toQRCode, type User, useTableUtils } from "@/mod.ts";
+import { toQRCode, useTableUtils, type User } from "@/mod.ts";
 import { USER_STATUS_OPTIONS, USER_TYPE_OPTIONS } from "@/utils/constants.ts";
 import { useSignal } from "@preact/signals";
 import {
@@ -47,7 +47,7 @@ export function CardUsers(props: { user: User[] }) {
     copyId,
     downloadAsCsv,
   } = useTableUtils<User>({
-    endpoint: "/database/users",
+    endpoint: "/datastore/users",
     data,
     setData,
     active,

@@ -53,7 +53,7 @@ export function CardVehicles(props: { vehicles: Vehicle[] }) {
     copyId,
     downloadAsCsv,
   } = useTableUtils<Vehicle>({
-    endpoint: "/database/vehicles",
+    endpoint: "/datastore/vehicles",
     data,
     setData,
     active,
@@ -346,8 +346,8 @@ export function DialogFormVehicle(
   const form = useForm<Vehicle>({ defaultValues: props.defaultValues });
 
   const url = props.method === "PATCH"
-    ? `/database/vehicles/${props.defaultValues.id}`
-    : "/database/vehicles";
+    ? `/datastore/vehicles/${props.defaultValues.id}`
+    : "/datastore/vehicles";
   const id = props.method === "PATCH" ? "vehicles.patch" : "vehicles.create";
 
   const onSubmit = async ({

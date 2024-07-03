@@ -1,4 +1,4 @@
-import { type Guest, toQRCode, useTableUtils } from "@/mod.ts";
+import { toQRCode, useTableUtils, type Guest } from "@/mod.ts";
 import { USER_STATUS_OPTIONS } from "@/utils/constants.ts";
 import { useSignal } from "@preact/signals";
 import {
@@ -59,7 +59,7 @@ export function CardGuests(props: {
     copyId,
     downloadAsCsv,
   } = useTableUtils<Guest>({
-    endpoint: "/database/guests",
+    endpoint: "/datastore/guests",
     data,
     setData,
     active,
@@ -330,8 +330,8 @@ export function DialogFormGuest(
   const form = useForm<Guest>({ defaultValues: props.defaultValues });
 
   const url = props.method === "PATCH"
-    ? `/database/guests/${props.defaultValues.id}`
-    : "/database/guests";
+    ? `/datastore/guests/${props.defaultValues.id}`
+    : "/datastore/guests";
   const id = props.method === "PATCH" ? "guests.patch" : "guests.create";
 
   const onSubmit = async ({
