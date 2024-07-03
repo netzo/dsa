@@ -2,8 +2,8 @@ import { Booking, getBooking, getPublication } from "@/mod.ts";
 import { Head } from "fresh/runtime.ts";
 import {
   Calendar,
-  momentLocalizer,
   Views,
+  momentLocalizer,
 } from "https://esm.sh/react-big-calendar@1.11.2?external=react,react-dom&target=es2022";
 import { Button } from "netzo/components/button.tsx";
 import {

@@ -9,10 +9,10 @@ export default defineRoute<NetzoState>((_req, ctx) => {
           404
         </h1>
         <p className="mb-4 text-3xl font-bold text-gray-900 md:text-4xl dark:text-white">
-          Not Found
+          Página no encontrada
         </p>
         <p className="mb-4 text-lg font-light text-gray-500 dark:text-gray-400">
-          No matching route for{" "}
+          No se encontró la página{" "}
           <code className="font-mono">{ctx.url.pathname}</code>
         </p>
       </div>
