@@ -105,7 +105,7 @@ export const toMXN = (amount: number) =>
   }).format(amount);
 
 export const toPercent = (value: number) =>
-  new Intl.NumberFormat("en-US", {
+  new Intl.NumberFormat("es-MX", {
     style: "percent",
     minimumFractionDigits: 2,
   }).format(value);

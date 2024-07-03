@@ -42,7 +42,7 @@ export const toMXN = (amount: number) =>
   }).format(amount);
 
 export const toUSD = (amount: number) =>
-  new Intl.NumberFormat("en-US", {
+  new Intl.NumberFormat("es-MX", {
     style: "currency",
     currency: "USD",
   }).format(amount);
@@ -55,7 +55,7 @@ export const toUSD = (amount: number) =>
 // });
 
 export const toPercent = (value: number) =>
-  new Intl.NumberFormat("en-US", {
+  new Intl.NumberFormat("es-MX", {
     style: "percent",
     minimumFractionDigits: 2,
   }).format(value);
@@ -272,3 +272,4 @@ export * from "./datastore/slots.ts";
 export * from "./datastore/statements.ts";
 export * from "./datastore/users.ts";
 export * from "./datastore/vehicles.ts";
+
