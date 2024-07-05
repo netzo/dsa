@@ -18,7 +18,13 @@
   "lint": { "rules": { "tags": ["fresh", "recommended"] } },
   "fmt": { "lineWidth": 100 },
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "dom.asynciterable", "deno.ns", "deno.unstable"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "dom.asynciterable",
+      "deno.ns",
+      "deno.unstable"
+    ],
     "jsx": "precompile",
     "jsxImportSource": "preact",
     "jsxImportSourceTypes": "npm:@types/react@18.2.60",
@@ -39,9 +45,9 @@
     "@/": "./",
     "fresh/": "https://deno.land/x/fresh@1.6.8/",
     "$fresh/": "https://deno.land/x/fresh@1.6.8/",
-    "preact": "npm:preact@10.22.0",
-    "react": "npm:preact@10.22.0/compat",
-    "react-dom": "npm:preact@10.22.0/compat",
+    "preact": "npm:preact@10.22.1",
+    "react": "npm:preact@10.22.1/compat",
+    "react-dom": "npm:preact@10.22.1/compat",
     "@preact/signals": "npm:@preact/signals@1.2.3",
     "@preact/signals-core": "npm:@preact/signals-core@1.6.1",
     "netzo/": "https://deno.land/x/netzo@0.5.110/",

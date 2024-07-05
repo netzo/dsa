@@ -1,5 +1,5 @@
 import { assertEquals } from "@std/assert";
-import { ServeHandlerInfo, createHandler } from "fresh/server.ts";
+import { createHandler, ServeHandlerInfo } from "fresh/server.ts";
 import manifest from "../fresh.gen.ts";
 import config from "../netzo.config.ts";
 

@@ -1,4 +1,4 @@
-import { toDate, toQRCode, useTableUtils, type Entry } from "@/mod.ts";
+import { type Entry, toDate, toQRCode, useTableUtils } from "@/mod.ts";
 import { ENTRY_TYPE_OPTIONS } from "@/utils/constants.ts";
 import { useSignal } from "@preact/signals";
 import {
