@@ -2,25 +2,25 @@
   "version": "3",
   "packages": {
     "specifiers": {
-      "npm:@preact/signals@1.2.3": "npm:@preact/signals@1.2.3_preact@10.22.1",
+      "npm:@preact/signals@1.2.3": "npm:@preact/signals@1.2.3_preact@10.22.0",
       "npm:@types/react@18.2.60": "npm:@types/react@18.2.60",
       "npm:date-arithmetic@4.1.0": "npm:date-arithmetic@4.1.0",
       "npm:export-to-csv@1.2.4": "npm:export-to-csv@1.2.4",
       "npm:flat@6.0.1": "npm:flat@6.0.1",
       "npm:moment@2.30.1": "npm:moment@2.30.1",
-      "npm:preact@10.22.1": "npm:preact@10.22.1",
+      "npm:preact@10.22.0": "npm:preact@10.22.0",
       "npm:timeago.js@4.0.0-beta.3": "npm:timeago.js@4.0.0-beta.3"
     },
     "npm": {
-      "@preact/signals-core@1.6.1": {
-        "integrity": "sha512-KXEEmJoKDlo0Igju/cj9YvKIgyaWFDgnprShQjzimUd5VynAAdTWMshawEOjUVeKbsI0aR58V6WOQp+DNcKApw==",
+      "@preact/signals-core@1.7.0": {
+        "integrity": "sha512-bEZLgmJGSBVP5PUPDowhPW3bVdMmp9Tr5OEl+SQK+8Tv9T7UsIfyN905cfkmmeqw8z4xp8T6zrl4M1uj9+HAfg==",
         "dependencies": {}
       },
-      "@preact/signals@1.2.3_preact@10.22.1": {
+      "@preact/signals@1.2.3_preact@10.22.0": {
         "integrity": "sha512-M2DXse3Wi8HwjI1d2vQWOLJ3lHogvqTsJYvl4ofXRXgMFQzJ7kmlZvlt5i8x5S5VwgZu0ghru4HkLqOoFfU2JQ==",
         "dependencies": {
-          "@preact/signals-core": "@preact/signals-core@1.6.1",
-          "preact": "preact@10.22.1"
+          "@preact/signals-core": "@preact/signals-core@1.7.0",
+          "preact": "preact@10.22.0"
         }
       },
       "@types/prop-types@15.7.12": {
@@ -59,8 +59,8 @@
         "integrity": "sha512-uEmtNhbDOrWPFS+hdjFCBfy9f2YoyzRpwcl+DqpC6taX21FzsTLQVbMV/W7PzNSX6x/bhC1zA3c2UQ5NzH6how==",
         "dependencies": {}
       },
-      "preact@10.22.1": {
-        "integrity": "sha512-jRYbDDgMpIb5LHq3hkI0bbl+l/TQ9UnkdQ0ww+lp+4MMOdqaUYdFc5qeyP+IV8FAd/2Em7drVPeKdQxsiWCf/A==",
+      "preact@10.22.0": {
+        "integrity": "sha512-RRurnSjJPj4rp5K6XoP45Ui33ncb7e4H7WiOHVpjbkvqvA3U+N8Z6Qbo0AE6leGYBV66n8EhEaFixvIu3SkxFw==",
         "dependencies": {}
       },
       "timeago.js@4.0.0-beta.3": {
@@ -74,7 +74,7 @@
     "dependencies": [
       "npm:@preact/signals-core@1.6.1",
       "npm:@preact/signals@1.2.3",
-      "npm:preact@10.22.1"
+      "npm:preact@10.22.0"
     ]
   }
 }
