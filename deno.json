@@ -1,7 +1,9 @@
 {
-  "name": "@netzolabs/dsa-members-portal",
+  "name": "@netzo/dsa-members-portal",
   "version": "0.0.0",
-  "exclude": ["**/_fresh/*"],
+  "exclude": [
+    "**/_fresh/*"
+  ],
   "tasks": {
     "db:load": "deno run -A --env tasks/db:load.ts",
     "db:reset": "deno run -A --env tasks/db:reset.ts",
@@ -11,12 +13,25 @@
     "dev": "deno run -A --env --watch=static/,routes/ dev.ts",
     "build": "deno run -A --env dev.ts build",
     "start": "deno run -A --env main.ts",
-    "deploy": "netzo deploy --exclude=./database",
-    "update": "deno run -A -r https://fresh.deno.dev/update ."
+    "update": "deno run -A -r https://fresh.deno.dev/update .",
+    "deploy": "deno task build && deployctl deploy --prod"
   },
-  "unstable": ["cron", "kv", "temporal"],
-  "lint": { "rules": { "tags": ["fresh", "recommended"] } },
-  "fmt": { "lineWidth": 100 },
+  "unstable": [
+    "cron",
+    "kv",
+    "temporal"
+  ],
+  "lint": {
+    "rules": {
+      "tags": [
+        "fresh",
+        "recommended"
+      ]
+    }
+  },
+  "fmt": {
+    "lineWidth": 100
+  },
   "compilerOptions": {
     "lib": [
       "dom",
@@ -53,5 +68,13 @@
     "netzo/": "https://deno.land/x/netzo@0.5.114/",
     "case/": "https://deno.land/x/case@2.2.0/",
     "zod": "https://deno.land/x/zod@v3.22.4/mod.ts"
+  },
+  "deploy": {
+    "project": "9b315326-a28e-4e6c-94ee-68f28efeabb3",
+    "exclude": [
+      "**/node_modules"
+    ],
+    "include": [],
+    "entrypoint": "main.ts"
   }
 }
