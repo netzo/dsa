@@ -4,21 +4,20 @@
   </a>
 </div>
 
-<h3 align="center">NetzoLabs</h3>
+<h3 align="center">Netzo</h3>
 
 <p align="center">
-  Code. Deploy. Repeat.
-</p>
-
-<p align="center">
-  <a href="https://netzo.io"><strong>Website</strong></a> ·
-  <a href="https://netzo.io/docs"><strong>Docs</strong></a> ·
-  <a href="https://discord.gg/tbDUpRQCTk"><strong>Community</strong></a>
+  <strong>Technological solutions</strong> for real world problems
 </p>
 
 <div align="center" style="margin-top: 24px;">
-
-[![Discord](https://discord.com/api/guilds/1069584352415068251/widget.png)](https://discord.gg/tbDUpRQCTk)
-[![Follow on Twitter](https://img.shields.io/twitter/follow/netzoio.svg?label=follow+netzoio)](https://twitter.com/netzoio)
-
+  
+  [![Discord](https://discord.com/api/guilds/1069584352415068251/widget.png)](https://discord.gg/tbDUpRQCTk)
+  [![Follow on Twitter](https://img.shields.io/twitter/follow/netzoio.svg?label=follow+netzoio)](https://twitter.com/netzoio)
 </div>
+
+<p align="center">
+  <a href="https://netzo.io" rel="noopener" target="_blank">
+    <img width="900" src="https://github.com/netzo/website/blob/1e86197ed16eadd4c0695271cadba8c1c7bdf562/src/public/images/home/save-hundreds-of-developer-hours.gif" alt="Netzo" />
+  </a>
+</p>
